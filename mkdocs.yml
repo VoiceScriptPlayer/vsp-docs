@@ -1,0 +1,29 @@
+site_name: VoiceScriptPlayer Docs
+site_description: Documentation for VoiceScriptPlayer
+site_url: https://VoiceScriptPlayer.github.io/vsp-docs/
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - search.suggest
+    - search.highlight
+
+nav:
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Features: features.md
+  - Interactive Events: interactive-events.md
+  - AI: ai.md
+  - FAQ: faq.md
+
+repo_url: https://github.com/VoiceScriptPlayer/vsp-docs
+repo_name: vsp-docs
+
+markdown_extensions:
+  - admonition
+  - def_list
+  - tables
+  - toc:
+      permalink: true
