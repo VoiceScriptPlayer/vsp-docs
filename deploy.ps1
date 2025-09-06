@@ -9,13 +9,13 @@ if (-not (Test-Path ".\mkdocs.yml")) {
 }
 
 # 커밋 메시지 입력 받기 (기본값: update docs)
-param(
-    [string]$msg = "update docs"
-)
+# param(
+#     [string]$msg = "update docs"
+# )
 
 # Git 커밋 & 푸시
 git add .
-git commit -m "$msg"
+git commit -m "update docs"
 git push origin main
 
 # MkDocs 배포
