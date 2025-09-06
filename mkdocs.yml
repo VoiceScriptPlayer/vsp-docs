@@ -13,15 +13,27 @@ theme:
 nav:
   - Home: index.md
   - Getting Started: getting-started.md
+  - Project:
+    - 새 프로젝트 만들기: project/create.md
+    - 불러오기 & 저장: project/manage.md
+  - Editor:
+    - 타임라인: editor/timeline.md
+    - 컨트롤 & 속성: editor/controls.md
+    - 이벤트 설정: editor/events.md
+    - 메뉴: editor/menus.md
+  - Playback:
+    - 실행하기: playback/run.md
+    - 디버그 & 로그: playback/debug.md
   - Features: features.md
-  - Interactive Events: interactive-events.md
+  - Device:
+    - TCode: device/tcode.md
   - AI:
-    - Whisper(STT): ai/whisper.md
-    - ElevenLabs(TTS): ai/elevenlabs.md
-    - COEIROINK(TTS): ai/coeiroink.md
-    - Hailuo(TTS): ai/hailuo.md
-    - Meta AI(번역/LLM): ai/meta_ai.md
-    - DeepL(번역): ai/deepl.md
+    - Whisper: ai/whisper.md
+    - ElevenLabs: ai/elevenlabs.md
+    - COEIROINK: ai/coeiroink.md
+    - Hailuo: ai/hailuo.md
+    - Meta AI: ai/meta_ai.md
+    - DeepL: ai/deepl.md
   - FAQ: faq.md
 
 repo_url: https://github.com/VoiceScriptPlayer/vsp-docs

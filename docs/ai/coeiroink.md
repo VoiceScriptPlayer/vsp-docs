@@ -19,7 +19,7 @@ VoiceScriptPlayer에서는 **대본 음성화, 캐릭터 보이스 합성** 등�
      - NVIDIA GPU 환경에서 동작  
      - CPU 대비 3~10배 빠른 처리 속도  
      - 실행을 위해 **CUDA(권장 11.8)** 가 설치되어 있어야 합니다.  
-     - [CUDA 다운로드 페이지](https://developer.nvidia.com/cuda-downloads)  
+     - [CUDA 다운로드 페이지](https://developer.nvidia.com/cuda-11-8-0-download-archive)  
 
    ![COEIROINK 다운로드 페이지](../images/coeiroink_download.png)
 
