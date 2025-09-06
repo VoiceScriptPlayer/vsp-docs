@@ -15,7 +15,8 @@ nav:
   - Getting Started: getting-started.md
   - Features: features.md
   - Interactive Events: interactive-events.md
-  - AI: ai.md
+  - AI:
+    - 개요: ai/ai.md
   - FAQ: faq.md
 
 repo_url: https://github.com/VoiceScriptPlayer/vsp-docs
