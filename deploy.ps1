@@ -1,6 +1,6 @@
 # deploy.ps1
 # python -m mkdocs serve 
-
+# Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
 # 현재 폴더가 vsp-docs 인지 확인
 if (-not (Test-Path ".\mkdocs.yml")) {
