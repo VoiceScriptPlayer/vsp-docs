@@ -16,7 +16,12 @@ nav:
   - Features: features.md
   - Interactive Events: interactive-events.md
   - AI:
-    - 개요: ai/ai.md
+    - Whisper(STT): ai/whisper.md
+    - ElevenLabs(TTS): ai/elevenlabs.md
+    - COEIROINK(TTS): ai/coeiroink.md
+    - Hailuo(TTS): ai/hailuo.md
+    - Meta AI(번역/LLM): ai/meta_ai.md
+    - DeepL(번역): ai/deepl.md
   - FAQ: faq.md
 
 repo_url: https://github.com/VoiceScriptPlayer/vsp-docs
