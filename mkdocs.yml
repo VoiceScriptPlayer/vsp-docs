@@ -28,6 +28,7 @@ nav:
   - Device:
     - TCode: device/tcode.md
   - AI:
+    - SpeechRecognition: ai/speechRecognition.md
     - Whisper: ai/whisper.md
     - ElevenLabs: ai/elevenlabs.md
     - COEIROINK: ai/coeiroink.md
