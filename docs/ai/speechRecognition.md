@@ -18,9 +18,10 @@ VoiceScriptPlayer에서는 이를 통해 **음성 인식(STT)** 기능을 사용
 
 - **Microsoft Server Speech Recognition Language Packs (언어팩 모음)**  
   [다운로드 링크](https://www.microsoft.com/en-us/download/details.aspx?id=27224)
+![설치 확인 화면](../images/languagepack_setup_file.png)
 
 > 첫 번째 파일은 **런타임 엔진**, 두 번째 파일은 **언어팩(여러 언어 지원)** 입니다.
-
+> 두번째 파일은 끝이 TELE로 끝나는게 해당 언어의 언어팩입니다.
 ---
 
 ### 2) 언어팩 주의사항
@@ -55,14 +56,14 @@ VoiceScriptPlayer에서는 이를 통해 **음성 인식(STT)** 기능을 사용
 
 ## 4. 실행 오류 해결
 
-### 1) `클래스가 등록되지 않았습니다 (0x80040154)`
+### 1) `런타임 설치 오류`
 ![런차임 설치 오류](../images/setup_error.png)
 
 - **원인:** 런타임이 설치되지 않았거나, 32/64비트 불일치  
 - **해결 방법:**  
   - `Microsoft Server Speech Platform Runtime (x64)`가 설치되어 있는지 확인  
 
-### 2) `언어 리소스를 찾을 수 없음`
+### 2) `언어팩이 설치되지 않음`
 ![언어 리소스 실패](../images/languagepack_error.png)
 
 - **원인:** 필요한 언어팩이 설치되지 않음  
