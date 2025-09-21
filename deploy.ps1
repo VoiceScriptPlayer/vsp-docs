@@ -1,4 +1,4 @@
-# deploy.ps1
+# .\deploy.ps1
 # python -m mkdocs serve 
 # Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
