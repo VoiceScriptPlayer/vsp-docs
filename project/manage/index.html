@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="ko" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -16,11 +16,11 @@
         <link rel="prev" href="../create/">
       
       
-        <link rel="next" href="../../editor/timeline/">
+        <link rel="next" href="../../editor/overview/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.17">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
     
     
       
@@ -28,7 +28,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.2a3383ac.min.css">
       
       
 
@@ -66,8 +66,8 @@
     <div data-md-component="skip">
       
         
-        <a href="#managing-projects" class="md-skip">
-          Skip to content
+        <a href="#_1" class="md-skip">
+          콘텐츠로 이동
         </a>
       
     </div>
@@ -76,62 +76,86 @@
     </div>
     
     
-      
-
-<header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="VoiceScriptPlayer Docs" class="md-header__button md-logo" aria-label="VoiceScriptPlayer Docs" data-md-component="logo">
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="header.title">
+    <!-- 왼쪽: 로고 -->
+    <a href="https://VoiceScriptPlayer.github.io/vsp-docs/"
+       title="VoiceScriptPlayer Docs"
+       class="md-header__button md-logo"
+       aria-label="VoiceScriptPlayer Docs">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
+
+    <!-- 햄버거 메뉴 (모바일용) -->
     <label class="md-header__button md-icon" for="__drawer">
-      
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
+
+    <!-- 제목 -->
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
-          <span class="md-ellipsis">
-            VoiceScriptPlayer Docs
-          </span>
+          <span class="md-ellipsis">VoiceScriptPlayer Docs</span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
-          <span class="md-ellipsis">
-            
-              불러오기 & 저장
-            
-          </span>
+          <span class="md-ellipsis">불러오기 & 저장</span>
         </div>
       </div>
     </div>
+
+    <!-- 🌐 언어 전환 -->
     
+      <div class="md-header__option">
+  <div class="md-select">
     
-      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    <button class="md-header__button md-icon" aria-label="언어설정">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="ko" class="md-select__link">
+              한국어
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../en/project/manage/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../ja/project/manage/" hreflang="ja" class="md-select__link">
+              日本語
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
     
-    
-    
-      
-      
-        <label class="md-header__button md-icon" for="__search">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        </label>
-        <div class="md-search" data-md-component="search" role="dialog">
+
+    <!-- 🔍 검색창 복원 -->
+    <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Search">
+      <nav class="md-search__options" aria-label="검색">
         
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
@@ -144,7 +168,7 @@
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Initializing search
+            검색 초기화
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -152,23 +176,19 @@
     </div>
   </div>
 </div>
-      
-    
-    
-      <div class="md-header__source">
-        <a href="https://github.com/VoiceScriptPlayer/vsp-docs" title="Go to repository" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
-  </div>
-  <div class="md-source__repository">
-    vsp-docs
-  </div>
+
+    <!-- ❤️ Patreon 버튼 -->
+<a href="https://www.patreon.com/VoiceScriptPlayer"
+   title="Support on Patreon"
+   class="md-header__button md-icon"
+   target="_blank" rel="noopener"
+   style="display:flex;align-items:center;gap:6px;margin-left:6px;">
+  <img src="../../images/PATREON_SYMBOL.ico" alt="Patreon"
+       width="22" height="22"
+       style="display:block;border-radius:4px;filter:var(--md-icon-filter);" />
+  <span style="font-size:0.9rem;font-weight:500;">Support on Patreon</span>
 </a>
-      </div>
-    
   </nav>
-  
 </header>
     
     <div class="md-container" data-md-component="container">
@@ -177,7 +197,7 @@
         
           
             
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+<nav class="md-tabs" aria-label="탭" data-md-component="tabs">
   <div class="md-grid">
     <ul class="md-tabs__list">
       
@@ -249,7 +269,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../editor/timeline/" class="md-tabs__link">
+        <a href="../../editor/overview/" class="md-tabs__link">
           
   
   
@@ -379,7 +399,7 @@
   
 
 
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="VoiceScriptPlayer Docs" class="md-nav__button md-logo" aria-label="VoiceScriptPlayer Docs" data-md-component="logo">
       
@@ -389,18 +409,6 @@
     </a>
     VoiceScriptPlayer Docs
   </label>
-  
-    <div class="md-nav__source">
-      <a href="https://github.com/VoiceScriptPlayer/vsp-docs" title="Go to repository" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
-  </div>
-  <div class="md-source__repository">
-    vsp-docs
-  </div>
-</a>
-    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -562,7 +570,7 @@
       
         
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<nav class="md-nav md-nav--secondary" aria-label="목차">
   
   
   
@@ -571,50 +579,149 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      목차
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-opening-a-project" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Opening a Project
+      1. 프로젝트 불러오기
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 프로젝트 불러오기">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 불러오기 방법
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 프로젝트 저장
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-saving-projects" class="md-nav__link">
+  <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Saving Projects
+      3. 리소스 관리
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 리소스 관리">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 리소스 탭 구조
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 리소스 추가 방법
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 리소스 수정 및 삭제
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 내보내기 &amp; 공유
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 내보내기 &amp; 공유">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      📁 프로젝트 게시 열기
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      🗂️ 게시 설정 창
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎧 저작권이 있는 음원 제외
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      📦 내보내기 옵션 요약
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 백업 &amp; 버전 관리
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-resource-management" class="md-nav__link">
+  <a href="#6" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Resource Management
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-exporting-sharing" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Exporting &amp; Sharing
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-backup-version-control" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Backup &amp; Version Control
+      6. 다음 단계
     </span>
   </a>
   
@@ -686,6 +793,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../../editor/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    개요
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../editor/timeline/" class="md-nav__link">
         
   
@@ -709,12 +839,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../editor/controls/" class="md-nav__link">
+      <a href="../../editor/sound/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    컨트롤 & 속성
+    사운드
     
   </span>
   
@@ -732,12 +862,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../../editor/events/" class="md-nav__link">
+      <a href="../../editor/video/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    이벤트 설정
+    비디오
     
   </span>
   
@@ -755,12 +885,150 @@
   
   
     <li class="md-nav__item">
-      <a href="../../editor/menus/" class="md-nav__link">
+      <a href="../../editor/live2d/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    메뉴
+    Live2D
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../editor/ui/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    UI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../editor/script/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    스크립트
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../editor/stroke/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    스트로크
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../editor/ejaculation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    사정 액션
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../editor/resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    리소스 관리
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../editor/runtime-helper/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    런타임 도우미
     
   </span>
   
@@ -952,6 +1220,29 @@
   
   <span class="md-ellipsis">
     TCode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../device/intiface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Intiface
     
   </span>
   
@@ -1215,7 +1506,7 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<nav class="md-nav md-nav--secondary" aria-label="목차">
   
   
   
@@ -1224,50 +1515,149 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      목차
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-opening-a-project" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Opening a Project
+      1. 프로젝트 불러오기
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 프로젝트 불러오기">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 불러오기 방법
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 프로젝트 저장
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-saving-projects" class="md-nav__link">
+  <a href="#3" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Saving Projects
+      3. 리소스 관리
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 리소스 관리">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 리소스 탭 구조
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 리소스 추가 방법
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 리소스 수정 및 삭제
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 내보내기 &amp; 공유
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 내보내기 &amp; 공유">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      📁 프로젝트 게시 열기
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      🗂️ 게시 설정 창
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎧 저작권이 있는 음원 제외
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      📦 내보내기 옵션 요약
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 백업 &amp; 버전 관리
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-resource-management" class="md-nav__link">
+  <a href="#6" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Resource Management
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-exporting-sharing" class="md-nav__link">
-    <span class="md-ellipsis">
-      4. Exporting &amp; Sharing
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-backup-version-control" class="md-nav__link">
-    <span class="md-ellipsis">
-      5. Backup &amp; Version Control
+      6. 다음 단계
     </span>
   </a>
   
@@ -1288,49 +1678,222 @@
                   
 
 
-  
-  
 
-
-<h1 id="managing-projects">Managing Projects<a class="headerlink" href="#managing-projects" title="Permanent link">&para;</a></h1>
-<p>This page covers how to open, save, and organize projects in <strong>VoiceScriptPlayer</strong>.</p>
+<h1 id="_1">프로젝트 불러오기 &amp; 저장<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p>이 문서는 <strong>VoiceScriptPlayer</strong>에서 프로젝트를 불러오고, 저장하며, 관리하는 방법을 설명합니다.</p>
 <hr />
-<h2 id="1-opening-a-project">1. Opening a Project<a class="headerlink" href="#1-opening-a-project" title="Permanent link">&para;</a></h2>
+<h2 id="1">1. 프로젝트 불러오기<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<p>기존에 만든 프로젝트는 <strong>메인 화면의 프로젝트 목록(타일 형식)</strong> 에서 불러올 수 있습니다.<br />
+에디터가 실행 중일 때는 새 프로젝트를 열 수 없으며,<br />
+먼저 에디터를 닫은 뒤 홈 화면으로 돌아가야 합니다.</p>
+<hr />
+<h3 id="_2">🔹 불러오기 방법<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<ol>
+<li>에디터 창을 닫고 <strong>홈 화면</strong>으로 이동합니다.  </li>
+<li>홈 화면의 <strong>프로젝트 목록(타일)</strong> 에서 열고자 하는 프로젝트를 찾습니다.  </li>
+<li>해당 <strong>프로젝트의 편집 버튼을 누르면</strong> 자동으로 열립니다.  </li>
+<li>최근 수정한 프로젝트는 상단의 <strong>“최근 수정한 리스트”</strong> 에도 표시됩니다.</li>
+</ol>
+<blockquote>
+<p>⚠️ <strong>주의:</strong><br />
+VoiceScriptPlayer는 동시에 여러 프로젝트를 열 수 없습니다.<br />
+현재 편집 중인 프로젝트를 닫은 뒤에만 다른 프로젝트를 열 수 있습니다.</p>
+<p>💡 <strong>팁:</strong><br />
+프로젝트는 자동 저장되며, 수동으로 삭제하지 않는 한 목록에 계속 표시됩니다.<br />
+제목, 태그, 설명은 홈 화면에서 바로 수정할 수 있습니다.</p>
+</blockquote>
+<hr />
+<h2 id="2">2. 프로젝트 저장<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<p>VoiceScriptPlayer는 작업 도중 언제든지 저장할 수 있으며,<br />
+자동 저장 기능도 지원합니다.</p>
+<table>
+<thead>
+<tr>
+<th>저장 방식</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>저장 (Ctrl + S)</strong></td>
+<td>현재 프로젝트 상태를 즉시 저장합니다.</td>
+</tr>
+<tr>
+<td><strong>다른 이름으로 저장</strong></td>
+<td>새로운 이름이나 경로로 복사본을 생성합니다.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>팁:</strong><br />
+리소스 파일은 프로젝트 저장과 관련 없이 적용됩니다.</p>
+</blockquote>
+<hr />
+<h2 id="3">3. 리소스 관리<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
+<p>VoiceScriptPlayer에서는 리소스를 “탐색기” 형태로 한 번에 관리하지 않고,<br />
+각 리소스 유형별로 <strong>전용 탭(Tab)</strong> 에서 개별적으로 관리합니다.</p>
+<hr />
+<h3 id="_3">🔹 리소스 탭 구조<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>프로젝트 상단에는 다음과 같은 리소스 관리 탭이 있습니다.</p>
+<table>
+<thead>
+<tr>
+<th>탭 이름</th>
+<th>역할</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🎵 <a href="../../editor/sound/"><strong>사운드</strong></a></td>
+<td>오디오 파일(<code>.mp3</code>, <code>.wav</code>)을 불러오고 <strong>자막 생성 및 편집</strong>, <strong>번역</strong>, <strong>음성 생성(TTS)</strong> 등을 수행할 수 있습니다.</td>
+</tr>
+<tr>
+<td>🎬 <a href="../../editor/video/"><strong>비디오</strong></a></td>
+<td>영상 파일(<code>.mp4</code>, <code>.mov</code>)을 추가하고 <strong>자막 생성</strong>, <strong>번역</strong>, <strong>동기화 편집</strong>을 할 수 있습니다.</td>
+</tr>
+<tr>
+<td>🧍 <a href="../../editor/live2d/"><strong>Live2D</strong></a></td>
+<td>캐릭터 모델(<code>.model3.json</code>) 및 모션 파일을 불러와 배치하고 <strong>모션, 표정, 리깅 연동</strong>을 설정합니다.</td>
+</tr>
+<tr>
+<td>🧩 <a href="../../editor/ui/"><strong>UI</strong></a></td>
+<td>버튼, 이미지, 텍스트 등 <strong>사용자 인터페이스 구성 요소를 배치 및 편집</strong>합니다.</td>
+</tr>
+<tr>
+<td>💬 <a href="../../editor/script/"><strong>스크립트</strong></a></td>
+<td><strong>변수, 트리거, 조건문</strong> 등을 사용해 상호작용 동작을 정의하고 제어합니다.</td>
+</tr>
+<tr>
+<td>✏️ <a href="../../editor/stroke/"><strong>스트로크</strong></a></td>
+<td><strong>타임라인 기반 물리 이벤트</strong>나 <strong>진동 패턴</strong>을 설정하고 미리보기를 제공합니다.</td>
+</tr>
+<tr>
+<td>💦 <a href="../../editor/ejaculation/"><strong>사정 액션</strong></a></td>
+<td><strong>특수 효과, 애니메이션 타이밍</strong>, <strong>스트로크 연동</strong> 등을 제어합니다.</td>
+</tr>
+<tr>
+<td>📦 <a href="../../editor/resources/"><strong>리소스 관리</strong></a></td>
+<td>프로젝트 전반에 사용되는 <strong>공용 리소스(변수, 이미지, Live2D, 번역 사전 등)</strong> 을 통합 관리합니다.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="_4">🔹 리소스 추가 방법<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<ol>
+<li>원하는 리소스 탭(예: <strong>사운드</strong>, <strong>비디오</strong>, <strong>Live2D</strong>)으로 이동합니다.  </li>
+<li>상단의 <strong>[가져오기] 버튼</strong>을 이용해 파일을 불러옵니다.  </li>
+<li>리소스가 해당 탭 목록에 등록되며, 프로젝트 폴더 내 알맞은 위치에 자동 복사됩니다.</li>
+</ol>
+<blockquote>
+<p>⚙️ <strong>참고:</strong><br />
+리소스는 각각의 탭에서 개별적으로 관리되며,<br />
+추가된 파일은 자동으로 프로젝트 폴더(<code>Video/</code>, <code>UI/</code>, <code>Trigger/</code> 등)에 정리됩니다.<br />
+경로를 직접 입력할 필요가 없습니다.</p>
+</blockquote>
+<hr />
+<h3 id="_5">🔹 리소스 수정 및 삭제<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Go to <strong>File → Open Project</strong></li>
-<li>Select a <code>.vspx</code> file</li>
-<li>The project folder will load automatically</li>
+<li>각 탭에서 등록된 리소스를 선택하면 <strong>우측 패널</strong>에 세부 설정이 표시됩니다.  </li>
+<li>설정을 변경하면 실시간으로 반영되며, 별도의 저장 과정 없이 자동 저장됩니다.  </li>
+<li>필요 없는 리소스는 <strong>[삭제] 버튼</strong>으로 제거할 수 있습니다.<br />
+  (실제 파일은 프로젝트 폴더에서 자동 정리됩니다.)</li>
 </ul>
 <hr />
-<h2 id="2-saving-projects">2. Saving Projects<a class="headerlink" href="#2-saving-projects" title="Permanent link">&para;</a></h2>
+<blockquote>
+<p>💡 <strong>팁:</strong><br />
+각 리소스 탭은 독립적으로 작동하므로,<br />
+한 리소스를 수정해도 다른 탭에는 영향을 주지 않습니다.<br />
+예를 들어, 사운드 편집 중이라도 UI 탭의 버튼 구성은 그대로 유지됩니다.</p>
+</blockquote>
+<hr />
+<h2 id="4">4. 내보내기 &amp; 공유<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<p>VoiceScriptPlayer에서는 프로젝트를 다른 사용자에게 배포하거나,<br />
+편집이 불가능한 <strong>재생 전용 형태</strong>로 게시할 수 있습니다.</p>
+<hr />
+<h3 id="_6">📁 프로젝트 게시 열기<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<p><img alt="파일 메뉴 - 프로젝트 게시" src="../../images/project-publish-menu.png" /></p>
+<p>프로젝트 게시 기능은 상단 메뉴의 <strong>[파일 → 프로젝트 게시]</strong> 에서 실행할 수 있습니다.<br />
+이 항목을 클릭하면 게시 설정 창이 열립니다.</p>
+<hr />
+<h3 id="_7">🗂️ 게시 설정 창<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<p><img alt="프로젝트 게시" src="../../images/project-publish.png" /></p>
+<p>게시 창에서는 다음 항목을 설정할 수 있습니다:</p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>위치 고르기</strong></td>
+<td>게시할 폴더 경로를 선택합니다.</td>
+</tr>
+<tr>
+<td><strong>프로젝트 포함 여부</strong></td>
+<td>게시에 포함할 리소스를 선택합니다.<br>오른쪽 화살표(→)로 제외, 왼쪽 화살표(←)로 포함할 수 있습니다.</td>
+</tr>
+</tbody>
+</table>
+<p>게시를 완료하면 선택한 폴더 내에<br />
+<strong>편집이 불가능하고 재생만 가능한 형태의 프로젝트 폴더</strong>가 생성됩니다.</p>
+<blockquote>
+<p>⚙️ <strong>참고:</strong><br />
+게시 시 프로젝트는 압축되지 않습니다.<br />
+내부 구조(<code>Video/</code>, <code>UI/</code>, <code>Trigger/</code> 등)는 그대로 유지되며,<br />
+<strong>VoiceScriptPlayer Player</strong>에서만 실행 가능합니다.</p>
+</blockquote>
+<hr />
+<h3 id="_8">🎧 저작권이 있는 음원 제외<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p>게시 과정에서 저작권이 민감한 오디오 파일(예: 상업용 BGM, 음성 등)은<br />
+“프로젝트 포함 여부” 목록에서 제외할 수 있습니다.</p>
 <ul>
-<li><strong>Save (Ctrl+S):</strong> Saves the current project state</li>
-<li><strong>Save As:</strong> Creates a copy with a new name/location</li>
-<li>Auto-save is available (every X minutes)</li>
+<li>제외된 음원은 게시 폴더에 복사되지 않습니다.  </li>
+<li>재생 시 사용자가 직접 해당 파일의 위치를 지정하여 로드할 수 있습니다.  </li>
+<li>이를 통해 <strong>저작권이 있는 음원을 보호하면서도 프로젝트 배포가 가능</strong>합니다.</li>
+</ul>
+<blockquote>
+<p>💡 <strong>팁:</strong><br />
+게시 전 저작권 관련 리소스를 정리하면<br />
+다른 사용자가 프로젝트를 열 때 오류 없이 바로 실행할 수 있습니다.</p>
+</blockquote>
+<hr />
+<h3 id="_9">📦 내보내기 옵션 요약<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>기능</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>프로젝트 게시</strong></td>
+<td>폴더 형태로 내보내며, 편집은 불가능하고 재생만 가능</td>
+</tr>
+<tr>
+<td><strong>프로젝트 내보내기</strong></td>
+<td>전체 프로젝트를 복사(또는 백업)하는 일반 내보내기</td>
+</tr>
+<tr>
+<td><strong>플레이어 빌드 내보내기</strong></td>
+<td>실행 파일 형태로 빌드하여 완전 독립 실행 가능</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="5">5. 백업 &amp; 버전 관리<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<p>프로젝트 안정성을 위해 주기적인 백업과 버전 관리를 권장합니다.</p>
+<ul>
+<li><strong>권장 폴더:</strong><br />
+<code>Documents/VoiceScriptPlayer/Projects/</code> 폴더 내에<br />
+  각 프로젝트를 개별 폴더로 정리하세요.</li>
 </ul>
 <hr />
-<h2 id="3-resource-management">3. Resource Management<a class="headerlink" href="#3-resource-management" title="Permanent link">&para;</a></h2>
+<h2 id="6">6. 다음 단계<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Add files via <strong>Project Explorer → Add Resource</strong></li>
-<li>Supported formats:</li>
-<li>Audio: <code>.mp3</code>, <code>.wav</code></li>
-<li>Video: <code>.mp4</code>, <code>.mov</code></li>
-<li>Subtitles: <code>.srt</code></li>
-<li>Images: <code>.png</code>, <code>.jpg</code></li>
-<li>Files are copied into the <code>Media/</code> folder for consistency</li>
-</ul>
-<hr />
-<h2 id="4-exporting-sharing">4. Exporting &amp; Sharing<a class="headerlink" href="#4-exporting-sharing" title="Permanent link">&para;</a></h2>
-<ul>
-<li><strong>Export Project</strong> → Packages the project for sharing</li>
-<li><strong>Export Player Build</strong> → Creates a standalone playable version</li>
-<li>To move projects manually, copy the entire project folder</li>
-</ul>
-<hr />
-<h2 id="5-backup-version-control">5. Backup &amp; Version Control<a class="headerlink" href="#5-backup-version-control" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Recommended: keep projects under Git or cloud storage</li>
-<li>Project files are text-based (<code>.vspx</code>), making them version-control friendly</li>
+<li><a href="../create/">새 프로젝트 만들기</a></li>
 </ul>
 
 
@@ -1368,6 +1931,19 @@
   
 </div>
       
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://www.patreon.com/VoiceScriptPlayer" target="_blank" rel="noopener" title="Patreon" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M490 153.8c-.1-65.4-51-119-110.7-138.3-74.2-24-172-20.5-242.9 12.9C50.6 68.9 23.6 157.7 22.6 246.2 21.8 319 29 510.6 137.2 512c80.3 1 92.3-102.5 129.5-152.3 26.4-35.5 60.5-45.5 102.4-55.9 72-17.8 121.1-74.7 121-150z"/></svg>
+    </a>
+  
+</div>
+      
     </div>
   </div>
 </footer>
@@ -1380,10 +1956,10 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
     
   </body>

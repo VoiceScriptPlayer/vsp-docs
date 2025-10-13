@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="ko" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.17">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
     
     
       
@@ -28,7 +28,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.2a3383ac.min.css">
       
       
 
@@ -66,8 +66,8 @@
     <div data-md-component="skip">
       
         
-        <a href="#getting-started" class="md-skip">
-          Skip to content
+        <a href="#_1" class="md-skip">
+          콘텐츠로 이동
         </a>
       
     </div>
@@ -76,62 +76,86 @@
     </div>
     
     
-      
-
-<header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="VoiceScriptPlayer Docs" class="md-header__button md-logo" aria-label="VoiceScriptPlayer Docs" data-md-component="logo">
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="header.title">
+    <!-- 왼쪽: 로고 -->
+    <a href="https://VoiceScriptPlayer.github.io/vsp-docs/"
+       title="VoiceScriptPlayer Docs"
+       class="md-header__button md-logo"
+       aria-label="VoiceScriptPlayer Docs">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
+
+    <!-- 햄버거 메뉴 (모바일용) -->
     <label class="md-header__button md-icon" for="__drawer">
-      
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
+
+    <!-- 제목 -->
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
-          <span class="md-ellipsis">
-            VoiceScriptPlayer Docs
-          </span>
+          <span class="md-ellipsis">VoiceScriptPlayer Docs</span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
-          <span class="md-ellipsis">
-            
-              Getting Started
-            
-          </span>
+          <span class="md-ellipsis">Getting Started</span>
         </div>
       </div>
     </div>
+
+    <!-- 🌐 언어 전환 -->
     
+      <div class="md-header__option">
+  <div class="md-select">
     
-      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    <button class="md-header__button md-icon" aria-label="언어설정">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="ko" class="md-select__link">
+              한국어
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../en/getting-started/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../ja/getting-started/" hreflang="ja" class="md-select__link">
+              日本語
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
     
-    
-    
-      
-      
-        <label class="md-header__button md-icon" for="__search">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        </label>
-        <div class="md-search" data-md-component="search" role="dialog">
+
+    <!-- 🔍 검색창 복원 -->
+    <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Search">
+      <nav class="md-search__options" aria-label="검색">
         
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
@@ -144,7 +168,7 @@
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Initializing search
+            검색 초기화
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -152,23 +176,19 @@
     </div>
   </div>
 </div>
-      
-    
-    
-      <div class="md-header__source">
-        <a href="https://github.com/VoiceScriptPlayer/vsp-docs" title="Go to repository" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
-  </div>
-  <div class="md-source__repository">
-    vsp-docs
-  </div>
+
+    <!-- ❤️ Patreon 버튼 -->
+<a href="https://www.patreon.com/VoiceScriptPlayer"
+   title="Support on Patreon"
+   class="md-header__button md-icon"
+   target="_blank" rel="noopener"
+   style="display:flex;align-items:center;gap:6px;margin-left:6px;">
+  <img src="../images/PATREON_SYMBOL.ico" alt="Patreon"
+       width="22" height="22"
+       style="display:block;border-radius:4px;filter:var(--md-icon-filter);" />
+  <span style="font-size:0.9rem;font-weight:500;">Support on Patreon</span>
 </a>
-      </div>
-    
   </nav>
-  
 </header>
     
     <div class="md-container" data-md-component="container">
@@ -177,7 +197,7 @@
         
           
             
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+<nav class="md-tabs" aria-label="탭" data-md-component="tabs">
   <div class="md-grid">
     <ul class="md-tabs__list">
       
@@ -249,7 +269,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../editor/timeline/" class="md-tabs__link">
+        <a href="../editor/overview/" class="md-tabs__link">
           
   
   
@@ -379,7 +399,7 @@
   
 
 
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="VoiceScriptPlayer Docs" class="md-nav__button md-logo" aria-label="VoiceScriptPlayer Docs" data-md-component="logo">
       
@@ -389,18 +409,6 @@
     </a>
     VoiceScriptPlayer Docs
   </label>
-  
-    <div class="md-nav__source">
-      <a href="https://github.com/VoiceScriptPlayer/vsp-docs" title="Go to repository" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
-  </div>
-  <div class="md-source__repository">
-    vsp-docs
-  </div>
-</a>
-    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -469,7 +477,7 @@
       
         
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<nav class="md-nav md-nav--secondary" aria-label="목차">
   
   
   
@@ -478,59 +486,107 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      목차
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-requirements" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Requirements
+      1. 시스템 요구 사항
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-installation" class="md-nav__link">
+  <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Installation
+      2. 설치 및 실행
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-first-launch" class="md-nav__link">
+  <a href="#3-ai" class="md-nav__link">
     <span class="md-ellipsis">
-      3. First Launch
+      3. AI 기능 구성 요소
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. AI 기능 구성 요소">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ AI 기능 설정 절차
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 첫 실행 화면
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 첫 실행 화면">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      🖥️ 주요 구성
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 새 프로젝트 만들기
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-create-your-first-project" class="md-nav__link">
+  <a href="#6" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Create Your First Project
+      6. 기존 프로젝트 불러오기
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-quick-test" class="md-nav__link">
+  <a href="#7" class="md-nav__link">
     <span class="md-ellipsis">
-      5. Quick Test
+      7. 설정 및 로그 위치
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#next-steps" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      Next Steps
+      다음 단계
     </span>
   </a>
   
@@ -690,6 +746,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../editor/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    개요
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../editor/timeline/" class="md-nav__link">
         
   
@@ -713,12 +792,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../editor/controls/" class="md-nav__link">
+      <a href="../editor/sound/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    컨트롤 & 속성
+    사운드
     
   </span>
   
@@ -736,12 +815,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../editor/events/" class="md-nav__link">
+      <a href="../editor/video/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    이벤트 설정
+    비디오
     
   </span>
   
@@ -759,12 +838,150 @@
   
   
     <li class="md-nav__item">
-      <a href="../editor/menus/" class="md-nav__link">
+      <a href="../editor/live2d/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    메뉴
+    Live2D
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../editor/ui/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    UI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../editor/script/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    스크립트
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../editor/stroke/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    스트로크
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../editor/ejaculation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    사정 액션
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../editor/resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    리소스 관리
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../editor/runtime-helper/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    런타임 도우미
     
   </span>
   
@@ -956,6 +1173,29 @@
   
   <span class="md-ellipsis">
     TCode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../device/intiface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Intiface
     
   </span>
   
@@ -1219,7 +1459,7 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<nav class="md-nav md-nav--secondary" aria-label="목차">
   
   
   
@@ -1228,59 +1468,107 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      목차
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1-requirements" class="md-nav__link">
+  <a href="#1" class="md-nav__link">
     <span class="md-ellipsis">
-      1. Requirements
+      1. 시스템 요구 사항
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-installation" class="md-nav__link">
+  <a href="#2" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Installation
+      2. 설치 및 실행
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-first-launch" class="md-nav__link">
+  <a href="#3-ai" class="md-nav__link">
     <span class="md-ellipsis">
-      3. First Launch
+      3. AI 기능 구성 요소
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. AI 기능 구성 요소">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ai" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ AI 기능 설정 절차
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 첫 실행 화면
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 첫 실행 화면">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      🖥️ 주요 구성
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 새 프로젝트 만들기
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-create-your-first-project" class="md-nav__link">
+  <a href="#6" class="md-nav__link">
     <span class="md-ellipsis">
-      4. Create Your First Project
+      6. 기존 프로젝트 불러오기
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#5-quick-test" class="md-nav__link">
+  <a href="#7" class="md-nav__link">
     <span class="md-ellipsis">
-      5. Quick Test
+      7. 설정 및 로그 위치
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#next-steps" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      Next Steps
+      다음 단계
     </span>
   </a>
   
@@ -1301,61 +1589,191 @@
                   
 
 
-  
-  
 
-
-<h1 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h1>
-<p>Welcome to <strong>VoiceScriptPlayer</strong> 🎵<br />
-This guide will help you install, run, and create your first project.</p>
+<h1 id="_1">시작하기<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p><strong>VoiceScriptPlayer</strong>에 오신 것을 환영합니다 🎵<br />
+이 문서는 프로그램 설치부터 첫 실행,<br />
+새 프로젝트를 만드는 방법까지 안내합니다.<br />
+또한 AI 기능을 활성화하기 위한 기본 설정 방법도 포함되어 있습니다.</p>
 <hr />
-<h2 id="1-requirements">1. Requirements<a class="headerlink" href="#1-requirements" title="Permanent link">&para;</a></h2>
+<h2 id="1">1. 시스템 요구 사항<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Windows 10/11 (x64)</li>
-<li>No installation required – portable executable</li>
-<li>Optional: GPU acceleration (CUDA 11.8 recommended)</li>
+<li>Windows 10 / 11 (64비트)</li>
+<li>설치 불필요 — 포터블 실행 파일</li>
+<li>GPU 가속 (CUDA 11.8 이상 권장)</li>
+<li><strong>필수 런타임:</strong> <a href="https://dotnet.microsoft.com/en-us/download/dotnet/8.0">.NET 8.0 Desktop Runtime</a></li>
 </ul>
+<blockquote>
+<p>⚠️ <strong>주의:</strong><br />
+VoiceScriptPlayer는 .NET 8.0 기반으로 제작되었습니다.<br />
+시스템에 해당 런타임이 설치되어 있지 않으면 실행되지 않습니다.</p>
+</blockquote>
 <hr />
-<h2 id="2-installation">2. Installation<a class="headerlink" href="#2-installation" title="Permanent link">&para;</a></h2>
+<h2 id="2">2. 설치 및 실행<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
 <ol>
-<li>Download the latest release from <a href="#">Official Site / GitHub Release</a>.</li>
-<li>Extract the zip file to any folder.</li>
-<li>Run <code>VoiceScriptPlayer.exe</code>.</li>
+<li><a href="#">공식 사이트 / GitHub Release</a>에서 최신 버전을 다운로드합니다.  </li>
+<li>압축(zip)을 풀어 원하는 폴더에 저장합니다.  </li>
+<li><code>VoiceScriptPlayer.exe</code>를 실행합니다.</li>
 </ol>
+<blockquote>
+<p>⚡ 관리자 권한은 필요하지 않으며,<br />
+설정 및 로그 파일은 “내 문서/VoiceScriptPlayer” 폴더에 생성됩니다.</p>
+</blockquote>
 <hr />
-<h2 id="3-first-launch">3. First Launch<a class="headerlink" href="#3-first-launch" title="Permanent link">&para;</a></h2>
+<h2 id="3-ai">3. AI 기능 구성 요소<a class="headerlink" href="#3-ai" title="Permanent link">&para;</a></h2>
+<p>VoiceScriptPlayer의 <strong>AI 탭</strong>에서는<br />
+음성 인식(STT), 음성 합성(TTS), 번역 기능을 사용할 수 있습니다.<br />
+이 기능들은 외부 프로그램이나 API 서버와 연동되므로,<br />
+처음 사용 시 아래 구성요소를 준비해야 합니다.</p>
+<table>
+<thead>
+<tr>
+<th>구분</th>
+<th>이름</th>
+<th>필요 조건</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>STT</strong></td>
+<td><a href="../ai/speechRecognition/">Microsoft Speech Recognition</a></td>
+<td>별도 설치 필요</td>
+<td>Microsoft Server Speech Platform Runtime + 언어팩 설치 필요</td>
+</tr>
+<tr>
+<td><strong>보조 STT(옵션)</strong></td>
+<td><a href="../ai/whisper/">Whisper</a></td>
+<td>선택 설치</td>
+<td>더 높은 정확도의 음성 인식 지원</td>
+</tr>
+<tr>
+<td><strong>TTS</strong></td>
+<td><a href="../ai/coeiroink/">COEIROINK</a> / <a href="../ai/elevenlabs/">ElevenLabs</a> / <a href="../ai/hailuo/">Hailuo</a></td>
+<td>API 키 또는 로컬 엔진</td>
+<td>텍스트를 음성으로 변환</td>
+</tr>
+<tr>
+<td><strong>번역</strong></td>
+<td><a href="../ai/deepl/">DeepL</a> / <a href="../ai/libretranslate/">LibreTranslate</a></td>
+<td>API 키 또는 로컬 서버</td>
+<td>자막, 대사 자동 번역 기능</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 각 AI 기능별 설치 및 설정 방법은<br />
+해당 문서에서 자세히 확인할 수 있습니다.</p>
+</blockquote>
+<hr />
+<h3 id="ai">⚙️ AI 기능 설정 절차<a class="headerlink" href="#ai" title="Permanent link">&para;</a></h3>
+<ol>
+<li>상단의 <strong>AI 탭</strong>으로 이동합니다.  </li>
+<li>각 AI 항목을 선택한 후 <strong>⚙️ 설정 버튼</strong>을 클릭합니다.  </li>
+<li>로컬 서버 주소 또는 API 키를 입력하면 기능이 활성화됩니다.  </li>
+</ol>
+<blockquote>
+<p>일부 기능(예: Whisper, COEIROINK)은<br />
+별도의 프로그램(<code>whisper_server.exe</code> 등)을 실행해야 합니다.</p>
+</blockquote>
+<hr />
+<h2 id="4">4. 첫 실행 화면<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<p>프로그램을 처음 실행하면 아래와 같은 홈 화면이 표시됩니다.</p>
+<p><img alt="screenshot-main-ui" src="../images/screenshot-main-ui.png" /></p>
+<p>이 화면은 프로젝트를 관리하고 실행하는 <strong>시작 허브(Start Hub)</strong> 역할을 합니다.</p>
+<hr />
+<h3 id="_2">🖥️ 주요 구성<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>구역</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>좌측 사이드바</strong></td>
+<td>홈, 프로젝트, AI, 설정 등의 메뉴가 있습니다.</td>
+</tr>
+<tr>
+<td><strong>상단 검색창</strong></td>
+<td>프로젝트를 이름이나 태그로 검색할 수 있습니다.</td>
+</tr>
+<tr>
+<td><strong>우측 장치 상태 표시</strong></td>
+<td>Handy, SR1 등 지원 기기의 연결 여부가 표시됩니다.</td>
+</tr>
+<tr>
+<td><strong>프로젝트 카드 목록</strong></td>
+<td>생성된 프로젝트들이 카드 형태로 표시됩니다.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚙️ 장치가 연결되지 않은 경우 “연결된 장치 없음”으로 표시됩니다.</p>
+</blockquote>
+<hr />
+<h2 id="5">5. 새 프로젝트 만들기<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<p><img alt="project-create" src="../images/project-create.png" /></p>
+<p>새 프로젝트를 만들려면 다음 단계를 따르세요.</p>
+<ol>
+<li>왼쪽 사이드바의 <strong>✏️ 아이콘(에디터)</strong> 을 클릭합니다.  </li>
+<li>상단의 <strong>‘새 프로젝트’</strong> 버튼을 누릅니다.  </li>
+<li>오른쪽 영역에서 아래 항목을 설정합니다.  </li>
+<li><strong>프로젝트 제목</strong>  </li>
+<li><strong>템플릿 선택</strong> (빈 프로젝트 / 미니 게임 / 다중 트랙)  </li>
+<li><strong>태그, 설명, 플레이 모드 등 (선택)</strong>  </li>
+<li><strong>생성(초록색 버튼)</strong> 을 클릭하면 프로젝트가 만들어지고 목록에 추가됩니다.</li>
+</ol>
+<blockquote>
+<p>💡 생성된 프로젝트는 자동 저장되며,<br />
+홈 화면의 “최근 수정한 리스트”에도 표시됩니다.</p>
+</blockquote>
+<hr />
+<h2 id="6">6. 기존 프로젝트 불러오기<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
+<p>기존 프로젝트는 아래 방법으로 열 수 있습니다.</p>
+<ol>
+<li>홈 화면 또는 에디터 탭에서 <strong>프로젝트 목록</strong>을 확인합니다.  </li>
+<li>불러올 프로젝트의 편집 버튼을 클릭하면 자동으로 열립니다.  </li>
+<li>최근 수정한 항목은 <strong>상단 리스트</strong>에도 표시됩니다.  </li>
+<li>제목, 태그, 설명 등은 언제든 수정할 수 있습니다.</li>
+</ol>
+<blockquote>
+<p>📁 프로젝트는 자동 저장되며, 삭제하지 않는 한 목록에 유지됩니다.</p>
+</blockquote>
+<hr />
+<h2 id="7">7. 설정 및 로그 위치<a class="headerlink" href="#7" title="Permanent link">&para;</a></h2>
+<p>VoiceScriptPlayer의 환경 설정과 로그는<br />
+<strong>“내 문서/VoiceScriptPlayer”</strong> 폴더 아래에 저장됩니다.</p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>경로</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>설정 파일</strong></td>
+<td><code>내 문서/VoiceScriptPlayer/Option.json</code></td>
+</tr>
+<tr>
+<td><strong>로그 파일</strong></td>
+<td><code>내 문서/VoiceScriptPlayer/Log/2025-10-13_Player.log</code></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ 프로그램 실행 중 발생한 예외나 오류는<br />
+자동으로 로그 파일에 기록됩니다.</p>
+</blockquote>
+<hr />
+<h2 id="_3">다음 단계<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <ul>
-<li>On the first launch, you’ll see the <strong>License Agreement</strong> screen.<br />
-  Accept the agreement to continue.</li>
-<li>The main interface includes:</li>
-<li><strong>Timeline (bottom)</strong> – manage audio, video, and controls by time.</li>
-<li><strong>Project Explorer (left)</strong> – organize media files.</li>
-<li><strong>Inspector (right)</strong> – edit control properties.</li>
-<li><strong>Preview/Player (center)</strong> – see your project in action.</li>
-</ul>
-<p><img alt="screenshot-main-ui" src="images/screenshot-ui.png" /></p>
-<hr />
-<h2 id="4-create-your-first-project">4. Create Your First Project<a class="headerlink" href="#4-create-your-first-project" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Go to <strong>File → New Project</strong>.</li>
-<li>Choose a name and a save location.</li>
-<li>Drag and drop an audio or video file into the Project Explorer.</li>
-<li>Place it on the Timeline.</li>
-</ol>
-<hr />
-<h2 id="5-quick-test">5. Quick Test<a class="headerlink" href="#5-quick-test" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Add a <strong>Button</strong> control from the toolbar.</li>
-<li>Place it on the Timeline.</li>
-<li>In the Inspector, add a <strong>Click Event</strong> → "Play Audio".</li>
-<li>Press the <strong>Play ▶</strong> button to test your project.</li>
-</ol>
-<hr />
-<h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Learn more about <a href="../project/manage/">Project Management</a>.</li>
-<li>Explore <a href="interactive-events.md">Interactive Events</a>.</li>
-<li>Discover <a href="../features/">Features</a>.</li>
+<li><a href="../project/manage/">프로젝트 관리</a> — 프로젝트 저장 및 불러오기  </li>
+<li><a href="../ai/whisper/">AI 설정 가이드</a> — Whisper, COEIROINK, DeepL 등 설정  </li>
+<li><a href="../device/tcode/">디바이스 연동</a> — Handy / SR1 장치 연결  </li>
+<li><a href="../features/">기능 요약</a> — 주요 기능 및 인터페이스 설명</li>
 </ul>
 
 
@@ -1393,6 +1811,19 @@ This guide will help you install, run, and create your first project.</p>
   
 </div>
       
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://www.patreon.com/VoiceScriptPlayer" target="_blank" rel="noopener" title="Patreon" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M490 153.8c-.1-65.4-51-119-110.7-138.3-74.2-24-172-20.5-242.9 12.9C50.6 68.9 23.6 157.7 22.6 246.2 21.8 319 29 510.6 137.2 512c80.3 1 92.3-102.5 129.5-152.3 26.4-35.5 60.5-45.5 102.4-55.9 72-17.8 121.1-74.7 121-150z"/></svg>
+    </a>
+  
+</div>
+      
     </div>
   </div>
 </footer>
@@ -1405,10 +1836,10 @@ This guide will help you install, run, and create your first project.</p>
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.sections", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
       
     
   </body>

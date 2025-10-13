@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="en" class="no-js">
+<html lang="ko" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -18,7 +18,7 @@
       
       
       <link rel="icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.17">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
     
     
       
@@ -26,7 +26,7 @@
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.2a3383ac.min.css">
       
       
 
@@ -64,8 +64,8 @@
     <div data-md-component="skip">
       
         
-        <a href="#voicescriptplayer-docs" class="md-skip">
-          Skip to content
+        <a href="#voicescriptplayer" class="md-skip">
+          콘텐츠로 이동
         </a>
       
     </div>
@@ -74,62 +74,86 @@
     </div>
     
     
-      
-
-<header class="md-header" data-md-component="header">
-  <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="VoiceScriptPlayer Docs" class="md-header__button md-logo" aria-label="VoiceScriptPlayer Docs" data-md-component="logo">
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="header.title">
+    <!-- 왼쪽: 로고 -->
+    <a href="https://VoiceScriptPlayer.github.io/vsp-docs/"
+       title="VoiceScriptPlayer Docs"
+       class="md-header__button md-logo"
+       aria-label="VoiceScriptPlayer Docs">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
+
+    <!-- 햄버거 메뉴 (모바일용) -->
     <label class="md-header__button md-icon" for="__drawer">
-      
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
+
+    <!-- 제목 -->
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
-          <span class="md-ellipsis">
-            VoiceScriptPlayer Docs
-          </span>
+          <span class="md-ellipsis">VoiceScriptPlayer Docs</span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
-          <span class="md-ellipsis">
-            
-              Home
-            
-          </span>
+          <span class="md-ellipsis">Home</span>
         </div>
       </div>
     </div>
+
+    <!-- 🌐 언어 전환 -->
     
+      <div class="md-header__option">
+  <div class="md-select">
     
-      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    <button class="md-header__button md-icon" aria-label="언어설정">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="/" hreflang="ko" class="md-select__link">
+              한국어
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/en/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="/ja/" hreflang="ja" class="md-select__link">
+              日本語
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
     
-    
-    
-      
-      
-        <label class="md-header__button md-icon" for="__search">
-          
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-        </label>
-        <div class="md-search" data-md-component="search" role="dialog">
+
+    <!-- 🔍 검색창 복원 -->
+    <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Search">
+      <nav class="md-search__options" aria-label="검색">
         
-        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
@@ -142,7 +166,7 @@
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            Initializing search
+            검색 초기화
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -150,23 +174,19 @@
     </div>
   </div>
 </div>
-      
-    
-    
-      <div class="md-header__source">
-        <a href="https://github.com/VoiceScriptPlayer/vsp-docs" title="Go to repository" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
-  </div>
-  <div class="md-source__repository">
-    vsp-docs
-  </div>
+
+    <!-- ❤️ Patreon 버튼 -->
+<a href="https://www.patreon.com/VoiceScriptPlayer"
+   title="Support on Patreon"
+   class="md-header__button md-icon"
+   target="_blank" rel="noopener"
+   style="display:flex;align-items:center;gap:6px;margin-left:6px;">
+  <img src="images/PATREON_SYMBOL.ico" alt="Patreon"
+       width="22" height="22"
+       style="display:block;border-radius:4px;filter:var(--md-icon-filter);" />
+  <span style="font-size:0.9rem;font-weight:500;">Support on Patreon</span>
 </a>
-      </div>
-    
   </nav>
-  
 </header>
     
     <div class="md-container" data-md-component="container">
@@ -175,7 +195,7 @@
         
           
             
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+<nav class="md-tabs" aria-label="탭" data-md-component="tabs">
   <div class="md-grid">
     <ul class="md-tabs__list">
       
@@ -247,7 +267,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="editor/timeline/" class="md-tabs__link">
+        <a href="editor/overview/" class="md-tabs__link">
           
   
   
@@ -377,7 +397,7 @@
   
 
 
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="." title="VoiceScriptPlayer Docs" class="md-nav__button md-logo" aria-label="VoiceScriptPlayer Docs" data-md-component="logo">
       
@@ -387,18 +407,6 @@
     </a>
     VoiceScriptPlayer Docs
   </label>
-  
-    <div class="md-nav__source">
-      <a href="https://github.com/VoiceScriptPlayer/vsp-docs" title="Go to repository" class="md-source" data-md-component="source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
-  </div>
-  <div class="md-source__repository">
-    vsp-docs
-  </div>
-</a>
-    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -445,7 +453,7 @@
       
         
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<nav class="md-nav md-nav--secondary" aria-label="목차">
   
   
   
@@ -454,59 +462,68 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      목차
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      🚀 Getting Started
+      🚀 시작하기
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      ✨ Features
+      ✨ 주요 기능
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#interactive-events" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      🎮 Interactive Events
+      🎮 인터랙티브 이벤트
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ai-integration" class="md-nav__link">
+  <a href="#ai" class="md-nav__link">
     <span class="md-ellipsis">
-      🤖 AI Integration
+      🤖 AI 통합
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#faq" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      ❓ FAQ
+      ⚙️ 디바이스 연동
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#about-this-documentation" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      📌 About This Documentation
+      ❓ 자주 묻는 질문
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 문서 구성 안내
     </span>
   </a>
   
@@ -688,6 +705,29 @@
   
   
     <li class="md-nav__item">
+      <a href="editor/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    개요
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="editor/timeline/" class="md-nav__link">
         
   
@@ -711,12 +751,12 @@
   
   
     <li class="md-nav__item">
-      <a href="editor/controls/" class="md-nav__link">
+      <a href="editor/sound/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    컨트롤 & 속성
+    사운드
     
   </span>
   
@@ -734,12 +774,12 @@
   
   
     <li class="md-nav__item">
-      <a href="editor/events/" class="md-nav__link">
+      <a href="editor/video/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    이벤트 설정
+    비디오
     
   </span>
   
@@ -757,12 +797,150 @@
   
   
     <li class="md-nav__item">
-      <a href="editor/menus/" class="md-nav__link">
+      <a href="editor/live2d/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    메뉴
+    Live2D
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="editor/ui/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    UI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="editor/script/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    스크립트
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="editor/stroke/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    스트로크
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="editor/ejaculation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    사정 액션
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="editor/resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    리소스 관리
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="editor/runtime-helper/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    런타임 도우미
     
   </span>
   
@@ -954,6 +1132,29 @@
   
   <span class="md-ellipsis">
     TCode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="device/intiface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Intiface
     
   </span>
   
@@ -1217,7 +1418,7 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<nav class="md-nav md-nav--secondary" aria-label="목차">
   
   
   
@@ -1226,59 +1427,68 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      Table of contents
+      목차
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
+  <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
-      🚀 Getting Started
+      🚀 시작하기
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#features" class="md-nav__link">
+  <a href="#_2" class="md-nav__link">
     <span class="md-ellipsis">
-      ✨ Features
+      ✨ 주요 기능
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#interactive-events" class="md-nav__link">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
-      🎮 Interactive Events
+      🎮 인터랙티브 이벤트
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#ai-integration" class="md-nav__link">
+  <a href="#ai" class="md-nav__link">
     <span class="md-ellipsis">
-      🤖 AI Integration
+      🤖 AI 통합
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#faq" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      ❓ FAQ
+      ⚙️ 디바이스 연동
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#about-this-documentation" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
-      📌 About This Documentation
+      ❓ 자주 묻는 질문
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      📌 문서 구성 안내
     </span>
   </a>
   
@@ -1299,52 +1509,63 @@
                   
 
 
-  
-  
 
-
-<h1 id="voicescriptplayer-docs">VoiceScriptPlayer Docs<a class="headerlink" href="#voicescriptplayer-docs" title="Permanent link">&para;</a></h1>
-<p>Welcome to the official documentation for <strong>VoiceScriptPlayer</strong> 🎵<br />
-VoiceScriptPlayer is an interactive media editor and player that allows you to combine audio, video, subtitles, and custom controls into dynamic projects.<br />
-Whether you want to create interactive stories, training content, or experimental media, VoiceScriptPlayer provides the tools to build and play them.</p>
+<h1 id="voicescriptplayer">VoiceScriptPlayer 문서<a class="headerlink" href="#voicescriptplayer" title="Permanent link">&para;</a></h1>
+<p><strong>VoiceScriptPlayer</strong> 공식 문서에 오신 것을 환영합니다 🎵<br />
+VoiceScriptPlayer는 오디오, 비디오, 자막, 사용자 정의 컨트롤을 결합하여<br />
+<strong>동적인 프로젝트를 제작하고 재생할 수 있는 인터랙티브 미디어 에디터이자 플레이어</strong>입니다.  </p>
+<p>단순한 멀티미디어 플레이어가 아니라,<br />
+<strong>Handy, SR1 등의 기기를 원격으로 제어하고 타임라인과 연동하여 플레이할 수 있는</strong><br />
+실시간 인터랙티브 콘텐츠 제작 도구입니다.  </p>
+<p>인터랙티브 스토리, 교육 콘텐츠, 실험적인 미디어 등 어떤 형태든<br />
+VoiceScriptPlayer는 이를 제작하고 재생하기 위한 완전한 환경을 제공합니다.</p>
 <hr />
-<h2 id="getting-started">🚀 Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
-<p>Learn how to install VoiceScriptPlayer and create your first project.<br />
-➡️ <a href="getting-started/">Getting Started</a></p>
+<h2 id="_1">🚀 시작하기<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>VoiceScriptPlayer를 설치하고 첫 번째 프로젝트를 만드는 방법을 배워보세요.<br />
+➡️ <a href="getting-started/">시작하기</a></p>
 <hr />
-<h2 id="features">✨ Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h2>
+<h2 id="_2">✨ 주요 기능<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>Project-based management</strong>: Organize audio, video, subtitles, and AI settings in one place.  </li>
-<li><strong>Timeline editing</strong>: Edit and synchronize media with an intuitive timeline.  </li>
-<li><strong>Interactive controls</strong>: Add buttons, images, Spine, Live2D, and more.  </li>
-<li><strong>Event system</strong>: Trigger actions with keyboard input, variables, and UI events.  </li>
-<li><strong>AI integration</strong>: Speech-to-Text, Text-to-Speech, and translation features built-in.<br />
-➡️ <a href="features/">Learn more in Features</a></li>
+<li><strong>프로젝트 기반 관리</strong>: 오디오, 비디오, 자막, AI 설정, 디바이스 연동을 한 곳에서 관리  </li>
+<li><strong>타임라인 편집</strong>: 직관적인 타임라인으로 미디어를 편집하고 동기화  </li>
+<li><strong>인터랙티브 컨트롤</strong>: 버튼, 이미지, Spine, Live2D 등 다양한 요소 추가  </li>
+<li><strong>이벤트 시스템</strong>: 키보드 입력, 변수, UI 이벤트, 기기 신호를 통한 액션 트리거  </li>
+<li><strong>AI 통합</strong>: 음성 인식(STT), 음성 합성(TTS), 번역 기능 내장<br />
+➡️ <a href="features/">자세히 보기</a></li>
 </ul>
 <hr />
-<h2 id="interactive-events">🎮 Interactive Events<a class="headerlink" href="#interactive-events" title="Permanent link">&para;</a></h2>
-<p>Set up triggers and interactions that make your projects dynamic:<br />
-- Keyboard and UI input<br />
-- Variable comparisons<br />
-- Media-based events<br />
-➡️ <a href="interactive-events.md">Explore Interactive Events</a></p>
+<h2 id="_3">🎮 인터랙티브 이벤트<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<p>프로젝트를 동적으로 만드는 트리거와 상호작용을 설정하세요:<br />
+- 키보드 및 UI 입력<br />
+- 변수 비교<br />
+- 미디어 및 디바이스 기반 이벤트<br />
+➡️ <a href="interactive-events.md">이벤트 시스템 알아보기</a></p>
 <hr />
-<h2 id="ai-integration">🤖 AI Integration<a class="headerlink" href="#ai-integration" title="Permanent link">&para;</a></h2>
-<p>VoiceScriptPlayer connects with multiple AI services:<br />
-- <strong>Whisper</strong> (Speech-to-Text)<br />
-- <strong>ElevenLabs, COEIROINK, Hailuo</strong> (Text-to-Speech)<br />
-- <strong>DeepL, Meta AI</strong> (Translation &amp; LLM)<br />
-➡️ <a href="ai.md">See all AI features</a></p>
+<h2 id="ai">🤖 AI 통합<a class="headerlink" href="#ai" title="Permanent link">&para;</a></h2>
+<p>VoiceScriptPlayer는 여러 AI 서비스와 연동됩니다:<br />
+- <strong>Whisper</strong> (음성 → 텍스트 변환)<br />
+- <strong>ElevenLabs, COEIROINK, Hailuo</strong> (텍스트 → 음성 변환)<br />
+- <strong>DeepL, Meta AI</strong> (번역 및 LLM 기능)<br />
+➡️ <a href="ai.md">AI 기능 전체 보기</a></p>
 <hr />
-<h2 id="faq">❓ FAQ<a class="headerlink" href="#faq" title="Permanent link">&para;</a></h2>
-<p>Find answers to common questions about setup, usage, and troubleshooting.<br />
-➡️ <a href="faq/">Go to FAQ</a></p>
+<h2 id="_4">⚙️ 디바이스 연동<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p>VoiceScriptPlayer는 <strong>Handy</strong>, <strong>SR1</strong>, 그리고 기타 TCode 호환 기기를<br />
+네트워크를 통해 원격 제어할 수 있습니다.<br />
+- 실시간 타임라인 동기화<br />
+- 트리거 기반 진동 및 모션 제어<br />
+- 사용자 정의 패턴 및 이벤트 연동<br />
+➡️ <a href="device/tcode/">디바이스 제어 기능 살펴보기</a></p>
 <hr />
-<h2 id="about-this-documentation">📌 About This Documentation<a class="headerlink" href="#about-this-documentation" title="Permanent link">&para;</a></h2>
-<p>This documentation is divided into two main parts:
-- <strong>Guides</strong> (Getting Started, Editor, Playback): Learn by following workflows.<br />
-- <strong>Reference</strong> (Features, Events, Menus, AI): Look up details about each function.  </p>
-<p>Enjoy building interactive projects with <strong>VoiceScriptPlayer</strong>!</p>
+<h2 id="_5">❓ 자주 묻는 질문<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<p>설치, 사용법, 문제 해결에 대한 일반적인 질문을 확인하세요.<br />
+➡️ <a href="faq/">FAQ로 이동</a></p>
+<hr />
+<h2 id="_6">📌 문서 구성 안내<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<p>이 문서는 다음 두 가지 구성을 중심으로 이루어져 있습니다:
+- <strong>가이드(Guides)</strong> — 시작하기, 에디터, 재생: 단계별 워크플로를 따라 학습<br />
+- <strong>레퍼런스(Reference)</strong> — 기능, 이벤트, 메뉴, AI, 디바이스: 세부 기능별 참고용 자료  </p>
+<p>이제 <strong>VoiceScriptPlayer</strong>로<br />
+인터랙티브 미디어와 실제 기기가 결합된 새로운 경험을 만들어보세요!</p>
 
 
 
@@ -1381,6 +1602,19 @@ Whether you want to create interactive stories, training content, or experimenta
   
 </div>
       
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://www.patreon.com/VoiceScriptPlayer" target="_blank" rel="noopener" title="Patreon" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M490 153.8c-.1-65.4-51-119-110.7-138.3-74.2-24-172-20.5-242.9 12.9C50.6 68.9 23.6 157.7 22.6 246.2 21.8 319 29 510.6 137.2 512c80.3 1 92.3-102.5 129.5-152.3 26.4-35.5 60.5-45.5 102.4-55.9 72-17.8 121.1-74.7 121-150z"/></svg>
+    </a>
+  
+</div>
+      
     </div>
   </div>
 </footer>
@@ -1393,10 +1627,10 @@ Whether you want to create interactive stories, training content, or experimenta
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.sections", "search.suggest", "search.highlight"], "search": "assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.sections", "search.suggest", "search.highlight"], "search": "assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.92b07e13.min.js"></script>
+      <script src="assets/javascripts/bundle.f55a23d4.min.js"></script>
       
     
   </body>
