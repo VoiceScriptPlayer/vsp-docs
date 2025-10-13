@@ -1,54 +1,72 @@
-# VoiceScriptPlayer Docs
+# VoiceScriptPlayer 문서
 
-Welcome to the official documentation for **VoiceScriptPlayer** 🎵  
-VoiceScriptPlayer is an interactive media editor and player that allows you to combine audio, video, subtitles, and custom controls into dynamic projects.  
-Whether you want to create interactive stories, training content, or experimental media, VoiceScriptPlayer provides the tools to build and play them.
+**VoiceScriptPlayer** 공식 문서에 오신 것을 환영합니다 🎵  
+VoiceScriptPlayer는 오디오, 비디오, 자막, 사용자 정의 컨트롤을 결합하여  
+**동적인 프로젝트를 제작하고 재생할 수 있는 인터랙티브 미디어 에디터이자 플레이어**입니다.  
 
----
+단순한 멀티미디어 플레이어가 아니라,  
+**Handy, SR1 등의 기기를 원격으로 제어하고 타임라인과 연동하여 플레이할 수 있는**  
+실시간 인터랙티브 콘텐츠 제작 도구입니다.  
 
-## 🚀 Getting Started
-Learn how to install VoiceScriptPlayer and create your first project.  
-➡️ [Getting Started](getting-started.md)
-
----
-
-## ✨ Features
-- **Project-based management**: Organize audio, video, subtitles, and AI settings in one place.  
-- **Timeline editing**: Edit and synchronize media with an intuitive timeline.  
-- **Interactive controls**: Add buttons, images, Spine, Live2D, and more.  
-- **Event system**: Trigger actions with keyboard input, variables, and UI events.  
-- **AI integration**: Speech-to-Text, Text-to-Speech, and translation features built-in.  
-➡️ [Learn more in Features](features.md)
+인터랙티브 스토리, 교육 콘텐츠, 실험적인 미디어 등 어떤 형태든  
+VoiceScriptPlayer는 이를 제작하고 재생하기 위한 완전한 환경을 제공합니다.
 
 ---
 
-## 🎮 Interactive Events
-Set up triggers and interactions that make your projects dynamic:  
-- Keyboard and UI input  
-- Variable comparisons  
-- Media-based events  
-➡️ [Explore Interactive Events](interactive-events.md)
+## 🚀 시작하기
+VoiceScriptPlayer를 설치하고 첫 번째 프로젝트를 만드는 방법을 배워보세요.  
+➡️ [시작하기](getting-started.md)
 
 ---
 
-## 🤖 AI Integration
-VoiceScriptPlayer connects with multiple AI services:  
-- **Whisper** (Speech-to-Text)  
-- **ElevenLabs, COEIROINK, Hailuo** (Text-to-Speech)  
-- **DeepL, Meta AI** (Translation & LLM)  
-➡️ [See all AI features](ai.md)
+## ✨ 주요 기능
+- **프로젝트 기반 관리**: 오디오, 비디오, 자막, AI 설정, 디바이스 연동을 한 곳에서 관리  
+- **타임라인 편집**: 직관적인 타임라인으로 미디어를 편집하고 동기화  
+- **인터랙티브 컨트롤**: 버튼, 이미지, Spine, Live2D 등 다양한 요소 추가  
+- **이벤트 시스템**: 키보드 입력, 변수, UI 이벤트, 기기 신호를 통한 액션 트리거  
+- **AI 통합**: 음성 인식(STT), 음성 합성(TTS), 번역 기능 내장  
+➡️ [자세히 보기](features.md)
 
 ---
 
-## ❓ FAQ
-Find answers to common questions about setup, usage, and troubleshooting.  
-➡️ [Go to FAQ](faq.md)
+## 🎮 인터랙티브 이벤트
+프로젝트를 동적으로 만드는 트리거와 상호작용을 설정하세요:  
+- 키보드 및 UI 입력  
+- 변수 비교  
+- 미디어 및 디바이스 기반 이벤트  
+➡️ [이벤트 시스템 알아보기](interactive-events.md)
 
 ---
 
-## 📌 About This Documentation
-This documentation is divided into two main parts:
-- **Guides** (Getting Started, Editor, Playback): Learn by following workflows.  
-- **Reference** (Features, Events, Menus, AI): Look up details about each function.  
+## 🤖 AI 통합
+VoiceScriptPlayer는 여러 AI 서비스와 연동됩니다:  
+- **Whisper** (음성 → 텍스트 변환)  
+- **ElevenLabs, COEIROINK, Hailuo** (텍스트 → 음성 변환)  
+- **DeepL, Meta AI** (번역 및 LLM 기능)  
+➡️ [AI 기능 전체 보기](ai.md)
 
-Enjoy building interactive projects with **VoiceScriptPlayer**!
+---
+
+## ⚙️ 디바이스 연동
+VoiceScriptPlayer는 **Handy**, **SR1**, 그리고 기타 TCode 호환 기기를  
+네트워크를 통해 원격 제어할 수 있습니다.  
+- 실시간 타임라인 동기화  
+- 트리거 기반 진동 및 모션 제어  
+- 사용자 정의 패턴 및 이벤트 연동  
+➡️ [디바이스 제어 기능 살펴보기](device/tcode.md)
+
+---
+
+## ❓ 자주 묻는 질문
+설치, 사용법, 문제 해결에 대한 일반적인 질문을 확인하세요.  
+➡️ [FAQ로 이동](faq.md)
+
+---
+
+## 📌 문서 구성 안내
+이 문서는 다음 두 가지 구성을 중심으로 이루어져 있습니다:
+- **가이드(Guides)** — 시작하기, 에디터, 재생: 단계별 워크플로를 따라 학습  
+- **레퍼런스(Reference)** — 기능, 이벤트, 메뉴, AI, 디바이스: 세부 기능별 참고용 자료  
+
+이제 **VoiceScriptPlayer**로  
+인터랙티브 미디어와 실제 기기가 결합된 새로운 경험을 만들어보세요!

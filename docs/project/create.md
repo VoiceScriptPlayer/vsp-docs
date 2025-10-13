@@ -1,39 +1,67 @@
-# Creating a New Project
+# 새 프로젝트 만들기
 
-Projects in **VoiceScriptPlayer** are collections of media, controls, and events stored together.  
-This page explains how to create a new project.
-
----
-
-## 1. What is a Project?
-A project contains:
-- Project settings (name, save path)
-- Media files (audio, video, images, subtitles)
-- Controls (buttons, checkboxes, Spine, Live2D, etc.)
-- Interactive events
-- AI-generated resources (STT, TTS, translations)
+새 프로젝트는 **VoiceScriptPlayer**에서 작업의 출발점입니다.  
+이 문서에서는 “새 프로젝트” 화면을 통해 프로젝트를 만드는 전체 과정을 설명합니다.
 
 ---
 
-## 2. Creating a New Project
-1. Go to **File → New Project**.
-2. Enter:
-   - **Project Name**
-   - **Save Location**
-3. A project folder will be created automatically.
+## 1. 새 프로젝트 화면 열기
+
+![project-create](../images/project-create.png)
+
+새 프로젝트를 만들려면 다음 단계를 따르세요.
+
+1. 왼쪽 사이드바의 **✏️ 아이콘(에디터)** 을 클릭합니다.  
+2. 상단의 **[새 프로젝트]** 버튼을 누릅니다.  
+3. 오른쪽 패널에서 프로젝트 정보를 입력합니다.
 
 ---
 
-## 3. Default Project Structure
-/MyProject/
-├─ Project.vspx # Main project file
-├─ Media/ # Audio, video, images
-├─ Controls/ # Control definitions
-├─ Events/ # Event configurations
-└─ Exports/ # Exported playable builds
+## 2. 프로젝트 정보 설정
+
+오른쪽 패널에서는 새 프로젝트의 기본 정보를 설정할 수 있습니다.  
+아래 항목들은 프로젝트 생성 시 반드시 확인해야 하는 주요 옵션들입니다.
+
+| 항목 | 설명 |
+|------|------|
+| **프로젝트 제목** | 프로젝트의 이름을 입력합니다. 파일 및 폴더명으로도 사용됩니다. |
+| **품번 (DLsite Code)** | DLsite 작품 번호를 입력합니다. 예: `RJ01430276`<br>오른쪽의 **🔍 버튼**을 누르면 해당 작품의 정보(제목, 설명, 태그 등)가 자동으로 바인딩됩니다. |
+| **자동 번역** | 바인딩된 내용(제목, 설명, 태그 등)을 자신의 언어로 자동 번역합니다.<br>언어는 아래 **STT 엔진 언어 설정**을 기준으로 선택됩니다. |
+| **템플릿 선택** | 프로젝트의 기본 구조를 미리 설정합니다.<br>**빈 프로젝트 / 미니 게임 / 다중 트랙** 중 하나를 선택할 수 있습니다. |
+| **태그 및 설명** | 프로젝트를 구분하거나 세부 설명을 추가할 수 있습니다. DLsite에서 가져온 경우 자동 입력됩니다. |
+| **플레이 모드** | 기본 플레이 방식을 선택합니다.<br>① **손만 사용** ② **기계 권장** ③ **기계만 사용** |
+| **언어 설정 (STT 엔진)** | 프로젝트 내 음성 인식(STT)에 사용할 기본 언어를 지정합니다.<br>예: 일본어(`ja`), 영어(`en`), 한국어(`ko`) 등 |
+| **마이크 확인 창** | 체크하면 프로젝트 시작 시 **마이크 인식 창**이 표시됩니다.<br>입력 장치가 정상적으로 작동하는지 테스트할 수 있습니다. |
+
+> 💡 **팁:**  
+> DLsite 품번으로 불러온 내용은 프로젝트 생성 시 자동 저장됩니다.  
+> 번역 버튼을 눌러 로컬 언어로 변환한 내용도 즉시 반영됩니다.  
+> 언어 설정은 **STT 엔진**뿐 아니라 **자동 번역, 자막 생성, 음성 합성(TTS)** 에도 동일하게 적용됩니다.
 
 
-## 4. First Steps
-- Add media to your project: [Managing Resources](manage.md#resources)
-- Place items on the Timeline
-- Save your progress frequently
+---
+
+## 3. 프로젝트 생성
+
+모든 설정을 마쳤다면 화면 하단의 **초록색 [생성] 버튼**을 누릅니다.  
+잠시 후 새 프로젝트가 자동으로 생성되고 **프로젝트 목록**에 추가됩니다.
+
+- 생성이 완료되면 자동 저장됩니다.  
+- 홈 화면의 **“최근 수정한 리스트”**에도 새 항목이 표시됩니다.  
+- 프로젝트 파일은 기본적으로 아래 구조로 저장됩니다:
+
+
+---
+
+## 4. 생성 후 바로 할 수 있는 작업
+
+- **미디어 추가:** [리소스 관리](manage.md#resources)에서 오디오·비디오·이미지를 불러옵니다.  
+- **UI 구성:** [UI 에디터](../editor/ui.md)에서 버튼, 텍스트 등을 배치합니다.  
+- **타임라인 구성:** [Stroke / 이벤트 편집기](../editor/stroke.md)에서 시간 기반 동작을 설정합니다.  
+- **저장:** 단축키 **Ctrl + S** 또는 메뉴의 **파일 → 저장**을 이용하세요.
+
+---
+
+## 6. 다음 단계
+
+- [프로젝트 불러오기 & 저장](manage.md)

@@ -1,44 +1,91 @@
 site_name: VoiceScriptPlayer Docs
 site_description: Documentation for VoiceScriptPlayer
 site_url: https://VoiceScriptPlayer.github.io/vsp-docs/
+
 theme:
   name: material
-  language: en
+  language: ko
+  custom_dir: overrides          # 👈 overrides 폴더 추가
   features:
     - navigation.tabs
     - navigation.sections
     - search.suggest
     - search.highlight
+  icon:
+    repo: fontawesome/brands/patreon
+
 
 nav:
   - Home: index.md
   - Getting Started: getting-started.md
   - Project:
-    - 새 프로젝트 만들기: project/create.md
-    - 불러오기 & 저장: project/manage.md
+      - 새 프로젝트 만들기: project/create.md
+      - 불러오기 & 저장: project/manage.md
   - Editor:
-    - 타임라인: editor/timeline.md
-    - 컨트롤 & 속성: editor/controls.md
-    - 이벤트 설정: editor/events.md
-    - 메뉴: editor/menus.md
+      - 개요: editor/overview.md
+      - 타임라인: editor/timeline.md
+      - 사운드: editor/sound.md
+      - 비디오: editor/video.md
+      - Live2D: editor/live2d.md
+      - UI: editor/ui.md
+      - 스크립트: editor/script.md
+      - 스트로크: editor/stroke.md
+      - 사정 액션: editor/ejaculation.md
+      - 리소스 관리: editor/resources.md
+      - 런타임 도우미: editor/runtime-helper.md
   - Playback:
-    - 실행하기: playback/run.md
-    - 디버그 & 로그: playback/debug.md
+      - 실행하기: playback/run.md
+      - 디버그 & 로그: playback/debug.md
   - Features: features.md
   - Device:
-    - TCode: device/tcode.md
+      - TCode: device/tcode.md
+      - Intiface: device/intiface.md
   - AI:
-    - SpeechRecognition: ai/speechRecognition.md
-    - Whisper: ai/whisper.md
-    - ElevenLabs: ai/elevenlabs.md
-    - COEIROINK: ai/coeiroink.md
-    - Hailuo: ai/hailuo.md
-    - LibreTranslate: ai/libretranslate.md
-    - DeepL: ai/deepl.md
+      - SpeechRecognition: ai/speechRecognition.md
+      - Whisper: ai/whisper.md
+      - ElevenLabs: ai/elevenlabs.md
+      - COEIROINK: ai/coeiroink.md
+      - Hailuo: ai/hailuo.md
+      - LibreTranslate: ai/libretranslate.md
+      - DeepL: ai/deepl.md
   - FAQ: faq.md
 
-repo_url: https://github.com/VoiceScriptPlayer/vsp-docs
-repo_name: vsp-docs
+plugins:
+  - search
+  - i18n:
+      languages:
+        - locale: ko
+          name: 한국어
+          default: true      # ← 기본 언어
+          build: true        # ← 이 언어로 빌드함
+        - locale: en
+          name: English
+          build: true
+        - locale: ja
+          name: 日本語
+          build: true
+      nav_translations:
+        en:
+          Home: Home
+          Getting Started: Getting Started
+          Project: Project
+          Editor: Editor
+          Playback: Playback
+          Features: Features
+          Device: Device
+          AI: AI
+          FAQ: FAQ
+        ja:
+          Home: ホーム
+          Getting Started: はじめに
+          Project: プロジェクト
+          Editor: エディター
+          Playback: 再生
+          Features: 機能
+          Device: デバイス
+          AI: AI
+          FAQ: よくある質問
+
 
 markdown_extensions:
   - admonition
@@ -46,3 +93,23 @@ markdown_extensions:
   - tables
   - toc:
       permalink: true
+
+extra:
+  nav:
+    - icon: fontawesome/brands/patreon
+      link: https://www.patreon.com/VoiceScriptPlayer
+      name: Patreon
+  alternate:
+    - name: 한국어
+      link: /
+      lang: ko
+    - name: English
+      link: /en/
+      lang: en
+    - name: 日本語
+      link: /ja/
+      lang: ja
+  social:
+    - icon: fontawesome/brands/patreon
+      link: https://www.patreon.com/VoiceScriptPlayer
+      name: Patreon

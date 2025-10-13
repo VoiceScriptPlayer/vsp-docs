@@ -1,54 +1,139 @@
-# Getting Started
+# 시작하기
 
-Welcome to **VoiceScriptPlayer** 🎵  
-This guide will help you install, run, and create your first project.
-
----
-
-## 1. Requirements
-- Windows 10/11 (x64)
-- No installation required – portable executable
-- Optional: GPU acceleration (CUDA 11.8 recommended)
+**VoiceScriptPlayer**에 오신 것을 환영합니다 🎵  
+이 문서는 프로그램 설치부터 첫 실행,  
+새 프로젝트를 만드는 방법까지 안내합니다.  
+또한 AI 기능을 활성화하기 위한 기본 설정 방법도 포함되어 있습니다.
 
 ---
 
-## 2. Installation
-1. Download the latest release from [Official Site / GitHub Release](#).
-2. Extract the zip file to any folder.
-3. Run `VoiceScriptPlayer.exe`.
+## 1. 시스템 요구 사항
+
+- Windows 10 / 11 (64비트)
+- 설치 불필요 — 포터블 실행 파일
+- GPU 가속 (CUDA 11.8 이상 권장)
+- **필수 런타임:** [.NET 8.0 Desktop Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
+
+> ⚠️ **주의:**  
+> VoiceScriptPlayer는 .NET 8.0 기반으로 제작되었습니다.  
+> 시스템에 해당 런타임이 설치되어 있지 않으면 실행되지 않습니다.
 
 ---
 
-## 3. First Launch
-- On the first launch, you’ll see the **License Agreement** screen.  
-  Accept the agreement to continue.
-- The main interface includes:
-  - **Timeline (bottom)** – manage audio, video, and controls by time.
-  - **Project Explorer (left)** – organize media files.
-  - **Inspector (right)** – edit control properties.
-  - **Preview/Player (center)** – see your project in action.
+## 2. 설치 및 실행
 
-![screenshot-main-ui](images/screenshot-ui.png)
+1. [공식 사이트 / GitHub Release](#)에서 최신 버전을 다운로드합니다.  
+2. 압축(zip)을 풀어 원하는 폴더에 저장합니다.  
+3. `VoiceScriptPlayer.exe`를 실행합니다.
+
+> ⚡ 관리자 권한은 필요하지 않으며,  
+> 설정 및 로그 파일은 “내 문서/VoiceScriptPlayer” 폴더에 생성됩니다.
 
 ---
 
-## 4. Create Your First Project
-1. Go to **File → New Project**.
-2. Choose a name and a save location.
-3. Drag and drop an audio or video file into the Project Explorer.
-4. Place it on the Timeline.
+## 3. AI 기능 구성 요소
+
+VoiceScriptPlayer의 **AI 탭**에서는  
+음성 인식(STT), 음성 합성(TTS), 번역 기능을 사용할 수 있습니다.  
+이 기능들은 외부 프로그램이나 API 서버와 연동되므로,  
+처음 사용 시 아래 구성요소를 준비해야 합니다.
+
+| 구분 | 이름 | 필요 조건 | 설명 |
+|------|------|------------|------|
+| **STT** | [Microsoft Speech Recognition](ai/speechRecognition.md) | 별도 설치 필요 | Microsoft Server Speech Platform Runtime + 언어팩 설치 필요 |
+| **보조 STT(옵션)** | [Whisper](ai/whisper.md) | 선택 설치 | 더 높은 정확도의 음성 인식 지원 |
+| **TTS** | [COEIROINK](ai/coeiroink.md) / [ElevenLabs](ai/elevenlabs.md) / [Hailuo](ai/hailuo.md) | API 키 또는 로컬 엔진 | 텍스트를 음성으로 변환 |
+| **번역** | [DeepL](ai/deepl.md) / [LibreTranslate](ai/libretranslate.md) | API 키 또는 로컬 서버 | 자막, 대사 자동 번역 기능 |
+
+> 💡 각 AI 기능별 설치 및 설정 방법은  
+> 해당 문서에서 자세히 확인할 수 있습니다.
 
 ---
 
-## 5. Quick Test
-1. Add a **Button** control from the toolbar.
-2. Place it on the Timeline.
-3. In the Inspector, add a **Click Event** → "Play Audio".
-4. Press the **Play ▶** button to test your project.
+### ⚙️ AI 기능 설정 절차
+
+1. 상단의 **AI 탭**으로 이동합니다.  
+2. 각 AI 항목을 선택한 후 **⚙️ 설정 버튼**을 클릭합니다.  
+3. 로컬 서버 주소 또는 API 키를 입력하면 기능이 활성화됩니다.  
+
+> 일부 기능(예: Whisper, COEIROINK)은  
+> 별도의 프로그램(`whisper_server.exe` 등)을 실행해야 합니다.
 
 ---
 
-## Next Steps
-- Learn more about [Project Management](project/manage.md).
-- Explore [Interactive Events](interactive-events.md).
-- Discover [Features](features.md).
+## 4. 첫 실행 화면
+
+프로그램을 처음 실행하면 아래와 같은 홈 화면이 표시됩니다.
+
+![screenshot-main-ui](images/screenshot-main-ui.png)
+
+이 화면은 프로젝트를 관리하고 실행하는 **시작 허브(Start Hub)** 역할을 합니다.
+
+---
+
+### 🖥️ 주요 구성
+
+| 구역 | 설명 |
+|------|------|
+| **좌측 사이드바** | 홈, 프로젝트, AI, 설정 등의 메뉴가 있습니다. |
+| **상단 검색창** | 프로젝트를 이름이나 태그로 검색할 수 있습니다. |
+| **우측 장치 상태 표시** | Handy, SR1 등 지원 기기의 연결 여부가 표시됩니다. |
+| **프로젝트 카드 목록** | 생성된 프로젝트들이 카드 형태로 표시됩니다. |
+
+> ⚙️ 장치가 연결되지 않은 경우 “연결된 장치 없음”으로 표시됩니다.
+
+---
+
+## 5. 새 프로젝트 만들기
+
+![project-create](images/project-create.png)
+
+새 프로젝트를 만들려면 다음 단계를 따르세요.
+
+1. 왼쪽 사이드바의 **✏️ 아이콘(에디터)** 을 클릭합니다.  
+2. 상단의 **‘새 프로젝트’** 버튼을 누릅니다.  
+3. 오른쪽 영역에서 아래 항목을 설정합니다.  
+   - **프로젝트 제목**  
+   - **템플릿 선택** (빈 프로젝트 / 미니 게임 / 다중 트랙)  
+   - **태그, 설명, 플레이 모드 등 (선택)**  
+4. **생성(초록색 버튼)** 을 클릭하면 프로젝트가 만들어지고 목록에 추가됩니다.
+
+> 💡 생성된 프로젝트는 자동 저장되며,  
+> 홈 화면의 “최근 수정한 리스트”에도 표시됩니다.
+
+---
+
+## 6. 기존 프로젝트 불러오기
+
+기존 프로젝트는 아래 방법으로 열 수 있습니다.
+
+1. 홈 화면 또는 에디터 탭에서 **프로젝트 목록**을 확인합니다.  
+2. 불러올 프로젝트의 편집 버튼을 클릭하면 자동으로 열립니다.  
+3. 최근 수정한 항목은 **상단 리스트**에도 표시됩니다.  
+4. 제목, 태그, 설명 등은 언제든 수정할 수 있습니다.
+
+> 📁 프로젝트는 자동 저장되며, 삭제하지 않는 한 목록에 유지됩니다.
+
+---
+
+## 7. 설정 및 로그 위치
+
+VoiceScriptPlayer의 환경 설정과 로그는  
+**“내 문서/VoiceScriptPlayer”** 폴더 아래에 저장됩니다.
+
+| 항목 | 경로 |
+|------|------|
+| **설정 파일** | `내 문서/VoiceScriptPlayer/Option.json` |
+| **로그 파일** | `내 문서/VoiceScriptPlayer/Log/2025-10-13_Player.log` |
+
+> ⚠️ 프로그램 실행 중 발생한 예외나 오류는  
+> 자동으로 로그 파일에 기록됩니다.
+
+---
+
+## 다음 단계
+
+- [프로젝트 관리](project/manage.md) — 프로젝트 저장 및 불러오기  
+- [AI 설정 가이드](ai/whisper.md) — Whisper, COEIROINK, DeepL 등 설정  
+- [디바이스 연동](device/tcode.md) — Handy / SR1 장치 연결  
+- [기능 요약](features.md) — 주요 기능 및 인터페이스 설명
