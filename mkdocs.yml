@@ -18,6 +18,13 @@ theme:
 nav:
   - Home: index.md
   - Getting Started: getting-started.md
+  - Creator Guide:
+    - 개요: creator-guide.md
+    - 예제 & 심화:
+        - 기본 템플릿으로 시작하기: creator/example-basic.md
+        - UI와 스크립트 연동 실습: creator/example-ui-script.md
+        - 조건문과 변수로 인터랙션 만들기: creator/example-logic.md
+        - Stroke & Device 응용: creator/example-stroke.md
   - Project:
       - 새 프로젝트 만들기: project/create.md
       - 불러오기 & 저장: project/manage.md
@@ -30,9 +37,10 @@ nav:
       - UI: editor/ui.md
       - 스크립트: editor/script.md
       - 스트로크: editor/stroke.md
-      - 특수 이벤트: editor/specialevent.md
+      - 클라이맥스: editor/special-event.md
       - 리소스 관리: editor/resources.md
       - 런타임 도우미: editor/runtime-helper.md
+      - 프로젝트 설정: editor/setting.md
   - Playback:
       - 실행하기: playback/run.md
       - 디버그 & 로그: playback/debug.md
@@ -41,6 +49,7 @@ nav:
       - TCode: device/tcode.md
       - Intiface: device/intiface.md
   - AI:
+      - 개요: ai/ai.md
       - SpeechRecognition: ai/speechRecognition.md
       - Whisper: ai/whisper.md
       - ElevenLabs: ai/elevenlabs.md

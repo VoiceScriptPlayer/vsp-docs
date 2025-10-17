@@ -34,7 +34,7 @@ VoiceScriptPlayer를 설치하고 첫 번째 프로젝트를 만드는 방법을
 - 키보드 및 UI 입력  
 - 변수 비교  
 - 미디어 및 디바이스 기반 이벤트  
-➡️ [이벤트 시스템 알아보기](interactive-events.md)
+➡️ [이벤트 시스템 알아보기](editor/script.md)
 
 ---
 
@@ -43,7 +43,7 @@ VoiceScriptPlayer는 여러 AI 서비스와 연동됩니다:
 - **Whisper** (음성 → 텍스트 변환)  
 - **ElevenLabs, COEIROINK, Hailuo** (텍스트 → 음성 변환)  
 - **DeepL, Meta AI** (번역 및 LLM 기능)  
-➡️ [AI 기능 전체 보기](ai.md)
+➡️ [AI 기능 전체 보기](ai/ai.md)
 
 ---
 

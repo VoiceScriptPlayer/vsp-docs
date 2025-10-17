@@ -287,7 +287,7 @@
 사운드 **[Sound]** 를 재생합니다.  
 왼쪽 볼륨: **[LeftVolume]**, 오른쪽 볼륨: **[RightVolume]**  
 - **Sound** : 사운드 이름  
-- **LeftVolume / RightVolume** : 0~1 범위의 볼륨 비율
+- **LeftVolume / RightVolume** : -1~1 범위의 볼륨 비율, -1일 경우 반대쪽에서 들림
 
 ---
 

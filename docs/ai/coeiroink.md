@@ -26,7 +26,7 @@ VoiceScriptPlayer에서는 **대본 음성화, 캐릭터 보이스 합성** 등�
 2. **실행 준비**  
    - COEIROINK는 설치 과정이 없습니다.  
    - 다운로드한 압축(zip) 파일을 원하는 위치에 해제한 뒤,  
-     그 안의 **`COEIROINK.exe`** 파일을 직접 실행하면 됩니다.  
+     그 안의 **`COEIROINK2.exe`** 파일을 직접 실행하면 됩니다.  
    - 기본 경로 변경이나 관리자 권한 실행은 필요하지 않습니다.  
    ![실행 파일](../images/coeiroink_exe.png)
 
@@ -98,7 +98,7 @@ COEIROINK는 실행만 해두면 VoiceScriptPlayer가 자동으로 연결할 수
 ---
 
 ## 4. 사용 방법 (Usage)
-1. `COEIROINK.exe` 실행  
+1. `COEIROINK2.exe` 실행  
 2. VoiceScriptPlayer에서 대본 입력  
 3. 사용할 캐릭터 및 스타일 선택  
 4. "재생" 버튼 클릭 → COEIROINK에서 음성이 합성됨  
@@ -112,7 +112,7 @@ COEIROINK는 실행만 해두면 VoiceScriptPlayer가 자동으로 연결할 수
 - CPU 버전은 느리지만 호환성이 좋고, GPU 버전은 빠르지만 **NVIDIA GPU + CUDA(권장 11.8)** 환경이 필요합니다.  
 - 일부 보이스는 **상업적 이용 불가**일 수 있으므로 반드시 보이스별 라이선스를 확인하세요.  
 - API 포트(`50032`)가 다른 프로그램과 충돌할 경우 설정에서 변경해야 합니다.  
-- **COEIROINK 이용 시 크레딧 표기(예: `COEIROINK:합성음성명`)는 필수입니다.**
+- **COEIROINK 이용 시 크레딧 표기(예: `COEIROINK:합성음성명`)는 필수입니다. VoiceScriptPlayer에서는 자동으로 크레딧 표기가 생성됩니다.**
 
 ---
 
