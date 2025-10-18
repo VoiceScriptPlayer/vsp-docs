@@ -20,9 +20,6 @@ Intiface Central은 VoiceScriptPlayer와 별도의 프로그램입니다.
 3. 상단의 **“Start Server”** 버튼을 눌러 서버를 활성화  
 4. 상태 표시줄에 **“Server Running”**이 보이면 준비 완료
 
-> ⚠️ Intiface는 반드시 **VoiceScriptPlayer보다 먼저 실행**되어야 합니다.  
-> 그렇지 않으면 연결 테스트가 실패합니다.
-
 ---
 
 ## 3. 연결 과정 (Connection Steps)
@@ -91,6 +88,7 @@ VoiceScriptPlayer → Intiface Server → 장치 (Bluetooth / USB)
 | **기타 BLE 장치** | 페어링 | Windows Bluetooth 설정에서 장치를 사전 페어링해야 인식됩니다. |
 
 > 🔍 자세한 설정 방법은 다음 자료를 참고하세요.  
+> - [Intiface 고급 설정 가이드](intiface_advanced.md)
 > - [Intiface Central GitHub 저장소](https://github.com/intiface/intiface-central)  
 > - [Buttplug.io 프로젝트](https://buttplug.io/)
 
