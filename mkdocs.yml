@@ -48,6 +48,7 @@ nav:
   - Device:
       - TCode: device/tcode.md
       - Intiface: device/intiface.md
+      - Intiface 고급: device/intiface_advanced.md
   - AI:
       - 개요: ai/ai.md
       - SpeechRecognition: ai/speechRecognition.md
