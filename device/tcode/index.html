@@ -1464,6 +1464,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../intiface_advanced/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Intiface 고급
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1889,6 +1912,19 @@ TCode는 두 번째 <strong>직접 연결</strong>을 선택해야 합니다.</p
 <h3 id="2">🔌 2단계 — 연결할 장치 선택<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
 <p>다음 화면에서 연결 가능한 <strong>COM 포트 목록</strong>이 표시됩니다.</p>
 <p><img alt="" src="../../images/tcode-step2.png" /></p>
+<p>USB 연결의 경우 장치가 꽂히면 거의 즉시 포트가 표시되지만,<br />
+🔵 <strong>Bluetooth 연결의 경우에는 장치 이름이 나타나기까지 약 5~10초 정도의 시간이 걸릴 수 있습니다.</strong><br />
+처음에는 아래와 같이 단순히 “표준 Bluetooth에서 직렬 링크(COMx)” 형태로 표시됩니다:</p>
+<p>📷 <strong>처음 표시 예시:</strong><br />
+<img alt="" src="../../images/tcode-bt-before.png" /></p>
+<p>잠시 후 Bluetooth 장치가 인식되면 실제 기기 이름(예: <code>FUNSR1-15877</code>)이 표시됩니다:</p>
+<p>📷 <strong>이름이 표시된 후:</strong><br />
+<img alt="" src="../../images/tcode-bt-after.png" /></p>
+<blockquote>
+<p>⏳ Bluetooth 연결은 포트 초기화 과정 때문에 잠시 지연될 수 있습니다.<br />
+이름이 바뀌지 않으면 장치가 페어링되어 있는지 확인하거나,<br />
+목록을 다시 열어 새로 고쳐보세요.</p>
+</blockquote>
 <hr />
 <h3 id="3">⚙️ 3단계 — 연결 설정 지정<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
 <p>오른쪽 패널에서 <strong>프로토콜 종류</strong>를 <code>TCode</code>로 설정합니다.<br />
@@ -1904,7 +1940,7 @@ TCode는 두 번째 <strong>직접 연결</strong>을 선택해야 합니다.</p
 <p><img alt="" src="../../images/tcode-step4.png" /></p>
 <blockquote>
 <p>✅ 저장을 누르면 현재 연결이 기본 장치로 설정됩니다.<br />
-이후 프로그램 재시작 시 자동으로 연결됩니다.</p>
+이후 설정이 저장되며 자동으로 기기에 연결됩니다.</p>
 </blockquote>
 <hr />
 <h3 id="5">🟢 5단계 — 연결 상태 확인<a class="headerlink" href="#5" title="Permanent link">&para;</a></h3>

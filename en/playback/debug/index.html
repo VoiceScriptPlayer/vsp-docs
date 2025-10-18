@@ -1449,6 +1449,29 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../device/intiface_advanced/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Intiface 고급
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1841,12 +1864,9 @@
 이 기능은 문제 진단이나 스크립트 동작 검증에 매우 유용하게 활용할 수 있습니다.</p>
 <hr />
 <h2 id="1">1. 로그 파일 위치<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
-<p>모든 로그는 기본적으로 다음 경로에 저장됩니다.</p>
-<pre><code>E:\Users\Documents\VoiceScriptPlayer\Log
+<p>모든 로그는 기본적으로 <strong>내문서</strong>경로에 저장됩니다.</p>
+<pre><code>E:\Users\&lt;사용자명&gt;\Documents\VoiceScriptPlayer\Log
 </code></pre>
-<p>💡 <strong>참고:</strong><br />
-시스템 환경에 따라 <code>E:\Users\Documents\</code> 대신<br />
-<code>C:\Users\&lt;사용자명&gt;\Documents\</code> 경로가 사용될 수 있습니다.</p>
 <hr />
 <h2 id="2">2. 로그 파일 형식<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
 <p>로그 파일은 날짜 또는 카테고리에 따라 자동으로 분류됩니다.</p>
@@ -1859,11 +1879,11 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>2025-10-15.log</strong></td>
+<td><strong>2025-<strong>-</strong>.log</strong></td>
 <td>일반 실행 중 발생한 전체 로그. 에디터, 서비스, 백엔드 전반의 기록이 포함됩니다.</td>
 </tr>
 <tr>
-<td><strong>2025-10-13_Player.log</strong></td>
+<td><strong>2025-__-___Player.log</strong></td>
 <td>실행 모드(Playback)에서 발생한 오류나 예외 로그. Player 전용 이벤트 기록입니다.</td>
 </tr>
 </tbody>
@@ -1906,9 +1926,9 @@
 </blockquote>
 <hr />
 <h2 id="4">4. 로그 구조 예시<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
-<p>아래는 <code>2025-10-13_Player.log</code>에 기록된 실제 로그의 축약 예시입니다.</p>
+<p>아래는 <code>2025-__-___Player.log</code>에 기록된 실제 로그의 축약 예시입니다.</p>
 <pre><code>============================================================
-[Time]     2025-10-17 23:37:24
+[Time]     2025-__-__ __:__:__
 [Category] Player
 [Caller]   ExceptionHandler
 [Type]     System.IO.FileNotFoundException
