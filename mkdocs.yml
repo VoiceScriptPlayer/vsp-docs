@@ -58,6 +58,8 @@ nav:
       - Hailuo: ai/hailuo.md
       - LibreTranslate: ai/libretranslate.md
       - DeepL: ai/deepl.md
+  - TroubleShooting:
+      - COEIROINK: troubleshooting/coeiroink.md
   - FAQ: faq.md
 
 plugins:
