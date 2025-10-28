@@ -297,6 +297,14 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://VoiceScriptPlayer.github.io/vsp-docs/ja/troubleshooting/coeiroink/"/>
     </url>
     <url>
+        <loc>https://VoiceScriptPlayer.github.io/vsp-docs/troubleshooting/hailuo/</loc>
+        <lastmod>2025-10-28</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://VoiceScriptPlayer.github.io/vsp-docs/troubleshooting/hailuo/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://VoiceScriptPlayer.github.io/vsp-docs/en/troubleshooting/hailuo/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://VoiceScriptPlayer.github.io/vsp-docs/ja/troubleshooting/hailuo/"/>
+    </url>
+    <url>
         <loc>https://VoiceScriptPlayer.github.io/vsp-docs/en/</loc>
         <lastmod>2025-10-28</lastmod>
         <changefreq>daily</changefreq>
@@ -593,6 +601,14 @@
         <xhtml:link rel="alternate" hreflang="ko" href="https://VoiceScriptPlayer.github.io/vsp-docs/troubleshooting/coeiroink/"/>
     </url>
     <url>
+        <loc>https://VoiceScriptPlayer.github.io/vsp-docs/en/troubleshooting/hailuo/</loc>
+        <lastmod>2025-10-28</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://VoiceScriptPlayer.github.io/vsp-docs/en/troubleshooting/hailuo/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://VoiceScriptPlayer.github.io/vsp-docs/ja/troubleshooting/hailuo/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://VoiceScriptPlayer.github.io/vsp-docs/troubleshooting/hailuo/"/>
+    </url>
+    <url>
         <loc>https://VoiceScriptPlayer.github.io/vsp-docs/ja/</loc>
         <lastmod>2025-10-28</lastmod>
         <changefreq>daily</changefreq>
@@ -887,5 +903,13 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://VoiceScriptPlayer.github.io/vsp-docs/ja/troubleshooting/coeiroink/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://VoiceScriptPlayer.github.io/vsp-docs/en/troubleshooting/coeiroink/"/>
         <xhtml:link rel="alternate" hreflang="ko" href="https://VoiceScriptPlayer.github.io/vsp-docs/troubleshooting/coeiroink/"/>
+    </url>
+    <url>
+        <loc>https://VoiceScriptPlayer.github.io/vsp-docs/ja/troubleshooting/hailuo/</loc>
+        <lastmod>2025-10-28</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://VoiceScriptPlayer.github.io/vsp-docs/ja/troubleshooting/hailuo/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://VoiceScriptPlayer.github.io/vsp-docs/en/troubleshooting/hailuo/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://VoiceScriptPlayer.github.io/vsp-docs/troubleshooting/hailuo/"/>
     </url>
 </urlset>
