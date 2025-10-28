@@ -1,5 +1,4 @@
-# network  
-## 💡 네트워크 연결 오류 (NetworkConnectionError)
+## 💡 네트워크 연결 오류 (NetworkConnectionError) {#network}
 
 ### 원인  
 - COEIROINK 로컬 서버(보통 `127.0.0.1:50032`)가 실행 중이 아니거나,  
@@ -18,8 +17,7 @@
    - 일부 외부 리소스를 불러오는 경우 네트워크 연결이 필요할 수 있습니다.  
 
 
-# coeiroink-server  
-## 💡 COEIROINK 서버 연결 실패 (CoeiroinkServerConnectionError)
+## 💡 COEIROINK 서버 연결 실패 (CoeiroinkServerConnectionError) {#coeiroink-server}
 
 ### 원인  
 - 로컬 COEIROINK 서버가 꺼져 있거나, API 포트(`50032`)가 변경됨.  
@@ -34,9 +32,8 @@
 3. 포트 충돌 시 다른 포트를 지정해 실행 후  
    설정 파일에서 해당 포트로 변경합니다.  
 
-
-# coeiroink-json  
-## 💡 서버 응답 해석 오류 (CoeiroinkJsonParseError)
+ 
+## 💡 서버 응답 해석 오류 (CoeiroinkJsonParseError) {#coeiroink-json}
 
 ### 원인  
 - COEIROINK 서버가 비정상적인 JSON 데이터를 반환함.  
@@ -53,8 +50,7 @@
    - COEIROINK 콘솔 또는 로그에서 "predict_with_duration" 에러 메시지를 확인하세요.  
 
 
-# coeiroink-text  
-## 💡 Prosody 데이터를 가져오지 못했습니다 (CoeiroinkProsodyEmpty)
+## 💡 Prosody 데이터를 가져오지 못했습니다 (CoeiroinkProsodyEmpty) {#coeiroink-text}
 
 ### 원인  
 - 입력 문장이 너무 짧거나, 지원되지 않는 문자 조합을 포함함.  
@@ -69,8 +65,7 @@
    - "predict_with_duration" 요청 시 응답이 비어 있는 경우, 엔진이 일부 문자를 처리하지 못했을 수 있습니다.  
 
 
-# coeiroink-prosody  
-## 💡 Prosody 예측 실패 (CoerioinkPredictError)
+## 💡 Prosody 예측 실패 (CoerioinkPredictError) {#coeiroink-prosody}
 
 ### 원인  
 - prosody 예측 요청(`/v1/predict_with_duration`)이 실패함.  
@@ -85,8 +80,7 @@
    - `speedScale` 값이 0 이하이거나 너무 크면 처리 실패할 수 있습니다.  
 
 
-# coeiroink-process  
-## 💡 오디오 처리 실패 (CoerioinkProcessError)
+## 💡 오디오 처리 실패 (CoerioinkProcessError) {#coeiroink-process}
 
 ### 원인  
 - `/v1/process` 요청에서 음성 생성 중 오류 발생.  
@@ -101,8 +95,7 @@
    - 너무 높은 값(예: 5.0 이상)은 내부 계산 오류를 유발할 수 있습니다.  
 
 
-# coeiroink-empty  
-## 💡 생성된 오디오 데이터가 비어 있음 (CoerioinkEmptyAudio)
+## 💡 생성된 오디오 데이터가 비어 있음 (CoerioinkEmptyAudio) {#coeiroink-empty}
 
 ### 원인  
 - 엔진이 음성을 출력하지 못하고 빈 응답을 반환함.  
@@ -117,8 +110,7 @@
    - 특정 음성 스타일이 오류를 일으킬 수 있습니다.  
 
 
-# coeiroink-format  
-## 💡 오디오 포맷 오류 (CoerioinkInvalidAudioFormat)
+## 💡 오디오 포맷 오류 (CoerioinkInvalidAudioFormat) {#coeiroink-format}
 
 ### 원인  
 - 엔진이 WAV 대신 오류 메시지를 텍스트로 반환함.  
@@ -132,9 +124,8 @@
 3. **짧은 문장으로 테스트**  
    - 과도하게 긴 텍스트 입력은 엔진 내부 버퍼 초과를 일으킬 수 있습니다.  
 
-
-# coeiroink-general  
-## 💡 알 수 없는 COEIROINK 오류 (CoerioinkUnknownError)
+ 
+## 💡 알 수 없는 COEIROINK 오류 (CoerioinkUnknownError) {#coeiroink-general}
 
 ### 원인  
 - 처리 중 예기치 못한 예외 발생 (파일 접근, 메모리 부족 등).  
