@@ -86,4 +86,3 @@ DLsite 작품 번호(RJ 코드)를 입력하면 해당 작품의 메타데이터
 - [런타임 도우미 탭](runtime-helper.md)  
 - [스트로크 탭](stroke.md)  
 - [특수 이벤트 탭](special-event.md)  
-- [AI 및 번역 설정](ai.md)

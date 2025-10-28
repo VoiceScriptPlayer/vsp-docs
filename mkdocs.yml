@@ -60,6 +60,7 @@ nav:
       - DeepL: ai/deepl.md
   - TroubleShooting:
       - COEIROINK: troubleshooting/coeiroink.md
+      - Hailuo: troubleshooting/hailuo.md
   - FAQ: faq.md
 
 plugins:
@@ -100,6 +101,7 @@ plugins:
 
 
 markdown_extensions:
+  - attr_list
   - admonition
   - def_list
   - tables
