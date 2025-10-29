@@ -1160,6 +1160,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="4. 트랙에 추가하기">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎚️ 사운드 노드 설정
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1819,6 +1834,29 @@
   
   
     <li class="md-nav__item">
+      <a href="../../ai/hailuo-subscription/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Hailuo 구독 가이드
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../ai/libretranslate/" class="md-nav__link">
         
   
@@ -1848,6 +1886,29 @@
   
   <span class="md-ellipsis">
     DeepL
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/deepl-subscription/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DeepL 구독 가이드
     
   </span>
   
@@ -2211,6 +2272,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="4. 트랙에 추가하기">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎚️ 사운드 노드 설정
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -2350,12 +2426,8 @@ TTS 생성, 자막 설정, 파일 가져오기 등 대부분의 음성 관련 �
 <td>현재 편집 중인 음성 파일의 이름입니다.</td>
 </tr>
 <tr>
-<td><strong>길이 / 총 길이</strong></td>
+<td><strong>길이</strong></td>
 <td>사운드의 재생 구간과 전체 길이를 표시합니다.</td>
-</tr>
-<tr>
-<td><strong>반복</strong></td>
-<td>체크 시, 음성이 끝나면 자동으로 반복 재생됩니다.</td>
 </tr>
 <tr>
 <td><strong>AI 설정</strong></td>
@@ -2538,12 +2610,8 @@ COEIROINK, Hailuo 등의 음성 엔진을 선택해 자연스러운 대사 단�
 <td>생성할 음성 파일의 이름입니다.</td>
 </tr>
 <tr>
-<td><strong>길이 / 총 길이</strong></td>
+<td><strong>길이</strong></td>
 <td>현재 문장들의 전체 재생 길이를 표시합니다.</td>
-</tr>
-<tr>
-<td><strong>반복</strong></td>
-<td>체크 시, 미리보기 중 음성이 끝나면 자동 반복 재생됩니다.</td>
 </tr>
 <tr>
 <td><strong>AI 설정</strong></td>
@@ -2634,8 +2702,8 @@ COEIROINK, Hailuo 등의 음성 엔진을 선택해 자연스러운 대사 단�
 <li><strong>일본산 오픈소스 음성 합성 엔진</strong></li>
 <li>감정 표현과 억양 제어에 강점</li>
 <li>로컬 합성 및 빠른 미리보기 가능</li>
-<li>지원 형식: WAV / MP3  </li>
-<li>주요 설정: <code>Pitch</code>, <code>Intensity</code>, <code>Timbre</code>, <code>Emotion</code></li>
+<li>지원 형식: WAV </li>
+<li>주요 설정: <code>Speed</code>, <code>Pitch</code>, <code>Volume</code></li>
 </ul>
 <h4 id="hailuo">🌊 Hailuo<a class="headerlink" href="#hailuo" title="Permanent link">&para;</a></h4>
 <ul>
@@ -2643,12 +2711,19 @@ COEIROINK, Hailuo 등의 음성 엔진을 선택해 자연스러운 대사 단�
 <li>자연스러운 발음과 부드러운 연결 처리에 강점</li>
 <li>다국어(한국어, 일본어, 영어 등) 지원</li>
 <li>클라우드 API를 통한 고음질 합성</li>
-<li>주요 설정: <code>Speed</code>, <code>Pitch</code>, <code>Volume</code>, <code>SampleRate</code></li>
+<li>주요 설정: <code>Pitch</code>, <code>Intensity</code>, <code>Timbre</code>, <code>Emotion</code></li>
 </ul>
+<p>🎧 <strong>웹에서 직접 체험하기</strong><br />
+<a href="https://www.minimax.io/audio/text-to-speech">Hailuo 공식 데모 페이지</a>에서는<br />
+다양한 보이스 프로필을 미리 들어보고, 음성을 생성해볼 수 있습니다.<br />
+원하는 스타일(예: 여성, 남성, 감정형 등)을 선택하여<br />
+톤·속도·감정 표현을 미리 확인한 후, VoiceScriptPlayer에서 동일하게 사용할 수 있습니다.</p>
+<p><img alt="hailuo-web-demo" src="../../images/hailuo_web_demo.png" /></p>
 <blockquote>
-<p>⚙️ 각 엔진의 세부 설정은 다음 문서를 참고하세요:<br />
-- <a href="../../ai/coeiroink/">AI → COEIROINK</a><br />
-- <a href="../../ai/hailuo/">AI → Hailuo</a></p>
+<ul>
+<li><a href="../../ai/coeiroink/">AI → COEIROINK</a>  </li>
+<li><a href="../../ai/hailuo/">AI → Hailuo</a></li>
+</ul>
 </blockquote>
 <hr />
 <h3 id="_12">▶️ 미리보기 및 합성<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
@@ -2698,6 +2773,36 @@ COEIROINK, Hailuo 등의 음성 엔진을 선택해 자연스러운 대사 단�
 사운드 노드는 타임라인의 다른 리소스(Live2D, UI, 이벤트)와 함께<br />
 시간축 기준으로 정밀하게 싱크를 맞출 수 있습니다.</p>
 </blockquote>
+<hr />
+<h3 id="_15">🎚️ 사운드 노드 설정<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<p>타임라인에 추가된 음원들은 <strong>소리 설정 창</strong>을 통해 세부 조정이 가능합니다.<br />
+사운드 노드를 <strong>우클릭 후 “편집”을 선택하거나</strong>,<br />
+<strong>더블클릭</strong>하여 다음과 같은 설정 창을 열 수 있습니다.</p>
+<p><img alt="sound-settings" src="../../images/sound_settings.png" /></p>
+<table>
+<thead>
+<tr>
+<th>항목</th>
+<th>설명</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>시작 시간 / 끝 시간</strong></td>
+<td>재생 구간의 시작과 종료 시점을 설정합니다.</td>
+</tr>
+<tr>
+<td><strong>반복</strong></td>
+<td>체크 시, 지정된 구간이 반복 재생됩니다.</td>
+</tr>
+<tr>
+<td><strong>왼쪽 / 오른쪽 음량</strong></td>
+<td>스테레오 밸런스를 개별 조정할 수 있습니다.</td>
+</tr>
+</tbody>
+</table>
+<p>이 기능을 활용하면, 특정 구간만 반복하거나<br />
+좌우 음량을 분리하여 <strong>공간감 있는 오디오 연출</strong>이 가능합니다.</p>
 <hr />
 <h2 id="5">5. 관련 문서<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
 <ul>

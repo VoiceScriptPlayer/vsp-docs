@@ -57,6 +57,14 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://VoiceScriptPlayer.github.io/vsp-docs/ja/ai/coeiroink/"/>
     </url>
     <url>
+        <loc>https://VoiceScriptPlayer.github.io/vsp-docs/ai/deepl-subscription/</loc>
+        <lastmod>2025-10-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://VoiceScriptPlayer.github.io/vsp-docs/ai/deepl-subscription/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://VoiceScriptPlayer.github.io/vsp-docs/en/ai/deepl-subscription/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://VoiceScriptPlayer.github.io/vsp-docs/ja/ai/deepl-subscription/"/>
+    </url>
+    <url>
         <loc>https://VoiceScriptPlayer.github.io/vsp-docs/ai/deepl/</loc>
         <lastmod>2025-10-29</lastmod>
         <changefreq>daily</changefreq>
@@ -71,6 +79,14 @@
         <xhtml:link rel="alternate" hreflang="ko" href="https://VoiceScriptPlayer.github.io/vsp-docs/ai/elevenlabs/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://VoiceScriptPlayer.github.io/vsp-docs/en/ai/elevenlabs/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://VoiceScriptPlayer.github.io/vsp-docs/ja/ai/elevenlabs/"/>
+    </url>
+    <url>
+        <loc>https://VoiceScriptPlayer.github.io/vsp-docs/ai/hailuo-subscription/</loc>
+        <lastmod>2025-10-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://VoiceScriptPlayer.github.io/vsp-docs/ai/hailuo-subscription/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://VoiceScriptPlayer.github.io/vsp-docs/en/ai/hailuo-subscription/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://VoiceScriptPlayer.github.io/vsp-docs/ja/ai/hailuo-subscription/"/>
     </url>
     <url>
         <loc>https://VoiceScriptPlayer.github.io/vsp-docs/ai/hailuo/</loc>
@@ -361,6 +377,14 @@
         <xhtml:link rel="alternate" hreflang="ko" href="https://VoiceScriptPlayer.github.io/vsp-docs/ai/coeiroink/"/>
     </url>
     <url>
+        <loc>https://VoiceScriptPlayer.github.io/vsp-docs/en/ai/deepl-subscription/</loc>
+        <lastmod>2025-10-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://VoiceScriptPlayer.github.io/vsp-docs/en/ai/deepl-subscription/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://VoiceScriptPlayer.github.io/vsp-docs/ja/ai/deepl-subscription/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://VoiceScriptPlayer.github.io/vsp-docs/ai/deepl-subscription/"/>
+    </url>
+    <url>
         <loc>https://VoiceScriptPlayer.github.io/vsp-docs/en/ai/deepl/</loc>
         <lastmod>2025-10-29</lastmod>
         <changefreq>daily</changefreq>
@@ -375,6 +399,14 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://VoiceScriptPlayer.github.io/vsp-docs/en/ai/elevenlabs/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://VoiceScriptPlayer.github.io/vsp-docs/ja/ai/elevenlabs/"/>
         <xhtml:link rel="alternate" hreflang="ko" href="https://VoiceScriptPlayer.github.io/vsp-docs/ai/elevenlabs/"/>
+    </url>
+    <url>
+        <loc>https://VoiceScriptPlayer.github.io/vsp-docs/en/ai/hailuo-subscription/</loc>
+        <lastmod>2025-10-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://VoiceScriptPlayer.github.io/vsp-docs/en/ai/hailuo-subscription/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://VoiceScriptPlayer.github.io/vsp-docs/ja/ai/hailuo-subscription/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://VoiceScriptPlayer.github.io/vsp-docs/ai/hailuo-subscription/"/>
     </url>
     <url>
         <loc>https://VoiceScriptPlayer.github.io/vsp-docs/en/ai/hailuo/</loc>
@@ -665,6 +697,14 @@
         <xhtml:link rel="alternate" hreflang="ko" href="https://VoiceScriptPlayer.github.io/vsp-docs/ai/coeiroink/"/>
     </url>
     <url>
+        <loc>https://VoiceScriptPlayer.github.io/vsp-docs/ja/ai/deepl-subscription/</loc>
+        <lastmod>2025-10-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://VoiceScriptPlayer.github.io/vsp-docs/ja/ai/deepl-subscription/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://VoiceScriptPlayer.github.io/vsp-docs/en/ai/deepl-subscription/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://VoiceScriptPlayer.github.io/vsp-docs/ai/deepl-subscription/"/>
+    </url>
+    <url>
         <loc>https://VoiceScriptPlayer.github.io/vsp-docs/ja/ai/deepl/</loc>
         <lastmod>2025-10-29</lastmod>
         <changefreq>daily</changefreq>
@@ -679,6 +719,14 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://VoiceScriptPlayer.github.io/vsp-docs/ja/ai/elevenlabs/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://VoiceScriptPlayer.github.io/vsp-docs/en/ai/elevenlabs/"/>
         <xhtml:link rel="alternate" hreflang="ko" href="https://VoiceScriptPlayer.github.io/vsp-docs/ai/elevenlabs/"/>
+    </url>
+    <url>
+        <loc>https://VoiceScriptPlayer.github.io/vsp-docs/ja/ai/hailuo-subscription/</loc>
+        <lastmod>2025-10-29</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://VoiceScriptPlayer.github.io/vsp-docs/ja/ai/hailuo-subscription/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://VoiceScriptPlayer.github.io/vsp-docs/en/ai/hailuo-subscription/"/>
+        <xhtml:link rel="alternate" hreflang="ko" href="https://VoiceScriptPlayer.github.io/vsp-docs/ai/hailuo-subscription/"/>
     </url>
     <url>
         <loc>https://VoiceScriptPlayer.github.io/vsp-docs/ja/ai/hailuo/</loc>
