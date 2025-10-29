@@ -13,7 +13,7 @@ VoiceScriptPlayer는 여러 AI 서비스와 연동되어, 음성 인식부터 �
 [Whisper / SpeechRecognition]
 (음성 → 텍스트 변환)
 ↓
-[DeepL / Meta AI / LibreTranslate]
+[DeepL  / LibreTranslate]
 (텍스트 번역 및 LLM 분석)
 ↓
 [ElevenLabs / COEIROINK / Hailuo]
