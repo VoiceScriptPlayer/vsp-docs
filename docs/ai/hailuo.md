@@ -15,6 +15,9 @@ VoiceScriptPlayer에서는 **AI 캐릭터 음성 생성**, **자막 동기화** 
 > **남은 코인(사용량)** 을 확인할 수 있습니다.
 ![hailuo-remaincoin](../images/hailuo-remaincoin.png)
 
+📘 **구독이 처음이신가요?**  
+➡ [**Hailuo 구독 및 결제 가이드 보기**](../ai/hailuo-subscription.md)
+
 ---
 
 ## 2. VoiceScriptPlayer에서의 사용 방법

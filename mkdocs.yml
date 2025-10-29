@@ -56,8 +56,10 @@ nav:
       - ElevenLabs: ai/elevenlabs.md
       - COEIROINK: ai/coeiroink.md
       - Hailuo: ai/hailuo.md
+      - Hailuo 구독 가이드: ai/hailuo-subscription.md
       - LibreTranslate: ai/libretranslate.md
       - DeepL: ai/deepl.md
+      - DeepL 구독 가이드: ai/deepl-subscription.md
   - TroubleShooting:
       - COEIROINK: troubleshooting/coeiroink.md
       - Hailuo: troubleshooting/hailuo.md
