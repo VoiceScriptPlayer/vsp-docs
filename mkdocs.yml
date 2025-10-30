@@ -236,16 +236,16 @@ extra:
       name: Patreon
   alternate:
     - name: English
-      link: /en/
+      link: /
       lang: en
     - name: 日本語
-      link: /ja/
+      link: /vsp-docs/ja/
       lang: ja
     - name: 中文
-      link: /zh/
+      link: /vsp-docs/zh/
       lang: zh
     - name: 한국어
-      link: /
+      link: /vsp-docs/ko/
       lang: ko
   social:
     - icon: fontawesome/brands/patreon
