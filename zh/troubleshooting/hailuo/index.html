@@ -1,0 +1,3392 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for VoiceScriptPlayer">
+      
+      
+      
+        <link rel="canonical" href="https://VoiceScriptPlayer.github.io/vsp-docs/zh/troubleshooting/hailuo/">
+      
+      
+        <link rel="prev" href="../coeiroink/">
+      
+      
+        <link rel="next" href="../../faq/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>Hailuo - VoiceScriptPlayer Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.84d31ad4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#network" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="header.title">
+    <!-- 왼쪽: 로고 -->
+    <a href="https://VoiceScriptPlayer.github.io/vsp-docs/"
+       title="VoiceScriptPlayer Docs"
+       class="md-header__button md-logo"
+       aria-label="VoiceScriptPlayer Docs">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+
+    <!-- 햄버거 메뉴 (모바일용) -->
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+
+    <!-- 제목 -->
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">VoiceScriptPlayer Docs</span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">Hailuo</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 🌐 언어 전환 -->
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="选择当前语言">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../../troubleshooting/hailuo/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../ja/troubleshooting/hailuo/" hreflang="ja" class="md-select__link">
+              日本語
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="zh" class="md-select__link">
+              中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../ko/troubleshooting/hailuo/" hreflang="ko" class="md-select__link">
+              한국어
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+
+    <!-- 🔍 검색창 복원 -->
+    <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- ❤️ Patreon 버튼 -->
+<a href="https://www.patreon.com/VoiceScriptPlayer"
+   title="Support on Patreon"
+   class="md-header__button md-icon"
+   target="_blank" rel="noopener"
+   style="display:flex;align-items:center;gap:6px;margin-left:6px;">
+  <img src="../../../images/PATREON_SYMBOL.ico" alt="Patreon"
+       width="22" height="22"
+       style="display:block;border-radius:4px;filter:var(--md-icon-filter);" />
+  <span style="font-size:0.9rem;font-weight:500;">Support on Patreon</span>
+</a>
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  主页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../getting-started/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  入门
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../creator-guide/" class="md-tabs__link">
+          
+  
+  
+  创作者指南
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../project/create/" class="md-tabs__link">
+          
+  
+  
+  项目
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../editor/overview/" class="md-tabs__link">
+          
+  
+  
+  编辑器
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../playback/run/" class="md-tabs__link">
+          
+  
+  
+  播放
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../features/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  功能
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../device/tcode/" class="md-tabs__link">
+          
+  
+  
+  设备
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ai/ai/" class="md-tabs__link">
+          
+  
+  
+  AI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../coeiroink/" class="md-tabs__link">
+          
+  
+  
+  故障排除
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../faq/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  常见问题
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../" title="VoiceScriptPlayer Docs" class="md-nav__button md-logo" aria-label="VoiceScriptPlayer Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    VoiceScriptPlayer Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    主页
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    入门
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    创作者指南
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            创作者指南
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../creator-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    示例与进阶
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            示例与进阶
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../creator/example-basic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    从基本模板开始
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../creator/example-ui-script/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    练习链接UI与脚本
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../creator/example-logic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    使用条件和变量创建交互
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../creator/example-stroke/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    动作与设备应用
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    项目
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            项目
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/create/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    创建新项目
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/manage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    加载与保存
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    编辑器
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            编辑器
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../editor/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../editor/timeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    时间轴
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../editor/sound/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    声音
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../editor/video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    视频
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../editor/live2d/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Live2D
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../editor/ui/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    UI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../editor/script/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    脚本
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../editor/stroke/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    动作
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../editor/special-event/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    高潮 (特殊事件)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../editor/resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    资源管理
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../editor/runtime-helper/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    运行时助手
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../editor/setting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    项目设置
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    播放
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            播放
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../playback/run/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    运行
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../playback/debug/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    调试与日志
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    功能
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    设备
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            设备
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../device/tcode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TCode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../device/intiface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Intiface
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../device/intiface_advanced/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Intiface 进阶
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    AI
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            AI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/speechRecognition/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    语音识别
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/whisper/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Whisper
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/elevenlabs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ElevenLabs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/coeiroink/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    COEIROINK
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/hailuo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Hailuo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/hailuo-subscription/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Hailuo 订阅指南
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/libretranslate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    LibreTranslate
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/deepl/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DeepL
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/deepl-subscription/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DeepL 订阅指南
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    故障排除
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            故障排除
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../coeiroink/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    COEIROINK
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Hailuo
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Hailuo
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#network" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 网络连接错误（NetworkConnectionError）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 网络连接错误（NetworkConnectionError）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      原因
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      解决方案
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auth-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 验证失败（HailuoAuthError）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 验证失败（HailuoAuthError）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      原因
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      解决方案
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#timeout-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 请求超时（HailuoTimeoutError）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 请求超时（HailuoTimeoutError）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      原因
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      解决方案
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ratelimit-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 请求限制（HailuoRateLimitError）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 请求限制（HailuoRateLimitError）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      原因
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      解决方案
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tpm-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 超过 TPM（每分钟处理量限制）（HailuoTPMError）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 超过 TPM（每分钟处理量限制）（HailuoTPMError）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      原因
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      解决方案
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hailuoillegalcharactererrorillegalchar-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 输入包含非法字符（HailuoIllegalCharacterError）{#illegalchar-error}（非法字符错误
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 输入包含非法字符（HailuoIllegalCharacterError）{#illegalchar-error}（非法字符错误">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      原因。
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      解决方案
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#invalidinput-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 输入格式错误（HailuoInvalidInputFormat）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 输入格式错误（HailuoInvalidInputFormat）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      原因。
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      解决方法
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#credit-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 信用不足（HailuoCreditError）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 信用不足（HailuoCreditError）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      原因
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      解决方案
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#request-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 无效请求格式（HailuoRequestError）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 无效请求格式（HailuoRequestError）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      原因
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      解决方法
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#server-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 服务器错误（HailuoServerError）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 服务器错误（HailuoServerError）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      原因。
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      解决方案
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#json-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 服务器响应解析错误（HailuoParseError）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 服务器响应解析错误（HailuoParseError）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      原因。
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      解决方案
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hailuoemptyaudioempty-audio" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 生成的音频数据为空（HailuoEmptyAudio）{#empty-audio}。
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 生成的音频数据为空（HailuoEmptyAudio）{#empty-audio}。">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      原因。
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      解决方案
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#audio-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 音频格式错误（HailuoInvalidAudioFormat）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 音频格式错误（HailuoInvalidAudioFormat）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      原因
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      解决方法
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#process-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 音频处理失败（HailuoAudioProcessingError）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 音频处理失败（HailuoAudioProcessingError）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      原因
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      解决方法
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hailuoo-unexpected" class="md-nav__link">
+    <span class="md-ellipsis">
+      hailuoo-unexpected
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="hailuoo-unexpected">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unexpected" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 意外响应（HailuoUnexpectedResponse）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 意外响应（HailuoUnexpectedResponse）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      原因
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      解决方法
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hailuoo-unknown" class="md-nav__link">
+    <span class="md-ellipsis">
+      hailuoo-unknown
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="hailuoo-unknown">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unknown-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 未知错误（HailuoUnknownError）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 未知错误（HailuoUnknownError）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      原因
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      解决方案
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    常见问题
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#network" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 网络连接错误（NetworkConnectionError）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 网络连接错误（NetworkConnectionError）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      原因
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      解决方案
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#auth-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 验证失败（HailuoAuthError）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 验证失败（HailuoAuthError）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      原因
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      解决方案
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#timeout-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 请求超时（HailuoTimeoutError）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 请求超时（HailuoTimeoutError）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      原因
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      解决方案
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ratelimit-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 请求限制（HailuoRateLimitError）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 请求限制（HailuoRateLimitError）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      原因
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      解决方案
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tpm-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 超过 TPM（每分钟处理量限制）（HailuoTPMError）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 超过 TPM（每分钟处理量限制）（HailuoTPMError）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      原因
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      解决方案
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hailuoillegalcharactererrorillegalchar-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 输入包含非法字符（HailuoIllegalCharacterError）{#illegalchar-error}（非法字符错误
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 输入包含非法字符（HailuoIllegalCharacterError）{#illegalchar-error}（非法字符错误">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      原因。
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      解决方案
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#invalidinput-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 输入格式错误（HailuoInvalidInputFormat）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 输入格式错误（HailuoInvalidInputFormat）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      原因。
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      解决方法
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#credit-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 信用不足（HailuoCreditError）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 信用不足（HailuoCreditError）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      原因
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      解决方案
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#request-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 无效请求格式（HailuoRequestError）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 无效请求格式（HailuoRequestError）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_17" class="md-nav__link">
+    <span class="md-ellipsis">
+      原因
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_18" class="md-nav__link">
+    <span class="md-ellipsis">
+      解决方法
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#server-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 服务器错误（HailuoServerError）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 服务器错误（HailuoServerError）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_19" class="md-nav__link">
+    <span class="md-ellipsis">
+      原因。
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_20" class="md-nav__link">
+    <span class="md-ellipsis">
+      解决方案
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#json-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 服务器响应解析错误（HailuoParseError）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 服务器响应解析错误（HailuoParseError）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_21" class="md-nav__link">
+    <span class="md-ellipsis">
+      原因。
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_22" class="md-nav__link">
+    <span class="md-ellipsis">
+      解决方案
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hailuoemptyaudioempty-audio" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 生成的音频数据为空（HailuoEmptyAudio）{#empty-audio}。
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 生成的音频数据为空（HailuoEmptyAudio）{#empty-audio}。">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_23" class="md-nav__link">
+    <span class="md-ellipsis">
+      原因。
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_24" class="md-nav__link">
+    <span class="md-ellipsis">
+      解决方案
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#audio-format" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 音频格式错误（HailuoInvalidAudioFormat）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 音频格式错误（HailuoInvalidAudioFormat）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_25" class="md-nav__link">
+    <span class="md-ellipsis">
+      原因
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_26" class="md-nav__link">
+    <span class="md-ellipsis">
+      解决方法
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#process-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 音频处理失败（HailuoAudioProcessingError）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 音频处理失败（HailuoAudioProcessingError）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_27" class="md-nav__link">
+    <span class="md-ellipsis">
+      原因
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_28" class="md-nav__link">
+    <span class="md-ellipsis">
+      解决方法
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hailuoo-unexpected" class="md-nav__link">
+    <span class="md-ellipsis">
+      hailuoo-unexpected
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="hailuoo-unexpected">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unexpected" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 意外响应（HailuoUnexpectedResponse）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 意外响应（HailuoUnexpectedResponse）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_29" class="md-nav__link">
+    <span class="md-ellipsis">
+      原因
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_30" class="md-nav__link">
+    <span class="md-ellipsis">
+      解决方法
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hailuoo-unknown" class="md-nav__link">
+    <span class="md-ellipsis">
+      hailuoo-unknown
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="hailuoo-unknown">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#unknown-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 未知错误（HailuoUnknownError）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💡 未知错误（HailuoUnknownError）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_31" class="md-nav__link">
+    <span class="md-ellipsis">
+      原因
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_32" class="md-nav__link">
+    <span class="md-ellipsis">
+      解决方案
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h2 id="network">💡 网络连接错误（NetworkConnectionError）<a class="headerlink" href="#network" title="Permanent link">&para;</a></h2>
+<h3 id="_1">原因<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>无法连接到河洛服务器，或网络连接不稳定。  </li>
+<li>您的防火墙或 VPN 可能阻止了对河洛 API 的访问。  </li>
+<li>服务器地址不正确，或网络暂时中断。</li>
+</ul>
+<h3 id="_2">解决方案<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>检查网络连接</strong><ul>
+<li>海洛应用程序接口与外部服务器通信，因此需要网络连接。  </li>
+</ul>
+</li>
+<li><strong>检查防火墙/安全程序</strong><ul>
+<li>确保域 <code>https://api.minimax.io</code>未被阻止。</li>
+</ul>
+</li>
+<li><strong>如果使用 VPN，请禁用并重试</strong><ul>
+<li>您的 VPN 或代理服务器可能会阻止验证头。  </li>
+</ul>
+</li>
+<li><strong>禁用并稍后重试</strong><ul>
+<li>错误可能是由于服务器维护或临时网络拥塞造成的。  </li>
+</ul>
+</li>
+</ol>
+<h2 id="auth-error">💡 验证失败（HailuoAuthError）<a class="headerlink" href="#auth-error" title="Permanent link">&para;</a></h2>
+<h3 id="_3">原因<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li>缺少 API 密钥或使用了无效值。</li>
+<li>授权头包含格式不正确的令牌。</li>
+<li>您获得的 API 密钥已过期或被删除。</li>
+</ul>
+<h3 id="_4">解决方案<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>验证 API 密钥输入是否正确</strong><ul>
+<li>从您的 Hailuo 控制面板中准确复制已发放的密钥。</li>
+<li>授权头应该如下。
+ Authorisation: Bearer YOUR_API_KEY`.</li>
+</ul>
+</li>
+<li><strong>检查是否缺少 API 密钥</strong><ul>
+<li>确保 VoiceScriptPlayer 首选项中的密钥不是空的。  </li>
+</ul>
+</li>
+<li><strong>重新发放 API 密钥</strong><ul>
+<li>您的密钥可能已过期，请从河洛网站获取新密钥。  </li>
+</ul>
+</li>
+</ol>
+<h2 id="timeout-error">💡 请求超时（HailuoTimeoutError）<a class="headerlink" href="#timeout-error" title="Permanent link">&para;</a></h2>
+<h3 id="_5">原因<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li>河洛 API 请求超时（通常为 10 秒）。</li>
+<li>服务器响应缓慢或暂时中断。</li>
+</ul>
+<h3 id="_6">解决方案<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>重试</strong><ul>
+<li>一段时间后重试通常能解决问题。  </li>
+</ul>
+</li>
+<li><strong>检查网络状况</strong><ul>
+<li>不稳定的连接会导致响应延迟。  </li>
+</ul>
+</li>
+<li><strong>缩短输入句子</strong><ul>
+<li>长文本可能导致处理时间延长。  </li>
+</ul>
+</li>
+</ol>
+<h2 id="ratelimit-error">💡 请求限制（HailuoRateLimitError）<a class="headerlink" href="#ratelimit-error" title="Permanent link">&para;</a></h2>
+<h3 id="_7">原因<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<ul>
+<li>您在短时间内发送了太多请求。</li>
+<li>已达到河洛 API 的调用频率限制（流量限制）。</li>
+</ul>
+<h3 id="_8">解决方案<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>等待 1-2 分钟，然后重试</strong><ul>
+<li>服务器将定期解除请求限制。  </li>
+</ul>
+</li>
+<li><strong>调整请求间隔</strong><ul>
+<li>请求之间至少间隔 1 秒钟。</li>
+</ul>
+</li>
+<li><strong>检查自动化脚本</strong><ul>
+<li>确保没有过多的调用，如循环请求。  </li>
+</ul>
+</li>
+</ol>
+<h2 id="tpm-error">💡 超过 TPM（每分钟处理量限制）（HailuoTPMError）<a class="headerlink" href="#tpm-error" title="Permanent link">&para;</a></h2>
+<h3 id="_9">原因<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<ul>
+<li>每分钟请求数（Token Per Minute）超过允许上限。</li>
+<li>为防止请求过多，河洛服务器进行了封堵。</li>
+</ul>
+<h3 id="_10">解决方案<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>增加请求间隔</strong><ul>
+<li>将请求间隔拉长，或在固定时间间隔发送请求。</li>
+</ul>
+</li>
+<li><strong>检查您的高级计划</strong><ul>
+<li>较高的计划有较高的 TPM 限制。</li>
+</ul>
+</li>
+<li><strong>实施自动重试逻辑</strong><ul>
+<li>添加 60 秒后重试的逻辑。</li>
+</ul>
+</li>
+</ol>
+<h2 id="hailuoillegalcharactererrorillegalchar-error">💡 输入包含非法字符（HailuoIllegalCharacterError）{#illegalchar-error}（非法字符错误<a class="headerlink" href="#hailuoillegalcharactererrorillegalchar-error" title="Permanent link">&para;</a></h2>
+<h4 id="_11">原因。<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h4>
+<ul>
+<li>总输入量的 10% 以上包含不可接受的字符（符号、表情符号等）。</li>
+<li>服务器未正确解释句子编码。</li>
+</ul>
+<h3 id="_12">解决方案<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>删除特殊字符</strong><ul>
+<li>删除表情符号或控制字符，如 💕, ✨, 🔥 等。</li>
+</ul>
+</li>
+<li><strong>规范文本</strong><ul>
+<li>清理空格、制表符、换行符，并编码为 UTF-8。  </li>
+</ul>
+</li>
+<li><strong>分成较短的句子</strong><ul>
+<li>如果句子太长，请分段发送。</li>
+</ul>
+</li>
+</ol>
+<h2 id="invalidinput-error">💡 输入格式错误（HailuoInvalidInputFormat）<a class="headerlink" href="#invalidinput-error" title="Permanent link">&para;</a></h2>
+<h4 id="_13">原因。<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h4>
+<ul>
+<li><code>text</code>, <code>voice_setting</code>, <code>audio_setting</code> 中的必填字段无效。</li>
+<li>JSON 序列化结构与服务器规范不同。  </li>
+</ul>
+<h3 id="_14">解决方法<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>验证 JSON 结构</strong><ul>
+<li>必须包含<code>model</code>、<code>text</code>、<code>voice_setting</code>和<code>audio_setting</code>字段。</li>
+</ul>
+</li>
+<li><strong>验证数据类型</strong><ul>
+<li>确保数字为 int/float，字符串为 string。  </li>
+</ul>
+</li>
+<li><strong>更新 VoiceScriptPlayer</strong><ul>
+<li>在最新版本中，它将自动以正确的结构发送。  </li>
+</ul>
+</li>
+</ol>
+<h2 id="credit-error">💡 信用不足（HailuoCreditError）<a class="headerlink" href="#credit-error" title="Permanent link">&para;</a></h2>
+<h3 id="_15">原因<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<ul>
+<li>API 请求所需积分不足。  </li>
+<li>您的河洛账户余额为 0 元或更少，或者您已超过使用上限。</li>
+</ul>
+<h3 id="_16">解决方案<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>登录您的海洛账户，查看余额</strong><ul>
+<li>查看余额是否足够。  </li>
+</ul>
+</li>
+<li><strong>充值后再试一次</strong><ul>
+<li>通过支付或充值菜单添加更多话费。</li>
+</ul>
+</li>
+<li><strong>检查您的免费等级限制</strong><ul>
+<li>如果超出免费使用限制，则需要点数。  </li>
+</ul>
+</li>
+</ol>
+<h2 id="request-error">💡 无效请求格式（HailuoRequestError）<a class="headerlink" href="#request-error" title="Permanent link">&para;</a></h2>
+<h3 id="_17">原因<a class="headerlink" href="#_17" title="Permanent link">&para;</a></h3>
+<ul>
+<li>缺少必填字段，或数据类型不正确。</li>
+<li><code>voice_id</code>, <code>text</code>, <code>audio_setting</code>中的一个值无效。</li>
+<li>服务器无法解释 JSON 结构。</li>
+</ul>
+<h3 id="_18">解决方法<a class="headerlink" href="#_18" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>检查请求数据</strong>  <ul>
+<li>请确认文本长度是否过长，以及格式是否有效。  </li>
+</ul>
+</li>
+<li><strong>检查语音参数设置</strong>  <ul>
+<li>确认 <code>VoiceId</code>、<code>SpeedScale</code>、<code>VolumeScale</code>、<code>PitchScale</code> 的值是否在正常范围内。  </li>
+</ul>
+</li>
+<li><strong>验证 JSON 有效性</strong>  <ul>
+<li>使用 <a href="https://jsonlint.com/">jsonlint.com</a> 等工具验证记录的请求 JSON 是否有效。  </li>
+</ul>
+</li>
+</ol>
+<h2 id="server-error">💡 服务器错误（HailuoServerError）<a class="headerlink" href="#server-error" title="Permanent link">&para;</a></h2>
+<h3 id="_19">原因。<a class="headerlink" href="#_19" title="Permanent link">&para;</a></h3>
+<ul>
+<li>河洛服务器出现错误。</li>
+<li>可能是由于流量临时增加或系统维护。  </li>
+</ul>
+<h3 id="_20">解决方案<a class="headerlink" href="#_20" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>请稍等片刻再试一次</strong><ul>
+<li>大多数服务器错误都是暂时的。  </li>
+</ul>
+</li>
+<li><strong>查看服务器状态页面</strong><ul>
+<li>查看河洛官方网站或 Discord 频道的维护公告。</li>
+</ul>
+</li>
+<li><strong>如果反复发生，请联系我们</strong><ul>
+<li>联系河洛技术支持并附上错误代码和日志。</li>
+</ul>
+</li>
+</ol>
+<h2 id="json-error">💡 服务器响应解析错误（HailuoParseError）<a class="headerlink" href="#json-error" title="Permanent link">&para;</a></h2>
+<h4 id="_21">原因。<a class="headerlink" href="#_21" title="Permanent link">&para;</a></h4>
+<ul>
+<li>服务器以意外格式返回 JSON。</li>
+<li>河洛 API 版本已更改或响应结构已更改。</li>
+</ul>
+<h3 id="_22">解决方案<a class="headerlink" href="#_22" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>检查 Hailuo 引擎版本</strong><ul>
+<li>确保与 VoiceScriptPlayer 使用的 API 版本兼容。  </li>
+</ul>
+</li>
+<li><strong>查看响应日志</strong><ul>
+<li>检查是否存在 "base_resp "或 "data "结构。</li>
+</ul>
+</li>
+<li><strong>更新软件</strong><ul>
+<li>将 VoiceScriptPlayer 更新到最新版本。</li>
+</ul>
+</li>
+</ol>
+<h2 id="hailuoemptyaudioempty-audio">💡 生成的音频数据为空（HailuoEmptyAudio）{#empty-audio}。<a class="headerlink" href="#hailuoemptyaudioempty-audio" title="Permanent link">&para;</a></h2>
+<h3 id="_23">原因。<a class="headerlink" href="#_23" title="Permanent link">&para;</a></h3>
+<ul>
+<li>您输入的文本太短或无法转换为音频。  </li>
+<li>海洛无法在内部生成语音。</li>
+</ul>
+<h3 id="_24">解决方案<a class="headerlink" href="#_24" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>检查文本内容</strong>。<ul>
+<li>用不含空格、特殊字符、表情符号等的句子再试一次。  </li>
+</ul>
+</li>
+<li><strong>换一种语音试试</strong><ul>
+<li>只有特定的 VoiceIds 才会出现这种情况。  </li>
+</ul>
+</li>
+<li><strong>重试</strong><ul>
+<li>失败可能是由于临时缓存问题。  </li>
+</ul>
+</li>
+</ol>
+<h2 id="audio-format">💡 音频格式错误（HailuoInvalidAudioFormat）<a class="headerlink" href="#audio-format" title="Permanent link">&para;</a></h2>
+<h3 id="_25">原因<a class="headerlink" href="#_25" title="Permanent link">&para;</a></h3>
+<ul>
+<li>返回的音频数据已损坏，或在十六进制转换过程中出现问题。</li>
+<li>服务器未返回有效的 <code>audio</code> 字段。</li>
+</ul>
+<h3 id="_26">解决方法<a class="headerlink" href="#_26" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>验证响应数据</strong><ul>
+<li>验证返回的数据是否为十六进制字符串。  </li>
+</ul>
+</li>
+<li><strong>格式检查</strong><ul>
+<li>检查设置的 <code>格式</code> 值是否为河洛支持的格式（<code>mp3</code>、<code>wav</code>）。</li>
+</ul>
+</li>
+<li><strong>用短句测试</strong><ul>
+<li>长文本输入可能导致缓冲区溢出。  </li>
+</ul>
+</li>
+</ol>
+<h2 id="process-error">💡 音频处理失败（HailuoAudioProcessingError）<a class="headerlink" href="#process-error" title="Permanent link">&para;</a></h2>
+<h3 id="_27">原因<a class="headerlink" href="#_27" title="Permanent link">&para;</a></h3>
+<ul>
+<li>在 MP3 解码或 WAV 转换过程中发生错误。</li>
+<li>文件流损坏或传递了无效数据。</li>
+</ul>
+<h3 id="_28">解决方法<a class="headerlink" href="#_28" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>重试</strong><ul>
+<li>这可能是暂时的转换错误。  </li>
+</ul>
+</li>
+<li><strong>检查响应数据长度</strong><ul>
+<li>检查数据是否太短或为零字节。  </li>
+</ul>
+</li>
+<li><strong>更新 Mp3/Wave 转换库</strong><ul>
+<li>确保使用最新版本的 NAudio 和其他相关库。</li>
+</ul>
+</li>
+</ol>
+<h1 id="hailuoo-unexpected">hailuoo-unexpected<a class="headerlink" href="#hailuoo-unexpected" title="Permanent link">&para;</a></h1>
+<h2 id="unexpected">💡 意外响应（HailuoUnexpectedResponse）<a class="headerlink" href="#unexpected" title="Permanent link">&para;</a></h2>
+<h3 id="_29">原因<a class="headerlink" href="#_29" title="Permanent link">&para;</a></h3>
+<ul>
+<li>服务器响应结构未按预期解析。</li>
+<li><code>"data.audio"</code> 字段不存在，或格式已更改。</li>
+</ul>
+<h3 id="_30">解决方法<a class="headerlink" href="#_30" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>检查响应文本</strong><ul>
+<li>直接检查日志中记录的 <code>responseText</code> 文本。</li>
+</ul>
+</li>
+<li><strong>检查 VoiceScriptPlayer 版本</strong><ul>
+<li>旧版本可能不支持最新的 API 结构。  </li>
+</ul>
+</li>
+<li><strong>检查服务器更新</strong><ul>
+<li>河洛可能更改了 API 规范。  </li>
+</ul>
+</li>
+</ol>
+<h1 id="hailuoo-unknown">hailuoo-unknown<a class="headerlink" href="#hailuoo-unknown" title="Permanent link">&para;</a></h1>
+<h2 id="unknown-error">💡 未知错误（HailuoUnknownError）<a class="headerlink" href="#unknown-error" title="Permanent link">&para;</a></h2>
+<h3 id="_31">原因<a class="headerlink" href="#_31" title="Permanent link">&para;</a></h3>
+<ul>
+<li>处理过程中发生意外错误。</li>
+<li>这可能是一种非例外情况（文件访问、磁盘写入失败等）。  </li>
+</ul>
+<h3 id="_32">解决方案<a class="headerlink" href="#_32" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>检查 VoiceScriptPlayer 和 Hailuo 的版本</strong>。<ul>
+<li>尽可能更新到最新版本。  </li>
+</ul>
+</li>
+<li><strong>重新启动程序</strong><ul>
+<li>问题可能由内存泄漏或缓存损坏引起。  </li>
+</ul>
+</li>
+<li><strong>联系开发人员</strong><ul>
+<li>请用日志（<code>vsp_log.txt</code>）报告问题。</li>
+</ul>
+</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://www.patreon.com/VoiceScriptPlayer" target="_blank" rel="noopener" title="Patreon" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M490 153.8c-.1-65.4-51-119-110.7-138.3-74.2-24-172-20.5-242.9 12.9C50.6 68.9 23.6 157.7 22.6 246.2 21.8 319 29 510.6 137.2 512c80.3 1 92.3-102.5 129.5-152.3 26.4-35.5 60.5-45.5 102.4-55.9 72-17.8 121.1-74.7 121-150z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.sections", "search.suggest", "search.highlight"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

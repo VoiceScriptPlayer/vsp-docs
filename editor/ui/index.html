@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="ko" class="no-js">
+<html lang="en" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
     
     
       
@@ -28,7 +28,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.2a3383ac.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
       
       
 
@@ -66,8 +66,8 @@
     <div data-md-component="skip">
       
         
-        <a href="#ui" class="md-skip">
-          콘텐츠로 이동
+        <a href="#ui-tab" class="md-skip">
+          Skip to content
         </a>
       
     </div>
@@ -111,20 +111,14 @@
       <div class="md-header__option">
   <div class="md-select">
     
-    <button class="md-header__button md-icon" aria-label="언어설정">
+    <button class="md-header__button md-icon" aria-label="Select language">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
     </button>
     <div class="md-select__inner">
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="./" hreflang="ko" class="md-select__link">
-              한국어
-            </a>
-          </li>
-        
-          <li class="md-select__item">
-            <a href="../../en/editor/ui/" hreflang="en" class="md-select__link">
+            <a href="./" hreflang="en" class="md-select__link">
               English
             </a>
           </li>
@@ -132,6 +126,18 @@
           <li class="md-select__item">
             <a href="../../ja/editor/ui/" hreflang="ja" class="md-select__link">
               日本語
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../zh/editor/ui/" hreflang="zh" class="md-select__link">
+              中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../ko/editor/ui/" hreflang="ko" class="md-select__link">
+              한국어
             </a>
           </li>
         
@@ -146,16 +152,16 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="검색">
+      <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
@@ -168,7 +174,7 @@
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            검색 초기화
+            Initializing search
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -197,7 +203,7 @@
         
           
             
-<nav class="md-tabs" aria-label="탭" data-md-component="tabs">
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
   <div class="md-grid">
     <ul class="md-tabs__list">
       
@@ -439,7 +445,7 @@
   
 
 
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="VoiceScriptPlayer Docs" class="md-nav__button md-logo" aria-label="VoiceScriptPlayer Docs" data-md-component="logo">
       
@@ -551,7 +557,7 @@
   
   
   <span class="md-ellipsis">
-    개요
+    Overview
     
   </span>
   
@@ -590,7 +596,7 @@
   
   
   <span class="md-ellipsis">
-    예제 & 심화
+    Examples & Advanced
     
   </span>
   
@@ -601,7 +607,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
-            예제 & 심화
+            Examples & Advanced
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -617,7 +623,7 @@
   
   
   <span class="md-ellipsis">
-    기본 템플릿으로 시작하기
+    Start with a Basic Template
     
   </span>
   
@@ -640,7 +646,7 @@
   
   
   <span class="md-ellipsis">
-    UI와 스크립트 연동 실습
+    Practice Linking UI and Script
     
   </span>
   
@@ -663,7 +669,7 @@
   
   
   <span class="md-ellipsis">
-    조건문과 변수로 인터랙션 만들기
+    Create Interaction with Conditions and Variables
     
   </span>
   
@@ -686,7 +692,7 @@
   
   
   <span class="md-ellipsis">
-    Stroke & Device 응용
+    Stroke & Device Applications
     
   </span>
   
@@ -767,7 +773,7 @@
   
   
   <span class="md-ellipsis">
-    새 프로젝트 만들기
+    Create New Project
     
   </span>
   
@@ -790,7 +796,7 @@
   
   
   <span class="md-ellipsis">
-    불러오기 & 저장
+    Load & Save
     
   </span>
   
@@ -868,7 +874,7 @@
   
   
   <span class="md-ellipsis">
-    개요
+    Overview
     
   </span>
   
@@ -891,7 +897,7 @@
   
   
   <span class="md-ellipsis">
-    타임라인
+    Timeline
     
   </span>
   
@@ -914,7 +920,7 @@
   
   
   <span class="md-ellipsis">
-    사운드
+    Sound
     
   </span>
   
@@ -937,7 +943,7 @@
   
   
   <span class="md-ellipsis">
-    비디오
+    Video
     
   </span>
   
@@ -1014,7 +1020,7 @@
       
         
 
-<nav class="md-nav md-nav--secondary" aria-label="목차">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -1023,42 +1029,42 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      목차
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#1-basic-interface" class="md-nav__link">
     <span class="md-ellipsis">
-      1. 기본 인터페이스
+      1. Basic Interface
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-ui" class="md-nav__link">
+  <a href="#2-ui-templates-and-instances" class="md-nav__link">
     <span class="md-ellipsis">
-      2. UI 템플릿과 인스턴스
+      2. UI Templates and Instances
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-ui" class="md-nav__link">
+  <a href="#3-ui-editor" class="md-nav__link">
     <span class="md-ellipsis">
-      3. UI 편집기
+      3. UI Editor
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="3. UI 편집기">
+    <nav class="md-nav" aria-label="3. UI Editor">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#top-options" class="md-nav__link">
     <span class="md-ellipsis">
-      🎛️ 상단 옵션
+      🎛️ Top Options
     </span>
   </a>
   
@@ -1070,55 +1076,55 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
+  <a href="#4-control-list" class="md-nav__link">
     <span class="md-ellipsis">
-      4. 컨트롤 목록
+      4. Control List
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
+  <a href="#5-property-editing" class="md-nav__link">
     <span class="md-ellipsis">
-      5. 속성 편집
+      5. Property Editing
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#6" class="md-nav__link">
+  <a href="#6-script-events" class="md-nav__link">
     <span class="md-ellipsis">
-      6. 스크립트 이벤트
+      6. Script Events
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="6. 스크립트 이벤트">
+    <nav class="md-nav" aria-label="6. Script Events">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#common-events-all-controls" class="md-nav__link">
     <span class="md-ellipsis">
-      🧩 공통 이벤트 (모든 컨트롤)
+      🧩 Common Events (All Controls)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#control-specific-events" class="md-nav__link">
     <span class="md-ellipsis">
-      🎛️ 컨트롤별 고유 이벤트
+      🎛️ Control-Specific Events
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#ui_1" class="md-nav__link">
+  <a href="#ui-script-control" class="md-nav__link">
     <span class="md-ellipsis">
-      💡 UI 스크립트 제어
+      💡 UI Script Control
     </span>
   </a>
   
@@ -1130,28 +1136,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#7" class="md-nav__link">
+  <a href="#7-control-management" class="md-nav__link">
     <span class="md-ellipsis">
-      7. 컨트롤 관리
+      7. Control Management
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#8-panel" class="md-nav__link">
+  <a href="#8-panel-and-layout-system" class="md-nav__link">
     <span class="md-ellipsis">
-      8. Panel과 레이아웃 시스템
+      8. Panel and Layout System
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="8. Panel과 레이아웃 시스템">
+    <nav class="md-nav" aria-label="8. Panel and Layout System">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#wpf" class="md-nav__link">
+  <a href="#wpf-layout-system" class="md-nav__link">
     <span class="md-ellipsis">
-      🧱 WPF 레이아웃 구조
+      🧱 WPF Layout System
     </span>
   </a>
   
@@ -1163,18 +1169,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#9" class="md-nav__link">
+  <a href="#9-file-structure" class="md-nav__link">
     <span class="md-ellipsis">
-      9. 파일 구조
+      9. File Structure
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#10" class="md-nav__link">
+  <a href="#10-related-documents" class="md-nav__link">
     <span class="md-ellipsis">
-      10. 관련 문서
+      10. Related Documents
     </span>
   </a>
   
@@ -1201,7 +1207,7 @@
   
   
   <span class="md-ellipsis">
-    스크립트
+    Script
     
   </span>
   
@@ -1224,7 +1230,7 @@
   
   
   <span class="md-ellipsis">
-    스트로크
+    Stroke
     
   </span>
   
@@ -1247,7 +1253,7 @@
   
   
   <span class="md-ellipsis">
-    클라이맥스
+    Climax
     
   </span>
   
@@ -1270,7 +1276,7 @@
   
   
   <span class="md-ellipsis">
-    리소스 관리
+    Resource Management
     
   </span>
   
@@ -1293,7 +1299,7 @@
   
   
   <span class="md-ellipsis">
-    런타임 도우미
+    Runtime Helper
     
   </span>
   
@@ -1316,7 +1322,7 @@
   
   
   <span class="md-ellipsis">
-    프로젝트 설정
+    Project Settings
     
   </span>
   
@@ -1389,7 +1395,7 @@
   
   
   <span class="md-ellipsis">
-    실행하기
+    Run
     
   </span>
   
@@ -1412,7 +1418,7 @@
   
   
   <span class="md-ellipsis">
-    디버그 & 로그
+    Debug & Log
     
   </span>
   
@@ -1553,7 +1559,7 @@
   
   
   <span class="md-ellipsis">
-    Intiface 고급
+    Intiface Advanced
     
   </span>
   
@@ -1626,7 +1632,7 @@
   
   
   <span class="md-ellipsis">
-    개요
+    Overview
     
   </span>
   
@@ -1764,7 +1770,7 @@
   
   
   <span class="md-ellipsis">
-    Hailuo 구독 가이드
+    Hailuo Subscription Guide
     
   </span>
   
@@ -1833,7 +1839,7 @@
   
   
   <span class="md-ellipsis">
-    DeepL 구독 가이드
+    DeepL Subscription Guide
     
   </span>
   
@@ -1982,7 +1988,7 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="목차">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -1991,42 +1997,42 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      목차
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#1-basic-interface" class="md-nav__link">
     <span class="md-ellipsis">
-      1. 기본 인터페이스
+      1. Basic Interface
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-ui" class="md-nav__link">
+  <a href="#2-ui-templates-and-instances" class="md-nav__link">
     <span class="md-ellipsis">
-      2. UI 템플릿과 인스턴스
+      2. UI Templates and Instances
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-ui" class="md-nav__link">
+  <a href="#3-ui-editor" class="md-nav__link">
     <span class="md-ellipsis">
-      3. UI 편집기
+      3. UI Editor
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="3. UI 편집기">
+    <nav class="md-nav" aria-label="3. UI Editor">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#top-options" class="md-nav__link">
     <span class="md-ellipsis">
-      🎛️ 상단 옵션
+      🎛️ Top Options
     </span>
   </a>
   
@@ -2038,55 +2044,55 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
+  <a href="#4-control-list" class="md-nav__link">
     <span class="md-ellipsis">
-      4. 컨트롤 목록
+      4. Control List
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
+  <a href="#5-property-editing" class="md-nav__link">
     <span class="md-ellipsis">
-      5. 속성 편집
+      5. Property Editing
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#6" class="md-nav__link">
+  <a href="#6-script-events" class="md-nav__link">
     <span class="md-ellipsis">
-      6. 스크립트 이벤트
+      6. Script Events
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="6. 스크립트 이벤트">
+    <nav class="md-nav" aria-label="6. Script Events">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#common-events-all-controls" class="md-nav__link">
     <span class="md-ellipsis">
-      🧩 공통 이벤트 (모든 컨트롤)
+      🧩 Common Events (All Controls)
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#control-specific-events" class="md-nav__link">
     <span class="md-ellipsis">
-      🎛️ 컨트롤별 고유 이벤트
+      🎛️ Control-Specific Events
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#ui_1" class="md-nav__link">
+  <a href="#ui-script-control" class="md-nav__link">
     <span class="md-ellipsis">
-      💡 UI 스크립트 제어
+      💡 UI Script Control
     </span>
   </a>
   
@@ -2098,28 +2104,28 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#7" class="md-nav__link">
+  <a href="#7-control-management" class="md-nav__link">
     <span class="md-ellipsis">
-      7. 컨트롤 관리
+      7. Control Management
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#8-panel" class="md-nav__link">
+  <a href="#8-panel-and-layout-system" class="md-nav__link">
     <span class="md-ellipsis">
-      8. Panel과 레이아웃 시스템
+      8. Panel and Layout System
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="8. Panel과 레이아웃 시스템">
+    <nav class="md-nav" aria-label="8. Panel and Layout System">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#wpf" class="md-nav__link">
+  <a href="#wpf-layout-system" class="md-nav__link">
     <span class="md-ellipsis">
-      🧱 WPF 레이아웃 구조
+      🧱 WPF Layout System
     </span>
   </a>
   
@@ -2131,18 +2137,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#9" class="md-nav__link">
+  <a href="#9-file-structure" class="md-nav__link">
     <span class="md-ellipsis">
-      9. 파일 구조
+      9. File Structure
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#10" class="md-nav__link">
+  <a href="#10-related-documents" class="md-nav__link">
     <span class="md-ellipsis">
-      10. 관련 문서
+      10. Related Documents
     </span>
   </a>
   
@@ -2164,405 +2170,406 @@
 
 
 
-<h1 id="ui">UI 탭<a class="headerlink" href="#ui" title="Permanent link">&para;</a></h1>
-<p>UI 탭은 <strong>프로젝트 내 인터페이스를 구성하고 제어</strong>하는 편집 탭입니다.<br />
-버튼, 이미지, 텍스트 등 다양한 UI 컨트롤을 배치하고<br />
-각 요소에 스크립트를 연결하여 <strong>상호작용을 구현할 수 있습니다.</strong></p>
+<h1 id="ui-tab">UI Tab<a class="headerlink" href="#ui-tab" title="Permanent link">&para;</a></h1>
+<p>The <strong>UI Tab</strong> is used to <strong>design and control the user interface within a project</strong>.<br />
+You can place various UI elements such as buttons, images, and text,<br />
+and link them to scripts to <strong>create interactive behavior</strong>.</p>
 <hr />
-<h2 id="1">1. 기본 인터페이스<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<h2 id="1-basic-interface">1. Basic Interface<a class="headerlink" href="#1-basic-interface" title="Permanent link">&para;</a></h2>
 <p><img alt="ui-main" src="../../images/ui-main.png" /></p>
 <table>
 <thead>
 <tr>
-<th>구성 요소</th>
-<th>설명</th>
+<th>Component</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>① 드래그하여 빈 UI 추가</strong></td>
-<td>새로운 <strong>UI 인스턴스</strong>를 생성합니다.</td>
+<td><strong>① Drag to Add Empty UI</strong></td>
+<td>Creates a new <strong>UI instance</strong>.</td>
 </tr>
 <tr>
-<td><strong>② UI 템플릿</strong></td>
-<td>재사용 가능한 <strong>UI 구성 템플릿</strong>을 관리합니다.</td>
+<td><strong>② UI Templates</strong></td>
+<td>Manages reusable <strong>UI layout templates</strong>.</td>
 </tr>
 <tr>
-<td><strong>③ 가져오기</strong></td>
-<td>기존에 저장된 UI 템플릿을 불러옵니다.</td>
+<td><strong>③ Import</strong></td>
+<td>Loads an existing saved UI template.</td>
 </tr>
 <tr>
-<td><strong>④ 새로 만들기</strong></td>
-<td>새 UI 템플릿을 생성합니다.</td>
+<td><strong>④ Create New</strong></td>
+<td>Creates a new UI template.</td>
 </tr>
 <tr>
-<td><strong>⑤ 편집 ✏️</strong></td>
-<td>선택한 UI를 편집기로 엽니다.</td>
+<td><strong>⑤ Edit ✏️</strong></td>
+<td>Opens the selected UI in the editor.</td>
 </tr>
 <tr>
-<td><strong>⑥ 삭제 🗑️</strong></td>
-<td>선택한 UI를 목록에서 제거합니다.</td>
+<td><strong>⑥ Delete 🗑️</strong></td>
+<td>Removes the selected UI from the list.</td>
 </tr>
 <tr>
-<td><strong>⑦ 폴더 열기 📂</strong></td>
-<td><code>Asset/UI/</code> 폴더를 바로 엽니다.</td>
+<td><strong>⑦ Open Folder 📂</strong></td>
+<td>Opens the <code>Asset/UI/</code> folder directly.</td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-<p>💡 <strong>참고:</strong><br />
-UI 인스턴스는 독립적으로 동작하며,<br />
-UI 템플릿은 수정 시 모든 인스턴스에 동일하게 반영됩니다.</p>
+<p>💡 <strong>Tip:</strong><br />
+UI instances operate independently,<br />
+while UI templates apply global changes to all instances that reference them.</p>
 </blockquote>
 <hr />
-<h2 id="2-ui">2. UI 템플릿과 인스턴스<a class="headerlink" href="#2-ui" title="Permanent link">&para;</a></h2>
-<p>UI는 <strong>템플릿형</strong>과 <strong>인스턴스형</strong>으로 구분됩니다.<br />
-두 방식은 적용 범위와 수정 방식이 다릅니다.</p>
+<h2 id="2-ui-templates-and-instances">2. UI Templates and Instances<a class="headerlink" href="#2-ui-templates-and-instances" title="Permanent link">&para;</a></h2>
+<p>UI elements are divided into <strong>Templates</strong> and <strong>Instances</strong>,<br />
+which differ in their scope and edit behavior.</p>
 <table>
 <thead>
 <tr>
-<th>구분</th>
-<th>설명</th>
-<th>특징</th>
+<th>Type</th>
+<th>Description</th>
+<th>Features</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>UI 템플릿</strong></td>
-<td>공용으로 재사용 가능한 UI 구성입니다.</td>
-<td>여러 화면에서 동일하게 사용 가능하며, 수정 시 일괄 반영됩니다.</td>
+<td><strong>UI Template</strong></td>
+<td>A reusable layout shared across multiple screens.</td>
+<td>Changes apply globally to all linked instances.</td>
 </tr>
 <tr>
-<td><strong>UI 인스턴스</strong></td>
-<td>개별 화면에만 적용되는 독립 UI입니다.</td>
-<td>각 인스턴스가 독립적으로 동작하며, 템플릿 변경의 영향을 받지 않습니다.</td>
+<td><strong>UI Instance</strong></td>
+<td>A unique, standalone UI for a single scene.</td>
+<td>Independent; unaffected by template changes.</td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-<p>💡 <strong>예시:</strong><br />
-“선택지 UI”, “일시정지 메뉴”, “시작 화면” 등은 템플릿으로 저장하면 효율적입니다.<br />
-특정 이벤트 전용 팝업 등은 인스턴스로 추가하는 것이 좋습니다.</p>
+<p>💡 <strong>Example:</strong><br />
+Menus like “Choice UI,” “Pause Menu,” or “Start Screen” are ideal as templates.<br />
+Event-specific popups are better as instances.</p>
 </blockquote>
 <hr />
-<h2 id="3-ui">3. UI 편집기<a class="headerlink" href="#3-ui" title="Permanent link">&para;</a></h2>
+<h2 id="3-ui-editor">3. UI Editor<a class="headerlink" href="#3-ui-editor" title="Permanent link">&para;</a></h2>
 <p><img alt="ui-editor" src="../../images/ui-editor.png" /></p>
-<p>UI 편집기는 좌측의 컨트롤 목록에서 원하는 요소를 선택하여<br />
-중앙의 캔버스에 배치하고, 우측 속성 패널에서 세부 설정을 조정하는 방식으로 구성되어 있습니다.</p>
+<p>The UI Editor consists of a <strong>Control List</strong> on the left, a <strong>Canvas</strong> in the center,<br />
+and a <strong>Properties Panel</strong> on the right.<br />
+You can drag elements from the list to the canvas and adjust their properties on the right.</p>
 <hr />
-<h3 id="_1">🎛️ 상단 옵션<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<h3 id="top-options">🎛️ Top Options<a class="headerlink" href="#top-options" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
-<th>항목</th>
-<th>설명</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>이름(Name)</strong></td>
-<td>UI의 이름을 지정합니다.</td>
-</tr>
-<tr>
-<td><strong>멈춤 상태에서 실행</strong></td>
-<td>프로젝트가 일시정지 중일 때도 UI가 표시되고 동작합니다.</td>
-</tr>
-<tr>
-<td><strong>자막 아래에 표시</strong></td>
-<td>자막보다 뒤쪽 레이어에 UI를 배치합니다. (HUD, 배경용 UI에 사용됩니다.)</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="4">4. 컨트롤 목록<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th>컨트롤</th>
-<th>설명</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Panel</strong></td>
-<td>다른 컨트롤을 포함할 수 있는 기본 컨테이너입니다.</td>
-</tr>
-<tr>
-<td><strong>Button</strong></td>
-<td>클릭 이벤트를 처리합니다.</td>
-</tr>
-<tr>
-<td><strong>ComboBox</strong></td>
-<td>드롭다운 항목 중 하나를 선택할 수 있습니다.</td>
-</tr>
-<tr>
-<td><strong>Input</strong></td>
-<td>텍스트를 입력할 수 있는 필드입니다.</td>
-</tr>
-<tr>
-<td><strong>Label / OutlineLabel</strong></td>
-<td>텍스트를 표시하며, OutlineLabel은 외곽선이 있는 형태입니다.</td>
-</tr>
-<tr>
-<td><strong>Slider / ProgressBar</strong></td>
-<td>값의 범위를 조정하거나 진행 상태를 표시합니다.</td>
-</tr>
-<tr>
-<td><strong>Image</strong></td>
-<td>이미지 파일을 표시합니다.</td>
-</tr>
-<tr>
-<td><strong>CheckBox</strong></td>
-<td>ON/OFF 상태를 가지는 UI 요소입니다.</td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p>⚙️ <strong>참고:</strong><br />
-<code>Panel</code> 컨트롤만 자식 컨트롤을 포함할 수 있습니다.<br />
-다른 컨트롤은 모두 단일 요소로 동작합니다.</p>
-</blockquote>
-<hr />
-<h2 id="5">5. 속성 편집<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
-<p><img alt="ui-properties" src="../../images/ui-properties.png" /></p>
-<p>UI 컨트롤의 속성은 컨트롤 종류에 따라 다르지만,<br />
-아래와 같은 <strong>공통 속성</strong>은 대부분의 컨트롤이 공유합니다.</p>
-<table>
-<thead>
-<tr>
-<th>항목</th>
-<th>설명</th>
+<th>Item</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>Name</strong></td>
-<td>컨트롤의 고유 이름으로, 스크립트나 트리거에서 참조됩니다.</td>
+<td>Specifies the UI’s name.</td>
 </tr>
 <tr>
-<td><strong>Width / Height</strong></td>
-<td>컨트롤의 크기를 지정합니다.</td>
+<td><strong>Active During Pause</strong></td>
+<td>Keeps the UI visible and functional even when the project is paused.</td>
 </tr>
 <tr>
-<td><strong>Horizontal / Vertical Alignment</strong></td>
-<td>부모 컨테이너 기준으로 정렬 위치를 지정합니다.</td>
+<td><strong>Show Behind Subtitles</strong></td>
+<td>Places the UI layer behind subtitles (useful for HUDs or background UIs).</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="4-control-list">4. Control List<a class="headerlink" href="#4-control-list" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Panel</strong></td>
+<td>A container that can hold other controls.</td>
 </tr>
 <tr>
-<td><strong>Margin</strong></td>
-<td>부모 영역과의 여백을 설정합니다.</td>
+<td><strong>Button</strong></td>
+<td>Handles click events.</td>
 </tr>
 <tr>
-<td><strong>Foreground / Background Color</strong></td>
-<td>전경색과 배경색을 지정합니다.</td>
+<td><strong>ComboBox</strong></td>
+<td>Allows selection from dropdown items.</td>
 </tr>
 <tr>
-<td><strong>Opacity / Rotation / Scale</strong></td>
-<td>투명도, 회전 각도, 크기를 조정합니다.</td>
+<td><strong>Input</strong></td>
+<td>A text input field.</td>
 </tr>
 <tr>
-<td><strong>IsEnabled / IsVisible</strong></td>
-<td>활성화 및 표시 여부를 제어합니다.</td>
+<td><strong>Label / OutlineLabel</strong></td>
+<td>Displays text; OutlineLabel includes a border outline.</td>
+</tr>
+<tr>
+<td><strong>Slider / ProgressBar</strong></td>
+<td>Adjusts a value or displays progress.</td>
+</tr>
+<tr>
+<td><strong>Image</strong></td>
+<td>Displays an image file.</td>
+</tr>
+<tr>
+<td><strong>CheckBox</strong></td>
+<td>A toggleable ON/OFF control.</td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-<p>💡 <strong>참고:</strong><br />
-컨트롤에 따라 <strong>추가 속성</strong>이 존재할 수 있습니다.<br />
-예: <code>Text</code>, <code>FontSize</code>, <code>ImageSource</code>, <code>MaxValue</code> 등</p>
+<p>⚙️ <strong>Note:</strong><br />
+Only <code>Panel</code> controls can contain child elements.<br />
+All other controls function as single, standalone elements.</p>
 </blockquote>
 <hr />
-<h2 id="6">6. 스크립트 이벤트<a class="headerlink" href="#6" title="Permanent link">&para;</a></h2>
-<p><img alt="alt text" src="../../images/ui-script.png" /></p>
-<p>UI 컨트롤은 각자의 동작에 따라 <strong>이벤트를 트리거</strong>할 수 있으며,<br />
-오른쪽의 <code>Script</code> 탭을 통해 스크립트를 연결할 수 있습니다.</p>
-<hr />
-<h3 id="_2">🧩 공통 이벤트 (모든 컨트롤)<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<h2 id="5-property-editing">5. Property Editing<a class="headerlink" href="#5-property-editing" title="Permanent link">&para;</a></h2>
+<p><img alt="ui-properties" src="../../images/ui-properties.png" /></p>
+<p>While each control type has its own properties,<br />
+the following <strong>common properties</strong> are shared by most controls:</p>
 <table>
 <thead>
 <tr>
-<th>이벤트</th>
-<th>설명</th>
+<th>Property</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Name</strong></td>
+<td>Unique identifier for referencing in scripts or triggers.</td>
+</tr>
+<tr>
+<td><strong>Width / Height</strong></td>
+<td>Defines the size of the control.</td>
+</tr>
+<tr>
+<td><strong>Horizontal / Vertical Alignment</strong></td>
+<td>Sets the position relative to the parent container.</td>
+</tr>
+<tr>
+<td><strong>Margin</strong></td>
+<td>Specifies spacing from the parent container.</td>
+</tr>
+<tr>
+<td><strong>Foreground / Background Color</strong></td>
+<td>Defines colors for text and background.</td>
+</tr>
+<tr>
+<td><strong>Opacity / Rotation / Scale</strong></td>
+<td>Adjusts transparency, rotation angle, and scaling.</td>
+</tr>
+<tr>
+<td><strong>IsEnabled / IsVisible</strong></td>
+<td>Toggles activation and visibility.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>Note:</strong><br />
+Some controls have additional properties such as<br />
+<code>Text</code>, <code>FontSize</code>, <code>ImageSource</code>, <code>MaxValue</code>, etc.</p>
+</blockquote>
+<hr />
+<h2 id="6-script-events">6. Script Events<a class="headerlink" href="#6-script-events" title="Permanent link">&para;</a></h2>
+<p><img alt="ui-script" src="../../images/ui-script.png" /></p>
+<p>Each UI control can <strong>trigger events</strong> based on user interaction.<br />
+Events can be connected to scripts through the <code>Script</code> tab on the right.</p>
+<hr />
+<h3 id="common-events-all-controls">🧩 Common Events (All Controls)<a class="headerlink" href="#common-events-all-controls" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Event</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>MouseDown / MouseUp</strong></td>
-<td>마우스를 클릭하거나 해제할 때 실행됩니다.</td>
+<td>Fires when the mouse is pressed or released.</td>
 </tr>
 <tr>
 <td><strong>MouseEnter / MouseLeave</strong></td>
-<td>마우스가 영역에 진입하거나 이탈할 때 실행됩니다.</td>
+<td>Fires when the mouse enters or leaves the control area.</td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-<p>💡 <strong>특수 이벤트:</strong><br />
-메인 <code>Panel</code>은 <strong>Tick</strong> 이벤트를 가집니다.<br />
-해당 UI가 열려 있는 동안 매 프레임마다 호출되며,<br />
-실시간 업데이트나 애니메이션 제어에 사용할 수 있습니다.  </p>
+<p>💡 <strong>Special Event:</strong><br />
+The main <code>Panel</code> supports a <strong>Tick</strong> event —<br />
+executed every frame while the UI is open,<br />
+useful for real-time updates or animations.</p>
 </blockquote>
 <hr />
-<h3 id="_3">🎛️ 컨트롤별 고유 이벤트<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<h3 id="control-specific-events">🎛️ Control-Specific Events<a class="headerlink" href="#control-specific-events" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
-<th>컨트롤</th>
-<th>이벤트</th>
-<th>설명</th>
+<th>Control</th>
+<th>Event</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>Panel</strong></td>
 <td><code>Loaded</code></td>
-<td>판넬이 표시 될 때 실행됩니다.</td>
+<td>Triggered when the panel appears.</td>
 </tr>
 <tr>
 <td><strong>Panel</strong></td>
 <td><code>Unloaded</code></td>
-<td>판넬이 제거 될 때 실행됩니다.</td>
+<td>Triggered when the panel is closed.</td>
 </tr>
 <tr>
 <td><strong>Button</strong></td>
 <td><code>Click</code></td>
-<td>클릭 시 실행됩니다.</td>
+<td>Fired when clicked.</td>
 </tr>
 <tr>
 <td><strong>Input</strong></td>
 <td><code>TextChanged</code></td>
-<td>입력 텍스트가 변경될 때 실행됩니다.</td>
+<td>Fired when text changes.</td>
 </tr>
 <tr>
 <td><strong>Slider / ComboBox / CheckBox</strong></td>
 <td><code>ValueChanged</code></td>
-<td>값이 변경될 때 실행됩니다.</td>
+<td>Fired when the value changes.</td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-<p>💡 <strong>참고:</strong><br />
-각 이벤트는 별도의 스크립트를 연결할 수 있으며,<br />
-연결된 이벤트는 런타임에서 자동으로 실행됩니다.</p>
+<p>💡 <strong>Note:</strong><br />
+Each event can have an independent script assigned,<br />
+which executes automatically at runtime.</p>
 </blockquote>
 <hr />
-<h3 id="ui_1">💡 UI 스크립트 제어<a class="headerlink" href="#ui_1" title="Permanent link">&para;</a></h3>
-<p>UI 컨트롤은 스크립트를 통해 직접 접근하고 조작할 수도 있습니다.<br />
-스크립트 입력 시 <strong><code>현재 UI(CurrentUI)</code></strong> 라는 기본 변수가 자동으로 제공되어<br />
-현재 열려 있는 UI와 그 내부의 컨트롤에 쉽게 접근할 수 있습니다.</p>
+<h3 id="ui-script-control">💡 UI Script Control<a class="headerlink" href="#ui-script-control" title="Permanent link">&para;</a></h3>
+<p>UI elements can be directly accessed and manipulated through scripts.<br />
+A built-in variable <strong><code>CurrentUI</code></strong> is automatically provided,<br />
+allowing direct access to the current UI and its controls.</p>
 <p><img alt="ui-variable-control" src="../../images/ui-variable-control.png" /></p>
 <blockquote>
-<p>💡 <strong>예시:</strong><br />
-버튼 클릭 시 <code>CurrentUI | NewButton | FontSize</code> 값을 변경하여<br />
-UI 내 특정 버튼의 글자 크기를 실시간으로 조정할 수 있습니다.<br />
-이 방식을 이용하면 <strong>텍스트 변경, 색상 변경, 상태 갱신 등</strong><br />
-다양한 인터페이스 반응을 구현할 수 있습니다.</p>
+<p>💡 <strong>Example:</strong><br />
+When a button is clicked, change<br />
+<code>CurrentUI | NewButton | FontSize</code><br />
+to dynamically adjust the button’s text size.<br />
+This enables <strong>real-time UI reactions</strong> like text updates, color changes, and state transitions.</p>
 </blockquote>
-<p>또한 스크립트를 이용해 <strong>UI 템플릿을 직접 열거나 닫는 기능</strong>도 지원합니다.</p>
+<p>You can also <strong>open or close UI templates dynamically</strong> through scripts.</p>
 <p><img alt="ui-open-example" src="../../images/ui-open-example.png" /></p>
 <blockquote>
-<p>💡 <strong>예시:</strong><br />
-<code>UI "새 UI" 를 식별자 "TEST" 로 엽니다.</code><br />
-와 같은 스크립트를 통해 지정한 UI 템플릿을 동적으로 표시할 수 있습니다.<br />
-이를 활용하면 이벤트나 트리거를 통해<br />
-상황에 따라 UI를 자동으로 전환하거나 팝업을 띄우는 등의 구성이 가능합니다.</p>
+<p>💡 <strong>Example:</strong><br />
+<code>Open UI "New UI" with identifier "TEST"</code><br />
+dynamically displays a specified UI template.<br />
+This allows switching or triggering popups automatically<br />
+based on events or conditions.</p>
 </blockquote>
 <hr />
-<h2 id="7">7. 컨트롤 관리<a class="headerlink" href="#7" title="Permanent link">&para;</a></h2>
+<h2 id="7-control-management">7. Control Management<a class="headerlink" href="#7-control-management" title="Permanent link">&para;</a></h2>
 <p><img alt="ui-context-menu" src="../../images/ui-context-menu.png" /></p>
-<p>컨트롤을 우클릭하면 다음과 같은 관리 메뉴가 표시됩니다.</p>
+<p>Right-click a control to open its context menu:</p>
 <table>
 <thead>
 <tr>
-<th>메뉴</th>
-<th>설명</th>
+<th>Menu</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>잘라내기 / 복사 / 붙여넣기</strong></td>
-<td>컨트롤을 이동하거나 복제합니다.</td>
+<td><strong>Cut / Copy / Paste</strong></td>
+<td>Move or duplicate controls.</td>
 </tr>
 <tr>
-<td><strong>맨 앞으로 / 뒤로 보내기</strong></td>
-<td>겹쳐진 UI의 표시 순서를 조정합니다.</td>
+<td><strong>Bring to Front / Send to Back</strong></td>
+<td>Adjust the z-order of overlapping elements.</td>
 </tr>
 <tr>
-<td><strong>삭제 (Delete)</strong></td>
-<td>선택된 컨트롤을 제거합니다.</td>
+<td><strong>Delete (Del)</strong></td>
+<td>Removes the selected control.</td>
 </tr>
 </tbody>
 </table>
-<p>또한 오른쪽 상단의 <strong>콤보박스</strong>를 사용하면<br />
-캔버스에서 직접 클릭하기 어려운 컨트롤을 쉽게 선택할 수 있습니다.</p>
+<p>The top-right <strong>dropdown list</strong> lets you easily select elements<br />
+that are hard to click directly on the canvas.</p>
 <hr />
-<h2 id="8-panel">8. Panel과 레이아웃 시스템<a class="headerlink" href="#8-panel" title="Permanent link">&para;</a></h2>
-<p><code>Panel</code>은 UI의 루트 컨테이너로,<br />
-모든 자식 컨트롤의 <strong>배치 기준</strong>이 되는 핵심 요소입니다.</p>
+<h2 id="8-panel-and-layout-system">8. Panel and Layout System<a class="headerlink" href="#8-panel-and-layout-system" title="Permanent link">&para;</a></h2>
+<p>The <code>Panel</code> is the <strong>root container</strong> of the UI<br />
+and serves as the <strong>layout reference</strong> for all child elements.</p>
 <hr />
-<h3 id="wpf">🧱 WPF 레이아웃 구조<a class="headerlink" href="#wpf" title="Permanent link">&para;</a></h3>
-<p>UI의 배치는 <strong>WPF 레이아웃 시스템</strong>을 기반으로 동작합니다.<br />
-절대 좌표가 아닌 <strong>상대 정렬 및 여백(Margin)</strong> 으로 구성되어 있으며,<br />
-다양한 해상도에서도 일정한 위치와 비율을 유지할 수 있습니다.</p>
+<h3 id="wpf-layout-system">🧱 WPF Layout System<a class="headerlink" href="#wpf-layout-system" title="Permanent link">&para;</a></h3>
+<p>The UI layout is based on the <strong>WPF layout system</strong>,<br />
+which uses <strong>relative positioning and margins</strong> instead of fixed coordinates.<br />
+This ensures consistent positioning and scaling across different resolutions.</p>
 <table>
 <thead>
 <tr>
-<th>개념</th>
-<th>설명</th>
+<th>Concept</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>Alignment</strong></td>
-<td>부모 기준으로 좌/우/중앙 정렬을 설정합니다.</td>
+<td>Aligns elements (Left, Right, Center) relative to their parent.</td>
 </tr>
 <tr>
 <td><strong>Margin</strong></td>
-<td>부모 컨테이너와의 거리(여백)를 지정합니다.</td>
+<td>Defines spacing between the element and its parent container.</td>
 </tr>
 <tr>
 <td><strong>Z-Order</strong></td>
-<td>컨트롤의 표시 우선순위를 설정합니다.</td>
+<td>Controls rendering priority (front/back).</td>
 </tr>
 <tr>
 <td><strong>Relative Layout</strong></td>
-<td>해상도 비율에 따라 자동 조정되는 상대 배치 시스템입니다.</td>
+<td>Automatically scales according to screen resolution.</td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-<p>💡 <strong>참고 자료:</strong><br />
-- <a href="https://learn.microsoft.com/ko-kr/dotnet/desktop/wpf/advanced/layout?view=netframeworkdesktop-4.8">Microsoft Docs: WPF 레이아웃 개요</a><br />
-- <a href="https://learn.microsoft.com/ko-kr/dotnet/desktop/wpf/controls/panels-overview?view=netframeworkdesktop-4.8">WPF Panels 소개 (Grid, StackPanel, Canvas 등)</a></p>
-<p>⚙️ <strong>팁:</strong><br />
-처음 사용할 때는 <code>HorizontalAlignment</code>와 <code>VerticalAlignment</code>를<br />
-왼쪽/상단 기준으로 설정하고 <code>Margin</code>으로 위치를 조정하면 쉽게 익숙해질 수 있습니다.</p>
+<p>💡 <strong>Reference:</strong><br />
+- <a href="https://learn.microsoft.com/en-us/dotnet/desktop/wpf/advanced/layout?view=netframeworkdesktop-4.8">Microsoft Docs: WPF Layout Overview</a><br />
+- <a href="https://learn.microsoft.com/en-us/dotnet/desktop/wpf/controls/panels-overview?view=netframeworkdesktop-4.8">Introduction to WPF Panels (Grid, StackPanel, Canvas, etc.)</a></p>
+<p>⚙️ <strong>Tip:</strong><br />
+For beginners, set <code>HorizontalAlignment</code> and <code>VerticalAlignment</code><br />
+to “Left/Top” and use <code>Margin</code> for positioning — it’s simpler to learn.</p>
 </blockquote>
 <hr />
-<h2 id="9">9. 파일 구조<a class="headerlink" href="#9" title="Permanent link">&para;</a></h2>
+<h2 id="9-file-structure">9. File Structure<a class="headerlink" href="#9-file-structure" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>항목</th>
-<th>경로</th>
+<th>Item</th>
+<th>Path</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>UI 템플릿 데이터</strong></td>
+<td><strong>UI Template Data</strong></td>
 <td><code>Asset/UI/</code></td>
 </tr>
 <tr>
-<td><strong>리소스 (이미지 등)</strong></td>
+<td><strong>Resources (Images, etc.)</strong></td>
 <td><code>Asset/Image/</code></td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="10">10. 관련 문서<a class="headerlink" href="#10" title="Permanent link">&para;</a></h2>
+<h2 id="10-related-documents">10. Related Documents<a class="headerlink" href="#10-related-documents" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="../live2d/">Live2D 탭</a>  </li>
-<li><a href="../script/">스크립트 탭</a>  </li>
-<li><a href="../timeline/">타임라인 편집</a></li>
+<li><a href="../live2d/">Live2D Tab</a>  </li>
+<li><a href="../script/">Script Tab</a>  </li>
+<li><a href="../timeline/">Timeline Editing</a>  </li>
 </ul>
 
 
@@ -2608,7 +2615,7 @@ UI 내 특정 버튼의 글자 크기를 실시간으로 조정할 수 있습니
     
     
     <a href="https://www.patreon.com/VoiceScriptPlayer" target="_blank" rel="noopener" title="Patreon" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M490 153.8c-.1-65.4-51-119-110.7-138.3-74.2-24-172-20.5-242.9 12.9C50.6 68.9 23.6 157.7 22.6 246.2 21.8 319 29 510.6 137.2 512c80.3 1 92.3-102.5 129.5-152.3 26.4-35.5 60.5-45.5 102.4-55.9 72-17.8 121.1-74.7 121-150z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M490 153.8c-.1-65.4-51-119-110.7-138.3-74.2-24-172-20.5-242.9 12.9C50.6 68.9 23.6 157.7 22.6 246.2 21.8 319 29 510.6 137.2 512c80.3 1 92.3-102.5 129.5-152.3 26.4-35.5 60.5-45.5 102.4-55.9 72-17.8 121.1-74.7 121-150z"/></svg>
     </a>
   
 </div>
@@ -2625,7 +2632,7 @@ UI 내 특정 버튼의 글자 크기를 실시간으로 조정할 수 있습니
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>

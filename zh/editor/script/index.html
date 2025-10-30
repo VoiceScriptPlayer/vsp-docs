@@ -1,0 +1,3566 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for VoiceScriptPlayer">
+      
+      
+      
+        <link rel="canonical" href="https://VoiceScriptPlayer.github.io/vsp-docs/zh/editor/script/">
+      
+      
+        <link rel="prev" href="../ui/">
+      
+      
+        <link rel="next" href="../stroke/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>脚本 - VoiceScriptPlayer Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.84d31ad4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#script-tab" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="header.title">
+    <!-- 왼쪽: 로고 -->
+    <a href="https://VoiceScriptPlayer.github.io/vsp-docs/"
+       title="VoiceScriptPlayer Docs"
+       class="md-header__button md-logo"
+       aria-label="VoiceScriptPlayer Docs">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+
+    <!-- 햄버거 메뉴 (모바일용) -->
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+
+    <!-- 제목 -->
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">VoiceScriptPlayer Docs</span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">脚本</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 🌐 언어 전환 -->
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="选择当前语言">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../../editor/script/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../ja/editor/script/" hreflang="ja" class="md-select__link">
+              日本語
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="zh" class="md-select__link">
+              中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../ko/editor/script/" hreflang="ko" class="md-select__link">
+              한국어
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+
+    <!-- 🔍 검색창 복원 -->
+    <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- ❤️ Patreon 버튼 -->
+<a href="https://www.patreon.com/VoiceScriptPlayer"
+   title="Support on Patreon"
+   class="md-header__button md-icon"
+   target="_blank" rel="noopener"
+   style="display:flex;align-items:center;gap:6px;margin-left:6px;">
+  <img src="../../../images/PATREON_SYMBOL.ico" alt="Patreon"
+       width="22" height="22"
+       style="display:block;border-radius:4px;filter:var(--md-icon-filter);" />
+  <span style="font-size:0.9rem;font-weight:500;">Support on Patreon</span>
+</a>
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  主页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../getting-started/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  入门
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../creator-guide/" class="md-tabs__link">
+          
+  
+  
+  创作者指南
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../project/create/" class="md-tabs__link">
+          
+  
+  
+  项目
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../overview/" class="md-tabs__link">
+          
+  
+  
+  编辑器
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../playback/run/" class="md-tabs__link">
+          
+  
+  
+  播放
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../features/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  功能
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../device/tcode/" class="md-tabs__link">
+          
+  
+  
+  设备
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ai/ai/" class="md-tabs__link">
+          
+  
+  
+  AI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../troubleshooting/coeiroink/" class="md-tabs__link">
+          
+  
+  
+  故障排除
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../faq/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  常见问题
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../" title="VoiceScriptPlayer Docs" class="md-nav__button md-logo" aria-label="VoiceScriptPlayer Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    VoiceScriptPlayer Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    主页
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    入门
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    创作者指南
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            创作者指南
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../creator-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    示例与进阶
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            示例与进阶
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../creator/example-basic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    从基本模板开始
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../creator/example-ui-script/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    练习链接UI与脚本
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../creator/example-logic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    使用条件和变量创建交互
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../creator/example-stroke/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    动作与设备应用
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    项目
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            项目
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/create/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    创建新项目
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/manage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    加载与保存
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    编辑器
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            编辑器
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../timeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    时间轴
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sound/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    声音
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    视频
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../live2d/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Live2D
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ui/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    UI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    脚本
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    脚本
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 基本界面
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 脚本编辑器
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 脚本编辑器">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧭 顶部面板
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 局部变量
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-condition" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 条件块（Condition）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 条件块（Condition）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ 基本概念
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 示例
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-action" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 动作块（Action）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 动作块（Action）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ 基本概念
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 示例
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 分支块（Branch）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 循环块（Loop）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. 条件与动作的组合
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. 全局脚本与实例脚本
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. 脚本执行模式
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. 条件列表
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. 条件列表">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      🖱️ 键盘输入
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🖱️ 键盘输入">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#keydown" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 KeyDown
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keyup" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 KeyUp
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keypressed" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 KeyPressed
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      🗣️ 语音 / 字幕
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🗣️ 语音 / 字幕">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#speechrecognition" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 SpeechRecognition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subtitlerecognition" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 SubtitleRecognition
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 状态 / 变量
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 状态 / 变量">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variablecomparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 VariableComparison
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#currenttrack" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 CurrentTrack
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cumaction" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 CumAction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reststatus" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 RestStatus
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eventstatus" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 EventStatus
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. 动作列表
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. 动作列表">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⏱️ 时间控制
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⏱️ 时间控制">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#waittime" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 WaitTime
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔊 声音控制
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔊 声音控制">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#playsound" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 PlaySound
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      📦 变量 / 轨道控制
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📦 变量 / 轨道控制">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setvariable" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 SetVariable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#movetrack" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 MoveTrack
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seektime" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 SeekTime
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      💾 数据管理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💾 数据管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#save-load" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Save / Load
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#close" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Close
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 UI 控制
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧩 UI 控制">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#openui-closeui" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 OpenUI / CloseUI
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔁 脚本控制
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔁 脚本控制">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#triggerexec-returnscript" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 TriggerExec / ReturnScript
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      💦 动作 / 事件控制
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💦 动作 / 事件控制">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cumactionexec" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 CumActionExec
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resttime" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 RestTime
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strokeexec" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 StrokeExec
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#live2d-spine" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎬 Live2D / Spine 控制
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎬 Live2D / Spine 控制">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#spineplayanimation" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 SpinePlayAnimation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spinesetskin" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 SpineSetSkin
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. 文件结构
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. 相关文档
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stroke/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    动作
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../special-event/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    高潮 (特殊事件)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    资源管理
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../runtime-helper/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    运行时助手
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    项目设置
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    播放
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            播放
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../playback/run/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    运行
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../playback/debug/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    调试与日志
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    功能
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    设备
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            设备
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../device/tcode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TCode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../device/intiface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Intiface
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../device/intiface_advanced/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Intiface 进阶
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    AI
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            AI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/speechRecognition/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    语音识别
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/whisper/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Whisper
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/elevenlabs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ElevenLabs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/coeiroink/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    COEIROINK
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/hailuo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Hailuo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/hailuo-subscription/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Hailuo 订阅指南
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/libretranslate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    LibreTranslate
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/deepl/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DeepL
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/deepl-subscription/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DeepL 订阅指南
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    故障排除
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            故障排除
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/coeiroink/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    COEIROINK
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/hailuo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Hailuo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    常见问题
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 基本界面
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 脚本编辑器
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 脚本编辑器">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧭 顶部面板
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 局部变量
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-condition" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 条件块（Condition）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 条件块（Condition）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ 基本概念
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 示例
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-action" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 动作块（Action）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 动作块（Action）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ 基本概念
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 示例
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-branch" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 分支块（Branch）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-loop" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. 循环块（Loop）
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. 条件与动作的组合
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. 全局脚本与实例脚本
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. 脚本执行模式
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. 条件列表
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="10. 条件列表">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      🖱️ 键盘输入
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🖱️ 键盘输入">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#keydown" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 KeyDown
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keyup" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 KeyUp
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keypressed" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 KeyPressed
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      🗣️ 语音 / 字幕
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🗣️ 语音 / 字幕">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#speechrecognition" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 SpeechRecognition
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subtitlerecognition" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 SubtitleRecognition
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 状态 / 变量
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📊 状态 / 变量">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#variablecomparison" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 VariableComparison
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#currenttrack" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 CurrentTrack
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cumaction" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 CumAction
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reststatus" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 RestStatus
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eventstatus" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 EventStatus
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. 动作列表
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="11. 动作列表">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⏱️ 时间控制
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⏱️ 时间控制">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#waittime" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 WaitTime
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔊 声音控制
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔊 声音控制">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#playsound" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 PlaySound
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      📦 变量 / 轨道控制
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="📦 变量 / 轨道控制">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setvariable" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 SetVariable
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#movetrack" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 MoveTrack
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#seektime" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 SeekTime
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      💾 数据管理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💾 数据管理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#save-load" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Save / Load
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#close" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 Close
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ui" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 UI 控制
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🧩 UI 控制">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#openui-closeui" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 OpenUI / CloseUI
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔁 脚本控制
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔁 脚本控制">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#triggerexec-returnscript" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 TriggerExec / ReturnScript
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      💦 动作 / 事件控制
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💦 动作 / 事件控制">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cumactionexec" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 CumActionExec
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resttime" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 RestTime
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#strokeexec" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 StrokeExec
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#live2d-spine" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎬 Live2D / Spine 控制
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎬 Live2D / Spine 控制">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#spineplayanimation" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 SpinePlayAnimation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#spinesetskin" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔹 SpineSetSkin
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. 文件结构
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. 相关文档
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="script-tab">脚本标签（Script Tab）<a class="headerlink" href="#script-tab" title="Permanent link">&para;</a></h1>
+<p><strong>脚本标签</strong> 是 <strong>VoiceScriptPlayer 的核心逻辑系统</strong>，<br />
+用于通过 <strong>条件（Condition）与动作（Action）</strong> 控制项目中的所有事件、交互、动画、UI 与声音等。</p>
+<hr />
+<h2 id="1">1. 基本界面<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<p><img alt="script-main" src="../../images/script-main.png" /></p>
+<table>
+<thead>
+<tr>
+<th>组件</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>① 拖拽添加脚本</strong></td>
+<td>创建新的实例脚本并添加到项目中。</td>
+</tr>
+<tr>
+<td><strong>② 全局脚本</strong></td>
+<td>管理始终加载的全局脚本。</td>
+</tr>
+<tr>
+<td><strong>③ 导入</strong></td>
+<td>载入现有的脚本模板。</td>
+</tr>
+<tr>
+<td><strong>④ 新建</strong></td>
+<td>创建新的脚本模板。</td>
+</tr>
+<tr>
+<td><strong>⑤ 编辑 ✏️</strong></td>
+<td>在编辑器中打开选定的脚本。</td>
+</tr>
+<tr>
+<td><strong>⑥ 删除 🗑️</strong></td>
+<td>从列表中移除所选脚本。</td>
+</tr>
+<tr>
+<td><strong>⑦ 打开文件夹 📂</strong></td>
+<td>直接打开 <code>Asset/Trigger/</code> 文件夹。</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>提示：</strong><br />
+全局脚本默认始终存在，但可以通过“仅在被调用时执行”选项将其作为模板使用。</p>
+</blockquote>
+<hr />
+<h2 id="2">2. 脚本编辑器<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
+<p><img alt="script-editor" src="../../images/script-editor.png" /></p>
+<p>脚本编辑器允许你自由组合 <strong>条件块（Condition）</strong> 与 <strong>动作块（Action）</strong>，<br />
+以可视化方式构建复杂逻辑。</p>
+<hr />
+<h3 id="_1">🧭 顶部面板<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>名称</strong></td>
+<td>指定脚本的唯一名称。</td>
+</tr>
+<tr>
+<td><strong>描述</strong></td>
+<td>记录脚本的用途或功能说明。</td>
+</tr>
+<tr>
+<td><strong>单次执行</strong></td>
+<td>仅执行一次，不会再次触发。</td>
+</tr>
+<tr>
+<td><strong>暂停时执行</strong></td>
+<td>即使在暂停状态下也可执行（用于菜单、设置界面等）。</td>
+</tr>
+<tr>
+<td><strong>仅在被调用时执行</strong></td>
+<td>仅在被外部触发或调用时执行。</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="_2">🧩 局部变量<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>功能</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>添加（＋）</strong></td>
+<td>在脚本中创建局部变量。</td>
+</tr>
+<tr>
+<td><strong>编辑（✏️）</strong></td>
+<td>修改变量名称或初始值。</td>
+</tr>
+<tr>
+<td><strong>删除（🗑️）</strong></td>
+<td>删除选中的变量。</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>注意：</strong><br />
+局部变量仅在当前脚本中有效，不会与全局变量冲突。</p>
+</blockquote>
+<hr />
+<h2 id="3-condition">3. 条件块（Condition）<a class="headerlink" href="#3-condition" title="Permanent link">&para;</a></h2>
+<p>条件块决定脚本 <strong>是否执行</strong>。<br />
+你可以组合多个条件来构建 <strong>精确的触发逻辑</strong>。</p>
+<hr />
+<h3 id="_3">⚙️ 基本概念<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li>当所有条件为 <strong>真（True）</strong> 时，执行相连的 <strong>动作块（Action）</strong>。  </li>
+<li>多个条件时，默认以 <strong>AND（并且）</strong> 逻辑计算。  </li>
+<li>使用 <strong>分支块（Branch）</strong> 可根据条件结果设置不同执行路径。  </li>
+<li>详情见 <a href="#10">条件列表</a>。</li>
+</ul>
+<hr />
+<h3 id="_4">🧩 示例<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>场景</th>
+<th>条件示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>键盘输入</td>
+<td>“当按下 [Space] 键时”</td>
+</tr>
+<tr>
+<td>语音识别</td>
+<td>“当识别到语音 ‘开始’ 时”</td>
+</tr>
+<tr>
+<td>变量判断</td>
+<td>“当变量 [Score] ≥ 100 时”</td>
+</tr>
+<tr>
+<td>字幕触发</td>
+<td>“当字幕包含 ‘Hello’ 时”</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>提示：</strong><br />
+条件可与 UI、声音、Live2D 等资源联动，例如：<br />
+“当前轨道为 1 且字幕包含指定文本” 等复合条件。</p>
+</blockquote>
+<hr />
+<h2 id="4-action">4. 动作块（Action）<a class="headerlink" href="#4-action" title="Permanent link">&para;</a></h2>
+<p>动作块定义 <strong>条件满足后执行的操作</strong>，<br />
+例如播放声音、修改变量、切换轨道、打开 UI 等。</p>
+<hr />
+<h3 id="_5">⚙️ 基本概念<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li>动作按 <strong>自上而下</strong> 顺序执行。  </li>
+<li>可插入 <strong>等待（Wait）</strong> 动作以控制时间。  </li>
+<li>结合循环可实现 <strong>持续逻辑</strong>。  </li>
+<li>详情见 <a href="#11">动作列表</a>。</li>
+</ul>
+<hr />
+<h3 id="_6">🧩 示例<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>场景</th>
+<th>动作示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>播放声音</td>
+<td>“播放声音 [Voice01]。”</td>
+</tr>
+<tr>
+<td>切换轨道</td>
+<td>“切换到轨道 [NextScene]。”</td>
+</tr>
+<tr>
+<td>修改变量</td>
+<td>“变量 [Volume] 增加 10。”</td>
+</tr>
+<tr>
+<td>打开 UI</td>
+<td>“打开 UI [OptionMenu]，标识符为 [Main]。”</td>
+</tr>
+<tr>
+<td>控制 Live2D</td>
+<td>“在 [Scene01] 中播放动画 [smile]。”</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>说明：</strong><br />
+动作也可基于时间执行，例如：<br />
+“3 秒内增加变量”、“2 秒内渐变动画”等。</p>
+</blockquote>
+<hr />
+<h2 id="5-branch">5. 分支块（Branch）<a class="headerlink" href="#5-branch" title="Permanent link">&para;</a></h2>
+<p>分支块用于区分 <strong>条件为真</strong> 与 <strong>条件为假</strong> 时的执行逻辑。</p>
+<table>
+<thead>
+<tr>
+<th>结构</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>条件成立</strong></td>
+<td>当条件为 True 时执行。</td>
+</tr>
+<tr>
+<td><strong>条件不成立</strong></td>
+<td>当条件为 False 时执行。</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 可嵌套多个分支以构建复杂事件逻辑。</p>
+</blockquote>
+<hr />
+<h2 id="6-loop">6. 循环块（Loop）<a class="headerlink" href="#6-loop" title="Permanent link">&para;</a></h2>
+<p>循环块在条件为真时持续执行指定动作。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>循环条件</strong></td>
+<td>根据变量或状态判断是否继续循环。</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 常用于“按键持续时重复动作”或“等待字幕出现”等场景。</p>
+</blockquote>
+<hr />
+<h2 id="7">7. 条件与动作的组合<a class="headerlink" href="#7" title="Permanent link">&para;</a></h2>
+<p><img alt="script-logic" src="../../images/script-logic.png" /></p>
+<p>脚本由多个条件与动作组合而成。<br />
+可拖拽调整顺序，并通过顶部图标实现复制、剪切或移动。</p>
+<table>
+<thead>
+<tr>
+<th>图标</th>
+<th>功能</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>➕</td>
+<td>新增条件或动作块</td>
+</tr>
+<tr>
+<td>🔀</td>
+<td>添加分支（If / Else）</td>
+</tr>
+<tr>
+<td>🔁</td>
+<td>添加循环</td>
+</tr>
+<tr>
+<td>✏️</td>
+<td>编辑选定块</td>
+</tr>
+<tr>
+<td>✂️</td>
+<td>剪切</td>
+</tr>
+<tr>
+<td>📋</td>
+<td>复制 / 粘贴</td>
+</tr>
+<tr>
+<td>🗑️</td>
+<td>删除</td>
+</tr>
+<tr>
+<td>⬆️ / ⬇️</td>
+<td>调整顺序</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚙️ <strong>提示：</strong><br />
+脚本结构可随时修改，且支持实时调试。</p>
+</blockquote>
+<hr />
+<h2 id="8">8. 全局脚本与实例脚本<a class="headerlink" href="#8" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>全局脚本</strong></td>
+<td>始终加载并在项目范围内生效。</td>
+</tr>
+<tr>
+<td><strong>实例脚本</strong></td>
+<td>绑定到特定轨道、UI 或事件上执行。</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>示例：</strong><br />
+- 全局脚本 → HUD 更新、计时事件<br />
+- 实例脚本 → 特定分支场景逻辑</p>
+</blockquote>
+<hr />
+<h2 id="9">9. 脚本执行模式<a class="headerlink" href="#9" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>单次执行</strong></td>
+<td>条件满足后仅执行一次。</td>
+</tr>
+<tr>
+<td><strong>仅在被调用时执行</strong></td>
+<td>需由其他脚本或触发器调用。</td>
+</tr>
+<tr>
+<td><strong>暂停时执行</strong></td>
+<td>暂停状态下也可运行（如菜单）。</td>
+</tr>
+<tr>
+<td><strong>无限循环</strong></td>
+<td>条件为真时持续执行。</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="10">10. 条件列表<a class="headerlink" href="#10" title="Permanent link">&para;</a></h2>
+<p>脚本执行的触发条件定义如下。</p>
+<hr />
+<h3 id="_7">🖱️ 键盘输入<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<h4 id="keydown">🔹 KeyDown<a class="headerlink" href="#keydown" title="Permanent link">&para;</a></h4>
+<p>当按下 <strong>[Key]</strong> 时触发。<br />
+- <strong>Key</strong>：键名（如 <code>A</code>、<code>Space</code>、<code>Enter</code>）</p>
+<h4 id="keyup">🔹 KeyUp<a class="headerlink" href="#keyup" title="Permanent link">&para;</a></h4>
+<p>当 <strong>[Key]</strong> 释放时触发。  </p>
+<h4 id="keypressed">🔹 KeyPressed<a class="headerlink" href="#keypressed" title="Permanent link">&para;</a></h4>
+<p>检测到按键按下（Down → Up）时触发。</p>
+<hr />
+<h3 id="_8">🗣️ 语音 / 字幕<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<h4 id="speechrecognition">🔹 SpeechRecognition<a class="headerlink" href="#speechrecognition" title="Permanent link">&para;</a></h4>
+<p>当识别到语音 <strong>[Text]</strong> 且音量 ≥ <strong>[Volume]</strong>、精度 ≥ <strong>[Precision]</strong> 时触发。<br />
+- <strong>Volume</strong>：最小音量 (0~1)<br />
+- <strong>Precision</strong>：识别精度 (0~1)</p>
+<h4 id="subtitlerecognition">🔹 SubtitleRecognition<a class="headerlink" href="#subtitlerecognition" title="Permanent link">&para;</a></h4>
+<p>当字幕包含 <strong>[Text]</strong> 时触发。</p>
+<hr />
+<h3 id="_9">📊 状态 / 变量<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<h4 id="variablecomparison">🔹 VariableComparison<a class="headerlink" href="#variablecomparison" title="Permanent link">&para;</a></h4>
+<p>当变量 <strong>[Variable]</strong> 与 <strong>[Value]</strong> 满足 <strong>[Comparison]</strong> 条件时。<br />
+- <strong>Comparison</strong>：<code>≥</code>、<code>≤</code>、<code>&gt;</code>、<code>&lt;</code>、<code>==</code>、<code>!=</code></p>
+<h4 id="currenttrack">🔹 CurrentTrack<a class="headerlink" href="#currenttrack" title="Permanent link">&para;</a></h4>
+<p>当前轨道为 <strong>[Track]</strong> 时触发。  </p>
+<h4 id="cumaction">🔹 CumAction<a class="headerlink" href="#cumaction" title="Permanent link">&para;</a></h4>
+<p>当发生特定射精动作 <strong>[CumType]</strong> 时触发。  </p>
+<h4 id="reststatus">🔹 RestStatus<a class="headerlink" href="#reststatus" title="Permanent link">&para;</a></h4>
+<p>休息状态为 <strong>[Status]</strong> 时触发。  </p>
+<h4 id="eventstatus">🔹 EventStatus<a class="headerlink" href="#eventstatus" title="Permanent link">&para;</a></h4>
+<p>当事件 <strong>[EventType]</strong> 状态为 <strong>[EventStatus]</strong> 时触发。  </p>
+<hr />
+<h2 id="11">11. 动作列表<a class="headerlink" href="#11" title="Permanent link">&para;</a></h2>
+<p>定义条件满足时执行的操作。</p>
+<hr />
+<h3 id="_10">⏱️ 时间控制<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<h4 id="waittime">🔹 WaitTime<a class="headerlink" href="#waittime" title="Permanent link">&para;</a></h4>
+<p>等待 <strong>[Seconds]</strong> 秒。  </p>
+<hr />
+<h3 id="_11">🔊 声音控制<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<h4 id="playsound">🔹 PlaySound<a class="headerlink" href="#playsound" title="Permanent link">&para;</a></h4>
+<p>播放声音 <strong>[Sound]</strong>，左右声道音量分别为 <strong>[LeftVolume]</strong>、<strong>[RightVolume]</strong>。  </p>
+<hr />
+<h3 id="_12">📦 变量 / 轨道控制<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<h4 id="setvariable">🔹 SetVariable<a class="headerlink" href="#setvariable" title="Permanent link">&para;</a></h4>
+<p>修改变量 <strong>[Variable]</strong> 的值，方式为 <strong>[Modify]</strong>，持续 <strong>[Seconds]</strong> 秒。  </p>
+<h4 id="movetrack">🔹 MoveTrack<a class="headerlink" href="#movetrack" title="Permanent link">&para;</a></h4>
+<p>切换到轨道 <strong>[Track]</strong>。  </p>
+<h4 id="seektime">🔹 SeekTime<a class="headerlink" href="#seektime" title="Permanent link">&para;</a></h4>
+<p>将轨道时间跳转到 <strong>[Seconds]</strong> 秒。  </p>
+<hr />
+<h3 id="_13">💾 数据管理<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<h4 id="save-load">🔹 Save / Load<a class="headerlink" href="#save-load" title="Permanent link">&para;</a></h4>
+<p>保存或加载到 <strong>Slot:[Slot]</strong>。  </p>
+<h4 id="close">🔹 Close<a class="headerlink" href="#close" title="Permanent link">&para;</a></h4>
+<p>关闭程序。  </p>
+<hr />
+<h3 id="ui">🧩 UI 控制<a class="headerlink" href="#ui" title="Permanent link">&para;</a></h3>
+<h4 id="openui-closeui">🔹 OpenUI / CloseUI<a class="headerlink" href="#openui-closeui" title="Permanent link">&para;</a></h4>
+<p>打开或关闭 UI <strong>[UI]</strong>，标识符为 <strong>[Text]</strong>。  </p>
+<hr />
+<h3 id="_14">🔁 脚本控制<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<h4 id="triggerexec-returnscript">🔹 TriggerExec / ReturnScript<a class="headerlink" href="#triggerexec-returnscript" title="Permanent link">&para;</a></h4>
+<p>执行或返回脚本 <strong>[Trigger]</strong>。  </p>
+<hr />
+<h3 id="_15">💦 动作 / 事件控制<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<h4 id="cumactionexec">🔹 CumActionExec<a class="headerlink" href="#cumactionexec" title="Permanent link">&para;</a></h4>
+<p>强制触发射精动作 <strong>[CumType]</strong>。  </p>
+<h4 id="resttime">🔹 RestTime<a class="headerlink" href="#resttime" title="Permanent link">&para;</a></h4>
+<p>休息 <strong>[Seconds]</strong> 秒。  </p>
+<h4 id="strokeexec">🔹 StrokeExec<a class="headerlink" href="#strokeexec" title="Permanent link">&para;</a></h4>
+<p>执行 <strong>[Stroke]</strong> 持续 <strong>[Seconds]</strong> 秒。  </p>
+<hr />
+<h3 id="live2d-spine">🎬 Live2D / Spine 控制<a class="headerlink" href="#live2d-spine" title="Permanent link">&para;</a></h3>
+<h4 id="spineplayanimation">🔹 SpinePlayAnimation<a class="headerlink" href="#spineplayanimation" title="Permanent link">&para;</a></h4>
+<p>在 Live2D <strong>[Live2D]</strong> 的 Spine 模型 <strong>[Model]</strong> 上播放动画 <strong>[Animation]</strong>。  </p>
+<h4 id="spinesetskin">🔹 SpineSetSkin<a class="headerlink" href="#spinesetskin" title="Permanent link">&para;</a></h4>
+<p>设置 Spine 模型 <strong>[Model]</strong> 的皮肤为 <strong>[Skin]</strong>。  </p>
+<hr />
+<blockquote>
+<p>⚙️ <strong>说明：</strong><br />
+所有条件与动作均以可视化积木形式呈现。</p>
+</blockquote>
+<hr />
+<h2 id="12">12. 文件结构<a class="headerlink" href="#12" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>路径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>全局脚本</strong></td>
+<td><code>Asset/Trigger/</code></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ <strong>注意：</strong><br />
+脚本必须保存在项目内部，不能引用外部文件。</p>
+</blockquote>
+<hr />
+<h2 id="14">14. 相关文档<a class="headerlink" href="#14" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../ui/">UI 标签</a>  </li>
+<li><a href="../live2d/">Live2D 标签</a>  </li>
+<li><a href="../timeline/">时间线编辑</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://www.patreon.com/VoiceScriptPlayer" target="_blank" rel="noopener" title="Patreon" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M490 153.8c-.1-65.4-51-119-110.7-138.3-74.2-24-172-20.5-242.9 12.9C50.6 68.9 23.6 157.7 22.6 246.2 21.8 319 29 510.6 137.2 512c80.3 1 92.3-102.5 129.5-152.3 26.4-35.5 60.5-45.5 102.4-55.9 72-17.8 121.1-74.7 121-150z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.sections", "search.suggest", "search.highlight"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

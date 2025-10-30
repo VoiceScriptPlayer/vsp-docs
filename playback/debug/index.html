@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="ko" class="no-js">
+<html lang="en" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -20,15 +20,15 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
     
     
       
-        <title>디버그 & 로그 - VoiceScriptPlayer Docs</title>
+        <title>Debug & Log - VoiceScriptPlayer Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.2a3383ac.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
       
       
 
@@ -67,7 +67,7 @@
       
         
         <a href="#debug-log" class="md-skip">
-          콘텐츠로 이동
+          Skip to content
         </a>
       
     </div>
@@ -101,7 +101,7 @@
           <span class="md-ellipsis">VoiceScriptPlayer Docs</span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
-          <span class="md-ellipsis">디버그 & 로그</span>
+          <span class="md-ellipsis">Debug & Log</span>
         </div>
       </div>
     </div>
@@ -111,20 +111,14 @@
       <div class="md-header__option">
   <div class="md-select">
     
-    <button class="md-header__button md-icon" aria-label="언어설정">
+    <button class="md-header__button md-icon" aria-label="Select language">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
     </button>
     <div class="md-select__inner">
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="./" hreflang="ko" class="md-select__link">
-              한국어
-            </a>
-          </li>
-        
-          <li class="md-select__item">
-            <a href="../../en/playback/debug/" hreflang="en" class="md-select__link">
+            <a href="./" hreflang="en" class="md-select__link">
               English
             </a>
           </li>
@@ -132,6 +126,18 @@
           <li class="md-select__item">
             <a href="../../ja/playback/debug/" hreflang="ja" class="md-select__link">
               日本語
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../zh/playback/debug/" hreflang="zh" class="md-select__link">
+              中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../ko/playback/debug/" hreflang="ko" class="md-select__link">
+              한국어
             </a>
           </li>
         
@@ -146,16 +152,16 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="검색">
+      <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
@@ -168,7 +174,7 @@
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            검색 초기화
+            Initializing search
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -197,7 +203,7 @@
         
           
             
-<nav class="md-tabs" aria-label="탭" data-md-component="tabs">
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
   <div class="md-grid">
     <ul class="md-tabs__list">
       
@@ -439,7 +445,7 @@
   
 
 
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="VoiceScriptPlayer Docs" class="md-nav__button md-logo" aria-label="VoiceScriptPlayer Docs" data-md-component="logo">
       
@@ -551,7 +557,7 @@
   
   
   <span class="md-ellipsis">
-    개요
+    Overview
     
   </span>
   
@@ -590,7 +596,7 @@
   
   
   <span class="md-ellipsis">
-    예제 & 심화
+    Examples & Advanced
     
   </span>
   
@@ -601,7 +607,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
-            예제 & 심화
+            Examples & Advanced
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -617,7 +623,7 @@
   
   
   <span class="md-ellipsis">
-    기본 템플릿으로 시작하기
+    Start with a Basic Template
     
   </span>
   
@@ -640,7 +646,7 @@
   
   
   <span class="md-ellipsis">
-    UI와 스크립트 연동 실습
+    Practice Linking UI and Script
     
   </span>
   
@@ -663,7 +669,7 @@
   
   
   <span class="md-ellipsis">
-    조건문과 변수로 인터랙션 만들기
+    Create Interaction with Conditions and Variables
     
   </span>
   
@@ -686,7 +692,7 @@
   
   
   <span class="md-ellipsis">
-    Stroke & Device 응용
+    Stroke & Device Applications
     
   </span>
   
@@ -767,7 +773,7 @@
   
   
   <span class="md-ellipsis">
-    새 프로젝트 만들기
+    Create New Project
     
   </span>
   
@@ -790,7 +796,7 @@
   
   
   <span class="md-ellipsis">
-    불러오기 & 저장
+    Load & Save
     
   </span>
   
@@ -863,7 +869,7 @@
   
   
   <span class="md-ellipsis">
-    개요
+    Overview
     
   </span>
   
@@ -886,7 +892,7 @@
   
   
   <span class="md-ellipsis">
-    타임라인
+    Timeline
     
   </span>
   
@@ -909,7 +915,7 @@
   
   
   <span class="md-ellipsis">
-    사운드
+    Sound
     
   </span>
   
@@ -932,7 +938,7 @@
   
   
   <span class="md-ellipsis">
-    비디오
+    Video
     
   </span>
   
@@ -1001,7 +1007,7 @@
   
   
   <span class="md-ellipsis">
-    스크립트
+    Script
     
   </span>
   
@@ -1024,7 +1030,7 @@
   
   
   <span class="md-ellipsis">
-    스트로크
+    Stroke
     
   </span>
   
@@ -1047,7 +1053,7 @@
   
   
   <span class="md-ellipsis">
-    클라이맥스
+    Climax
     
   </span>
   
@@ -1070,7 +1076,7 @@
   
   
   <span class="md-ellipsis">
-    리소스 관리
+    Resource Management
     
   </span>
   
@@ -1093,7 +1099,7 @@
   
   
   <span class="md-ellipsis">
-    런타임 도우미
+    Runtime Helper
     
   </span>
   
@@ -1116,7 +1122,7 @@
   
   
   <span class="md-ellipsis">
-    프로젝트 설정
+    Project Settings
     
   </span>
   
@@ -1194,7 +1200,7 @@
   
   
   <span class="md-ellipsis">
-    실행하기
+    Run
     
   </span>
   
@@ -1226,7 +1232,7 @@
   
   
   <span class="md-ellipsis">
-    디버그 & 로그
+    Debug & Log
     
   </span>
   
@@ -1239,7 +1245,7 @@
   
   
   <span class="md-ellipsis">
-    디버그 & 로그
+    Debug & Log
     
   </span>
   
@@ -1248,7 +1254,7 @@
       
         
 
-<nav class="md-nav md-nav--secondary" aria-label="목차">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -1257,50 +1263,50 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      목차
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#1-log-file-location" class="md-nav__link">
     <span class="md-ellipsis">
-      1. 로그 파일 위치
+      1. Log File Location
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#2-log-file-format" class="md-nav__link">
     <span class="md-ellipsis">
-      2. 로그 파일 형식
+      2. Log File Format
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#3-log-categories" class="md-nav__link">
     <span class="md-ellipsis">
-      3. 로그 카테고리
+      3. Log Categories
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
+  <a href="#4-log-structure-example" class="md-nav__link">
     <span class="md-ellipsis">
-      4. 로그 구조 예시
+      4. Log Structure Example
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
+  <a href="#5-how-to-read-logs" class="md-nav__link">
     <span class="md-ellipsis">
-      5. 로그 해석 방법
+      5. How to Read Logs
     </span>
   </a>
   
@@ -1309,34 +1315,34 @@
         <li class="md-nav__item">
   <a href="#6-playback-halt" class="md-nav__link">
     <span class="md-ellipsis">
-      6. 플레이 중단 (Playback Halt)
+      6. Playback Halt
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#7" class="md-nav__link">
+  <a href="#7-reporting-issues" class="md-nav__link">
     <span class="md-ellipsis">
-      7. 문제 발생 시 안내
+      7. Reporting Issues
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#8" class="md-nav__link">
+  <a href="#8-debugging-tips" class="md-nav__link">
     <span class="md-ellipsis">
-      8. 디버그 활용 팁
+      8. Debugging Tips
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#9" class="md-nav__link">
+  <a href="#9-related-documents" class="md-nav__link">
     <span class="md-ellipsis">
-      9. 관련 문서
+      9. Related Documents
     </span>
   </a>
   
@@ -1481,7 +1487,7 @@
   
   
   <span class="md-ellipsis">
-    Intiface 고급
+    Intiface Advanced
     
   </span>
   
@@ -1554,7 +1560,7 @@
   
   
   <span class="md-ellipsis">
-    개요
+    Overview
     
   </span>
   
@@ -1692,7 +1698,7 @@
   
   
   <span class="md-ellipsis">
-    Hailuo 구독 가이드
+    Hailuo Subscription Guide
     
   </span>
   
@@ -1761,7 +1767,7 @@
   
   
   <span class="md-ellipsis">
-    DeepL 구독 가이드
+    DeepL Subscription Guide
     
   </span>
   
@@ -1910,7 +1916,7 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="목차">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -1919,50 +1925,50 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      목차
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#1-log-file-location" class="md-nav__link">
     <span class="md-ellipsis">
-      1. 로그 파일 위치
+      1. Log File Location
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
+  <a href="#2-log-file-format" class="md-nav__link">
     <span class="md-ellipsis">
-      2. 로그 파일 형식
+      2. Log File Format
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#3-log-categories" class="md-nav__link">
     <span class="md-ellipsis">
-      3. 로그 카테고리
+      3. Log Categories
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
+  <a href="#4-log-structure-example" class="md-nav__link">
     <span class="md-ellipsis">
-      4. 로그 구조 예시
+      4. Log Structure Example
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
+  <a href="#5-how-to-read-logs" class="md-nav__link">
     <span class="md-ellipsis">
-      5. 로그 해석 방법
+      5. How to Read Logs
     </span>
   </a>
   
@@ -1971,34 +1977,34 @@
         <li class="md-nav__item">
   <a href="#6-playback-halt" class="md-nav__link">
     <span class="md-ellipsis">
-      6. 플레이 중단 (Playback Halt)
+      6. Playback Halt
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#7" class="md-nav__link">
+  <a href="#7-reporting-issues" class="md-nav__link">
     <span class="md-ellipsis">
-      7. 문제 발생 시 안내
+      7. Reporting Issues
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#8" class="md-nav__link">
+  <a href="#8-debugging-tips" class="md-nav__link">
     <span class="md-ellipsis">
-      8. 디버그 활용 팁
+      8. Debugging Tips
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#9" class="md-nav__link">
+  <a href="#9-related-documents" class="md-nav__link">
     <span class="md-ellipsis">
-      9. 관련 문서
+      9. Related Documents
     </span>
   </a>
   
@@ -2020,75 +2026,73 @@
 
 
 
-<h1 id="debug-log">디버그 &amp; 로그 (Debug &amp; Log)<a class="headerlink" href="#debug-log" title="Permanent link">&para;</a></h1>
-<p>VoiceScriptPlayer는 실행 중 발생하는 모든 예외, 이벤트, 경고를<br />
-자동으로 로그 파일로 기록합니다.<br />
-이 기능은 문제 진단이나 스크립트 동작 검증에 매우 유용하게 활용할 수 있습니다.</p>
+<h1 id="debug-log">Debug &amp; Log<a class="headerlink" href="#debug-log" title="Permanent link">&para;</a></h1>
+<p><strong>VoiceScriptPlayer</strong> automatically records all exceptions, events, and warnings that occur during execution.<br />
+This feature is extremely useful for diagnosing issues and verifying script behavior.</p>
 <hr />
-<h2 id="1">1. 로그 파일 위치<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
-<p>모든 로그는 기본적으로 <strong>내문서</strong>경로에 저장됩니다.</p>
-<pre><code>E:\Users\&lt;사용자명&gt;\Documents\VoiceScriptPlayer\Log
+<h2 id="1-log-file-location">1. Log File Location<a class="headerlink" href="#1-log-file-location" title="Permanent link">&para;</a></h2>
+<p>All logs are saved by default in the <strong>Documents</strong> directory:</p>
+<pre><code>C:\Users\&lt;Username&gt;\Documents\VoiceScriptPlayer\Log
 </code></pre>
 <hr />
-<h2 id="2">2. 로그 파일 형식<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
-<p>로그 파일은 날짜 또는 카테고리에 따라 자동으로 분류됩니다.</p>
+<h2 id="2-log-file-format">2. Log File Format<a class="headerlink" href="#2-log-file-format" title="Permanent link">&para;</a></h2>
+<p>Log files are automatically categorized by date or type.</p>
 <table>
 <thead>
 <tr>
-<th>파일 이름 예시</th>
-<th>설명</th>
+<th>File Name Example</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>2025-<strong>-</strong>.log</strong></td>
-<td>일반 실행 중 발생한 전체 로그. 에디터, 서비스, 백엔드 전반의 기록이 포함됩니다.</td>
+<td>General execution log that includes all records from the editor, services, and backend.</td>
 </tr>
 <tr>
 <td><strong>2025-__-___Player.log</strong></td>
-<td>실행 모드(Playback)에서 발생한 오류나 예외 로그. Player 전용 이벤트 기록입니다.</td>
+<td>Logs of errors or exceptions that occur in playback mode. Dedicated to Player-related events.</td>
 </tr>
 </tbody>
 </table>
-<p>모든 로그 파일은 UTF-8 인코딩으로 저장되며,<br />
-하루 단위로 자동 생성됩니다.</p>
+<p>All log files are saved in UTF-8 encoding and generated daily.</p>
 <hr />
-<h2 id="3">3. 로그 카테고리<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
-<p>각 로그 항목은 다음과 같은 <strong>카테고리(Category)</strong> 로 구분됩니다.</p>
+<h2 id="3-log-categories">3. Log Categories<a class="headerlink" href="#3-log-categories" title="Permanent link">&para;</a></h2>
+<p>Each log entry is classified under one of the following <strong>categories</strong>:</p>
 <table>
 <thead>
 <tr>
-<th>카테고리</th>
-<th>설명</th>
+<th>Category</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>UI</strong></td>
-<td>사용자 인터페이스 관련 예외. 버튼, 창, 컨트롤 동작 등</td>
+<td>User interface-related exceptions — buttons, windows, controls, etc.</td>
 </tr>
 <tr>
 <td><strong>Domain</strong></td>
-<td>프로젝트 로직, 데이터 처리, 내부 연산 과정의 오류</td>
+<td>Errors in project logic, data processing, or internal operations.</td>
 </tr>
 <tr>
 <td><strong>Task</strong></td>
-<td>비동기 작업, 타이머, 백그라운드 프로세스 관련 오류</td>
+<td>Errors in asynchronous operations, timers, or background processes.</td>
 </tr>
 <tr>
 <td><strong>Player</strong></td>
-<td>실행 모드(Playback) 또는 편집 중 재생 시 발생한 오류. 장치, 파일, 실행 제어 관련 예외</td>
+<td>Errors that occur during playback mode or while previewing in the editor — device, file, or execution control related exceptions.</td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-<p>💡 <strong>팁:</strong><br />
-“Player” 로그는 실제 실행 환경에서만 생성되며,<br />
-에디터에서도 재생 중이라면 동일한 방식으로 기록됩니다.</p>
+<p>💡 <strong>Tip:</strong><br />
+“Player” logs are generated only during actual playback.<br />
+However, if playback is triggered within the editor, the same logging behavior applies.</p>
 </blockquote>
 <hr />
-<h2 id="4">4. 로그 구조 예시<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
-<p>아래는 <code>2025-__-___Player.log</code>에 기록된 실제 로그의 축약 예시입니다.</p>
+<h2 id="4-log-structure-example">4. Log Structure Example<a class="headerlink" href="#4-log-structure-example" title="Permanent link">&para;</a></h2>
+<p>Below is a simplified example from <code>2025-__-___Player.log</code>:</p>
 <pre><code>============================================================
 [Time]     2025-__-__ __:__:__
 [Category] Player
@@ -2104,101 +2108,99 @@
 ============================================================
 </code></pre>
 <hr />
-<h2 id="5">5. 로그 해석 방법<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<h2 id="5-how-to-read-logs">5. How to Read Logs<a class="headerlink" href="#5-how-to-read-logs" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>항목</th>
-<th>설명</th>
+<th>Field</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>[Time]</strong></td>
-<td>오류 또는 이벤트 발생 시각</td>
+<td>Timestamp of the error or event.</td>
 </tr>
 <tr>
 <td><strong>[Category]</strong></td>
-<td>발생한 모듈 또는 영역</td>
+<td>Module or area where the issue occurred.</td>
 </tr>
 <tr>
 <td><strong>[Caller]</strong></td>
-<td>호출한 함수 또는 처리기 이름</td>
+<td>Function or handler that triggered the event.</td>
 </tr>
 <tr>
 <td><strong>[Type]</strong></td>
-<td>예외 형식 (System.Exception, FileNotFoundException 등)</td>
+<td>Exception type (e.g., System.Exception, FileNotFoundException).</td>
 </tr>
 <tr>
 <td><strong>[Message]</strong></td>
-<td>오류의 요약 메시지</td>
+<td>Short description of the error.</td>
 </tr>
 <tr>
 <td><strong>[Source]</strong></td>
-<td>오류가 발생한 어셈블리 또는 네임스페이스</td>
+<td>Assembly or namespace where the error originated.</td>
 </tr>
 <tr>
 <td><strong>[Target]</strong></td>
-<td>실제 호출된 메서드 서명</td>
+<td>Actual method signature that was called.</td>
 </tr>
 <tr>
 <td><strong>[StackTrace]</strong></td>
-<td>발생 지점의 코드 경로 (디버그 추적용)</td>
+<td>Call stack trace showing where the error occurred (for debugging).</td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-<p>💡 <strong>참고:</strong><br />
-스택 트레이스(StackTrace)는 내부 개발용 디버깅 정보이며,<br />
-일반 사용자는 세부 코드를 이해하지 않아도 됩니다.<br />
-로그의 상단에 있는 <strong>[Message]</strong> 항목만 확인해도<br />
-대부분의 오류 원인을 파악할 수 있습니다.</p>
+<p>💡 <strong>Note:</strong><br />
+The StackTrace is intended for internal debugging.<br />
+Regular users don’t need to understand the detailed code.<br />
+Checking only the <strong>[Message]</strong> field is usually enough to identify most issues.</p>
 </blockquote>
 <hr />
-<h2 id="6-playback-halt">6. 플레이 중단 (Playback Halt)<a class="headerlink" href="#6-playback-halt" title="Permanent link">&para;</a></h2>
-<p><code>Player</code> 카테고리의 오류는 단순 기록이 아닌,<br />
-<strong>실시간으로 화면에 표시되며 재생이 자동으로 중단됩니다.</strong></p>
+<h2 id="6-playback-halt">6. Playback Halt<a class="headerlink" href="#6-playback-halt" title="Permanent link">&para;</a></h2>
+<p>Errors in the <code>Player</code> category are not just recorded —<br />
+they are <strong>immediately displayed on screen, and playback stops automatically.</strong></p>
 <ul>
-<li>오류 메시지는 화면에 붉은색 텍스트로 표시됩니다.  </li>
-<li>동시에 해당 내용이 <code>Player.log</code> 파일에 기록됩니다.  </li>
-<li>이 상태에서는 재생이 완전히 멈추며,<br />
-  문제가 해결되기 전까지 프로젝트를 다시 시작할 수 없습니다.</li>
+<li>Error messages appear in red text on the screen.  </li>
+<li>They are simultaneously written to <code>Player.log</code>.  </li>
+<li>Playback completely stops, and the project cannot be restarted until the issue is resolved.</li>
 </ul>
-<p>예시:</p>
-<pre><code>파일을 찾을 수 없습니다.
-E:\Users\Documents\VoiceScriptPlayer\Project\새 프로젝트\Asset\Sound\새 사운드.wav
+<p>Example:</p>
+<pre><code>File not found.
+C:\Users\Documents\VoiceScriptPlayer\Project\NewProject\Asset\Sound\NewSound.wav
 </code></pre>
 <blockquote>
-<p>💡 <strong>참고:</strong><br />
-이 동작은 편집기(에디터 모드)와 실행기(Playback 모드)에서 모두 동일하게 발생합니다.<br />
-즉, 재생 중 파일 누락이나 장치 오류가 발생하면 즉시 정지됩니다.</p>
+<p>💡 <strong>Note:</strong><br />
+This behavior occurs in both <strong>Editor Mode</strong> and <strong>Playback Mode</strong>.<br />
+If a missing file or device error occurs during playback, it stops instantly.</p>
 </blockquote>
 <hr />
-<h2 id="7">7. 문제 발생 시 안내<a class="headerlink" href="#7" title="Permanent link">&para;</a></h2>
-<p>VoiceScriptPlayer는 예기치 않은 오류가 발생해도 자동으로 로그를 남깁니다.<br />
-만약 재현 가능한 문제나 비정상적인 동작이 반복된다면,<br />
-<strong>해당 로그 파일과 함께 문제 현상을 자세히 설명하여 개발자에게 전달해 주세요.</strong></p>
-<p>예를 들어 다음과 같은 정보를 함께 포함해 주세요:</p>
+<h2 id="7-reporting-issues">7. Reporting Issues<a class="headerlink" href="#7-reporting-issues" title="Permanent link">&para;</a></h2>
+<p>Even if an unexpected error occurs, VoiceScriptPlayer automatically generates a log.<br />
+If you experience reproducible problems or recurring abnormal behavior,<br />
+please send the <strong>log file</strong> along with a detailed description to the developer.</p>
+<p>Include the following information in your report:</p>
 <ul>
-<li>오류가 언제, 어떤 상황에서 발생했는지  </li>
-<li>어떤 기능을 사용 중이었는지  </li>
-<li>오류 발생 후 어떤 현상이 나타났는지  </li>
+<li>When and under what conditions the error occurred  </li>
+<li>What feature or function you were using  </li>
+<li>What happened immediately after the error  </li>
 </ul>
-<p>개발자는 이 로그를 통해 원인을 빠르게 분석하고 수정할 수 있습니다.<br />
-(버그 제보 채널은 추후 공식적으로 공지될 예정입니다.)</p>
+<p>Developers can quickly identify and fix the issue using these logs.<br />
+(Official bug reporting channels will be announced later.)</p>
 <hr />
-<h2 id="8">8. 디버그 활용 팁<a class="headerlink" href="#8" title="Permanent link">&para;</a></h2>
+<h2 id="8-debugging-tips">8. Debugging Tips<a class="headerlink" href="#8-debugging-tips" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>프로젝트가 실행되지 않거나 멈출 때</strong> → <code>Player.log</code> 확인  </li>
-<li><strong>UI 동작이 반응하지 않을 때</strong> → <code>UI</code> 카테고리 로그 확인  </li>
-<li><strong>반복적인 오류 발생 시</strong> → 가장 최근 날짜의 <code>.log</code> 파일을 열어 마지막 항목 확인  </li>
-<li><strong>파일 누락 또는 접근 오류</strong> → <code>[Message]</code> 또는 <code>[Target]</code> 항목에서 경로 확인  </li>
+<li><strong>Project won’t run or playback stops</strong> → Check <code>Player.log</code>  </li>
+<li><strong>UI not responding</strong> → Check the <code>UI</code> category logs  </li>
+<li><strong>Frequent errors</strong> → Open the most recent <code>.log</code> file and review the last entry  </li>
+<li><strong>Missing file or access errors</strong> → Check <code>[Message]</code> or <code>[Target]</code> for file paths  </li>
 </ul>
 <hr />
-<h2 id="9">9. 관련 문서<a class="headerlink" href="#9" title="Permanent link">&para;</a></h2>
+<h2 id="9-related-documents">9. Related Documents<a class="headerlink" href="#9-related-documents" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="../run/">실행하기 (Playback Mode)</a>  </li>
-<li><a href="../../editor/runtime-helper/">런타임 도우미</a></li>
+<li><a href="../run/">Playback Mode</a>  </li>
+<li><a href="../../editor/runtime-helper/">Runtime Helper</a></li>
 </ul>
 
 
@@ -2244,7 +2246,7 @@ E:\Users\Documents\VoiceScriptPlayer\Project\새 프로젝트\Asset\Sound\새 �
     
     
     <a href="https://www.patreon.com/VoiceScriptPlayer" target="_blank" rel="noopener" title="Patreon" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M490 153.8c-.1-65.4-51-119-110.7-138.3-74.2-24-172-20.5-242.9 12.9C50.6 68.9 23.6 157.7 22.6 246.2 21.8 319 29 510.6 137.2 512c80.3 1 92.3-102.5 129.5-152.3 26.4-35.5 60.5-45.5 102.4-55.9 72-17.8 121.1-74.7 121-150z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M490 153.8c-.1-65.4-51-119-110.7-138.3-74.2-24-172-20.5-242.9 12.9C50.6 68.9 23.6 157.7 22.6 246.2 21.8 319 29 510.6 137.2 512c80.3 1 92.3-102.5 129.5-152.3 26.4-35.5 60.5-45.5 102.4-55.9 72-17.8 121.1-74.7 121-150z"/></svg>
     </a>
   
 </div>
@@ -2261,7 +2263,7 @@ E:\Users\Documents\VoiceScriptPlayer\Project\새 프로젝트\Asset\Sound\새 �
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>

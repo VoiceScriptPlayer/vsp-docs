@@ -1,0 +1,2882 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentation for VoiceScriptPlayer">
+      
+      
+      
+        <link rel="canonical" href="https://VoiceScriptPlayer.github.io/vsp-docs/zh/editor/sound/">
+      
+      
+        <link rel="prev" href="../timeline/">
+      
+      
+        <link rel="next" href="../video/">
+      
+      
+      <link rel="icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+    
+    
+      
+        <title>声音 - VoiceScriptPlayer Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.84d31ad4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#sound-tab" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="header.title">
+    <!-- 왼쪽: 로고 -->
+    <a href="https://VoiceScriptPlayer.github.io/vsp-docs/"
+       title="VoiceScriptPlayer Docs"
+       class="md-header__button md-logo"
+       aria-label="VoiceScriptPlayer Docs">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+
+    <!-- 햄버거 메뉴 (모바일용) -->
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+
+    <!-- 제목 -->
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">VoiceScriptPlayer Docs</span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">声音</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 🌐 언어 전환 -->
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="选择当前语言">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="../../../editor/sound/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../ja/editor/sound/" hreflang="ja" class="md-select__link">
+              日本語
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="zh" class="md-select__link">
+              中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../../ko/editor/sound/" hreflang="ko" class="md-select__link">
+              한국어
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+
+    <!-- 🔍 검색창 복원 -->
+    <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- ❤️ Patreon 버튼 -->
+<a href="https://www.patreon.com/VoiceScriptPlayer"
+   title="Support on Patreon"
+   class="md-header__button md-icon"
+   target="_blank" rel="noopener"
+   style="display:flex;align-items:center;gap:6px;margin-left:6px;">
+  <img src="../../../images/PATREON_SYMBOL.ico" alt="Patreon"
+       width="22" height="22"
+       style="display:block;border-radius:4px;filter:var(--md-icon-filter);" />
+  <span style="font-size:0.9rem;font-weight:500;">Support on Patreon</span>
+</a>
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../" class="md-tabs__link">
+        
+  
+  
+    
+  
+  主页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../getting-started/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  入门
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../creator-guide/" class="md-tabs__link">
+          
+  
+  
+  创作者指南
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../project/create/" class="md-tabs__link">
+          
+  
+  
+  项目
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../overview/" class="md-tabs__link">
+          
+  
+  
+  编辑器
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../playback/run/" class="md-tabs__link">
+          
+  
+  
+  播放
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../features/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  功能
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../device/tcode/" class="md-tabs__link">
+          
+  
+  
+  设备
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ai/ai/" class="md-tabs__link">
+          
+  
+  
+  AI
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../troubleshooting/coeiroink/" class="md-tabs__link">
+          
+  
+  
+  故障排除
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../faq/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  常见问题
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../" title="VoiceScriptPlayer Docs" class="md-nav__button md-logo" aria-label="VoiceScriptPlayer Docs" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    VoiceScriptPlayer Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    主页
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    入门
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    创作者指南
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            创作者指南
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../creator-guide/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    示例与进阶
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            示例与进阶
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../creator/example-basic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    从基本模板开始
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../creator/example-ui-script/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    练习链接UI与脚本
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../creator/example-logic/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    使用条件和变量创建交互
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../creator/example-stroke/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    动作与设备应用
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    项目
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            项目
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/create/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    创建新项目
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../project/manage/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    加载与保存
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    编辑器
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            编辑器
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../timeline/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    时间轴
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    声音
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    声音
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 基本界面
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 基本界面">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ 操作概要
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-medio-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 字幕设置（Medio Editor）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 字幕设置（Medio Editor）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎛️ 基本组成
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stt" class="md-nav__link">
+    <span class="md-ellipsis">
+      🗣️ 将音频转换为字幕（STT）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌐 字幕翻译
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      ▶️ 预览与确认
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      📦 输出位置
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-tts" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 语音合成（TTS）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 语音合成（TTS）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 主要更新摘要
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎛️ 基本组成
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      🗣️ 句子级编辑
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      📜 时间轴控制
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎧 各引擎特征
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎧 各引擎特征">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#coeiroink" class="md-nav__link">
+    <span class="md-ellipsis">
+      🪶 COEIROINK
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hailuo" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌊 Hailuo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      ▶️ 预览与合成
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      📦 输出位置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 提示
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 添加到轨道中
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 添加到轨道中">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎚️ 音频节点设置
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 相关文档
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../video/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    视频
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../live2d/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Live2D
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ui/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    UI
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../script/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    脚本
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stroke/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    动作
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../special-event/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    高潮 (特殊事件)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    资源管理
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../runtime-helper/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    运行时助手
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setting/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    项目设置
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    播放
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            播放
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../playback/run/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    运行
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../playback/debug/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    调试与日志
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    功能
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    设备
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            设备
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../device/tcode/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    TCode
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../device/intiface/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Intiface
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../device/intiface_advanced/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Intiface 进阶
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    AI
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
+            <span class="md-nav__icon md-icon"></span>
+            AI
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/ai/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    概述
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/speechRecognition/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    语音识别
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/whisper/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Whisper
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/elevenlabs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    ElevenLabs
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/coeiroink/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    COEIROINK
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/hailuo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Hailuo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/hailuo-subscription/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Hailuo 订阅指南
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/libretranslate/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    LibreTranslate
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/deepl/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DeepL
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ai/deepl-subscription/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    DeepL 订阅指南
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_10" >
+        
+          
+          <label class="md-nav__link" for="__nav_10" id="__nav_10_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    故障排除
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_10">
+            <span class="md-nav__icon md-icon"></span>
+            故障排除
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/coeiroink/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    COEIROINK
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../troubleshooting/hailuo/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Hailuo
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../faq/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    常见问题
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. 基本界面
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 基本界面">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚙️ 操作概要
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-medio-editor" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. 字幕设置（Medio Editor）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 字幕设置（Medio Editor）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎛️ 基本组成
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stt" class="md-nav__link">
+    <span class="md-ellipsis">
+      🗣️ 将音频转换为字幕（STT）
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌐 字幕翻译
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      ▶️ 预览与确认
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      📦 输出位置
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-tts" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. 语音合成（TTS）
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 语音合成（TTS）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧩 主要更新摘要
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎛️ 基本组成
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      🗣️ 句子级编辑
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      📜 时间轴控制
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎧 各引擎特征
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎧 各引擎特征">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#coeiroink" class="md-nav__link">
+    <span class="md-ellipsis">
+      🪶 COEIROINK
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hailuo" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌊 Hailuo
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      ▶️ 预览与合成
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      📦 输出位置
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      💡 提示
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. 添加到轨道中
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 添加到轨道中">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎚️ 音频节点设置
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. 相关文档
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="sound-tab">声音标签页（Sound Tab）<a class="headerlink" href="#sound-tab" title="Permanent link">&para;</a></h1>
+<p>VoiceScriptPlayer 的 <strong>声音标签页</strong> 是用于管理项目中核心音频的编辑区域，<br />
+同时执行字幕（STT）、翻译和语音合成（TTS）等功能。<br />
+所有轨道和事件都以声音为基准进行同步。</p>
+<hr />
+<h2 id="1">1. 基本界面<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<p><img alt="sound-main" src="../../images/sound-main.png" /></p>
+<p>声音标签页用于管理项目中使用的所有音频文件。<br />
+TTS 生成、字幕设置、文件导入等所有与语音相关的功能都在此完成。</p>
+<table>
+<thead>
+<tr>
+<th>组件</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>① 包含到项目中</strong></td>
+<td>勾选后，导入的音频会<strong>复制到项目内部文件夹</strong>中。<br>取消勾选则仅<strong>引用外部文件</strong>，不会复制实际音频。</td>
+</tr>
+<tr>
+<td><strong>② 导入</strong></td>
+<td>从本地磁盘导入 <code>.wav</code>、<code>.mp3</code> 文件。<br>是否复制取决于“包含到项目中”的状态。</td>
+</tr>
+<tr>
+<td><strong>③ 新建</strong></td>
+<td>创建新的 TTS 语音。<br>点击后打开 <strong>TTS 生成窗口</strong>，可通过指定的语音引擎（如 COEIROINK）合成输入台词。</td>
+</tr>
+<tr>
+<td><strong>④ 编辑 ✏️</strong></td>
+<td>打开所选音频的详细编辑窗口。<br>导入的音频显示为<strong>字幕编辑器</strong>，生成的 TTS 音频显示为 <strong>TTS 编辑器</strong>。</td>
+</tr>
+<tr>
+<td><strong>⑤ 删除 🗑️</strong></td>
+<td>从列表中移除选定的音频。</td>
+</tr>
+<tr>
+<td><strong>⑥ 导出 ↗ / 重新导入 ↙</strong></td>
+<td>将项目中包含的音频导出到外部文件夹，或重新导入到项目中。</td>
+</tr>
+<tr>
+<td><strong>⑦ 打开音频文件夹 📂</strong></td>
+<td>直接打开当前项目中<strong>音频文件所在的文件夹</strong>。</td>
+</tr>
+<tr>
+<td><strong>⑧ 波形预览区域</strong></td>
+<td>显示选定音频的波形与长度。下方显示文件名、播放时长及是否包含在项目中。</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="_1">⚙️ 操作概要<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>情况</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>勾选“包含到项目中”后导入</td>
+<td>文件将<strong>复制</strong>到项目文件夹（<code>Asset/Sound/</code>）。</td>
+</tr>
+<tr>
+<td>未勾选后导入</td>
+<td>文件仅被<strong>引用</strong>，实际不会移动。</td>
+</tr>
+<tr>
+<td>使用“导出到外部”按钮</td>
+<td>将选定音频复制到指定文件夹。</td>
+</tr>
+<tr>
+<td>使用“重新导入到项目”按钮</td>
+<td>将外部文件恢复到项目中。</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<blockquote>
+<p>💡 <strong>提示：</strong><br />
+取消勾选“包含到项目中”有以下优点：</p>
+<ul>
+<li>✅ <strong>减少项目体积：</strong> 大型音频文件不会被复制，从而节省存储空间。  </li>
+<li>⚡ <strong>加快加载速度：</strong> 省略复制过程，导入更快。  </li>
+<li>🛠️ <strong>易于外部编辑：</strong> 外部编辑（如降噪、替换音频）能立即反映在项目中。  </li>
+<li>🧾 <strong>保护版权：</strong> 可避免将付费音源或商用语音包含在项目文件中。  </li>
+</ul>
+<p>但请注意，这类引用音频在<strong>发布导出</strong>时不会自动包含，<br />
+他人获取项目后将<strong>无法播放未包含的音频文件</strong>。</p>
+</blockquote>
+<hr />
+<h2 id="2-medio-editor">2. 字幕设置（Medio Editor）<a class="headerlink" href="#2-medio-editor" title="Permanent link">&para;</a></h2>
+<p><img alt="sound-subtitle-editor" src="../../images/sound-subtitle-editor.png" /></p>
+<p>选择音频文件并点击 <strong>✏️ 编辑</strong> 按钮后，<br />
+将打开 <code>Medio Editor</code> 窗口，可同时执行字幕生成（STT）、翻译与时间调整。</p>
+<hr />
+<h3 id="_2">🎛️ 基本组成<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>名称</strong></td>
+<td>当前正在编辑的音频文件名。</td>
+</tr>
+<tr>
+<td><strong>长度</strong></td>
+<td>显示音频的播放范围和总时长。</td>
+</tr>
+<tr>
+<td><strong>AI 设置</strong></td>
+<td>可直接打开 Whisper、DeepL 等 AI 引擎设置，无需关闭窗口。</td>
+</tr>
+<tr>
+<td><strong>音频语言</strong></td>
+<td>选择 STT 使用的语音语言（如日语、韩语、英语等）。</td>
+</tr>
+<tr>
+<td><strong>翻译语言</strong></td>
+<td>指定翻译的目标语言。</td>
+</tr>
+<tr>
+<td><strong>视频预览窗口</strong></td>
+<td>显示字幕预览效果。</td>
+</tr>
+<tr>
+<td><strong>字幕列表（右侧）</strong></td>
+<td>可单独修改每一行字幕的时间区间与位置。</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="stt">🗣️ 将音频转换为字幕（STT）<a class="headerlink" href="#stt" title="Permanent link">&para;</a></h3>
+<ol>
+<li>设置 <strong>音频语言</strong>。  </li>
+<li>点击 <strong>[将音频转换为字幕]</strong> 按钮。  </li>
+<li>使用已注册的 <strong>STT 引擎</strong>（如 Whisper）将语音转换为文本。  </li>
+<li>结果会自动显示为<strong>分段字幕列表</strong>。</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>StartTime / EndTime</strong></td>
+<td>调整字幕的开始与结束时间。</td>
+</tr>
+<tr>
+<td><strong>字幕内容</strong></td>
+<td>显示识别出的文本，可直接编辑。</td>
+</tr>
+<tr>
+<td><strong>X / Y</strong></td>
+<td>指定字幕在屏幕中的显示位置。</td>
+</tr>
+<tr>
+<td><strong>FontSize / OutlineSize</strong></td>
+<td>调整字幕的字体大小与描边粗细。</td>
+</tr>
+<tr>
+<td><strong>Dock</strong></td>
+<td>选择字幕基准位置（上、中、下）。</td>
+</tr>
+<tr>
+<td><strong>Fill / Outline</strong></td>
+<td>设置字幕颜色与描边颜色。</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>提示：</strong><br />
+转换后的字幕会自动保存至项目的 <code>Asset/Sound/</code> 文件夹，<br />
+可在其他音频或视频中复用。</p>
+</blockquote>
+<hr />
+<h3 id="_3">🌐 字幕翻译<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<ol>
+<li>生成字幕后点击 <strong>[翻译字幕]</strong> 按钮。  </li>
+<li>使用所选的 <strong>翻译引擎</strong>（DeepL、LibreTranslate 等）<br />
+   自动将 <code>音频语言 → 翻译语言</code>。  </li>
+<li>翻译结果会与原文并排显示，可逐条修改。</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>选项</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>自动翻译引擎</strong></td>
+<td>使用在设置中指定的翻译 API。</td>
+</tr>
+<tr>
+<td><strong>结果预览</strong></td>
+<td>在字幕预览窗口中即时查看翻译结果。</td>
+</tr>
+<tr>
+<td><strong>编辑应用</strong></td>
+<td>可直接在右侧面板中编辑并应用翻译结果。</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>提示：</strong><br />
+- 若要将日语音频翻译成韩语，请将 <strong>音频语言=日语</strong>、<strong>翻译语言=韩语</strong>。<br />
+- 翻译后的字幕与原字幕一同保存，播放音频时将自动显示。</p>
+</blockquote>
+<hr />
+<h3 id="_4">▶️ 预览与确认<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
+<ul>
+<li>点击底部的 <strong>播放按钮 ▶</strong> 可检查字幕同步。  </li>
+<li>可通过滑块查看特定时间段字幕。  </li>
+</ul>
+<blockquote>
+<p>⚙️ <strong>STT 与翻译引擎设置：</strong><br />
+- <a href="../../ai/whisper/">AI → Whisper</a><br />
+- <a href="../../ai/deepl/">AI → DeepL</a><br />
+- <a href="../../ai/libretranslate/">AI → LibreTranslate</a></p>
+</blockquote>
+<hr />
+<h3 id="_5">📦 输出位置<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>路径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>STT 字幕文件</td>
+<td><code>Asset/Sound/原始文件名.srt</code></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="3-tts">3. 语音合成（TTS）<a class="headerlink" href="#3-tts" title="Permanent link">&para;</a></h2>
+<p><img alt="sound-tts-editor" src="../../images/sound-tts-editor.png" /></p>
+<p>点击 <strong>[新建]</strong> 按钮后，会打开 <code>Audio Editor</code> 窗口，<br />
+可输入多句文本，并为每句单独设置合成参数。<br />
+可使用 COEIROINK、Hailuo 等语音引擎，生成自然的语音片段。</p>
+<hr />
+<h3 id="_6">🧩 主要更新摘要<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>多句输入支持</strong></td>
+<td>在一次编辑中可输入多句，每句单独合成。</td>
+</tr>
+<tr>
+<td><strong>句子级 TTS 设置</strong></td>
+<td>每句可独立调整角色、语速、音高、音量等参数。</td>
+</tr>
+<tr>
+<td><strong>新增时间轴</strong></td>
+<td>增加 TTS 专用时间轴，与其他轨道（视频、事件等）一致。</td>
+</tr>
+<tr>
+<td><strong>预览功能改进</strong></td>
+<td>可逐句播放或连续预览。</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="_7">🎛️ 基本组成<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>名称</strong></td>
+<td>要生成的音频文件名称。</td>
+</tr>
+<tr>
+<td><strong>长度</strong></td>
+<td>显示当前句子集合的总播放时间。</td>
+</tr>
+<tr>
+<td><strong>AI 设置</strong></td>
+<td>打开所选 TTS 引擎的配置窗口。</td>
+</tr>
+<tr>
+<td><strong>TextToSpeech 引擎</strong></td>
+<td>选择所使用的引擎（如 <code>COEIROINK</code>、<code>Hailuo</code>）。</td>
+</tr>
+<tr>
+<td><strong>时间轴</strong></td>
+<td>句子在时间轴上排列，可调整长度与位置。<br>操作方式与视频、事件轨道相同。</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="_8">🗣️ 句子级编辑<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h3>
+<p>每句文本独立管理，可单独调整<strong>文本、语音参数、字幕样式</strong>。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>文本输入框</strong></td>
+<td>输入要转换的台词。多行输入时每行为单独句子。</td>
+</tr>
+<tr>
+<td><strong>角色选择</strong></td>
+<td>指定使用的语音角色（如 リリン酱、ノエル 等）。</td>
+</tr>
+<tr>
+<td><strong>速度 / 音高 / 强度 / 音量</strong></td>
+<td>每句可单独调整。</td>
+</tr>
+<tr>
+<td><strong>字幕预览</strong></td>
+<td>下方显示字幕以检查同步。</td>
+</tr>
+<tr>
+<td><strong>字幕设置</strong></td>
+<td>独立设置字幕位置、字体大小、颜色、描边等视觉属性。</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="_9">📜 时间轴控制<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h3>
+<p>新增的 <strong>TTS 时间轴</strong> 与其他轨道编辑方式一致。</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>句子节点</strong></td>
+<td>每句显示为独立节点，可拖动调整位置。</td>
+</tr>
+<tr>
+<td><strong>区间调整</strong></td>
+<td>拖动节点两端调整长度。</td>
+</tr>
+<tr>
+<td><strong>顺序修改</strong></td>
+<td>改变句子顺序会自动更新时间轴。</td>
+</tr>
+<tr>
+<td><strong>播放控制</strong></td>
+<td>支持区间播放、全播放、暂停等功能。</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>💡 <strong>提示：</strong><br />
+通过时间轴可精准同步音频、字幕与事件。<br />
+编辑快捷键与操作方式与其他轨道一致。</p>
+</blockquote>
+<hr />
+<h3 id="_10">🎧 各引擎特征<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h3>
+<h4 id="coeiroink">🪶 COEIROINK<a class="headerlink" href="#coeiroink" title="Permanent link">&para;</a></h4>
+<ul>
+<li>日本开发的开源语音合成引擎  </li>
+<li>擅长情感表达与语调控制  </li>
+<li>支持本地快速生成  </li>
+<li>输出格式：WAV  </li>
+<li>主要参数：<code>Speed</code>、<code>Pitch</code>、<code>Volume</code></li>
+</ul>
+<h4 id="hailuo">🌊 Hailuo<a class="headerlink" href="#hailuo" title="Permanent link">&para;</a></h4>
+<ul>
+<li>云端 AI 语音合成引擎  </li>
+<li>擅长自然发音与平滑衔接  </li>
+<li>支持多语言（日语、韩语、英语等）  </li>
+<li>通过云 API 提供高音质合成  </li>
+<li>主要参数：<code>Pitch</code>、<code>Intensity</code>、<code>Timbre</code>、<code>Emotion</code></li>
+</ul>
+<p>🎧 <strong>在线体验</strong><br />
+可在 <a href="https://www.minimax.io/audio/text-to-speech">Hailuo 官方演示页面</a><br />
+试听多种语音角色，选择喜欢的风格（女性、男性、感情型等），<br />
+并在 VoiceScriptPlayer 中应用相同设置。</p>
+<p><img alt="hailuo-web-demo" src="../../images/hailuo_web_demo.png" /></p>
+<blockquote>
+<ul>
+<li><a href="../../ai/coeiroink/">AI → COEIROINK</a>  </li>
+<li><a href="../../ai/hailuo/">AI → Hailuo</a></li>
+</ul>
+</blockquote>
+<hr />
+<h3 id="_11">▶️ 预览与合成<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h3>
+<ul>
+<li>点击 <strong>▶ 按钮</strong> 即可播放当前句子。  </li>
+<li>支持全句播放与区间预览。  </li>
+<li>修改文本后会自动重新合成。  </li>
+</ul>
+<hr />
+<h3 id="_12">📦 输出位置<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>路径</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>生成的音频文件</strong></td>
+<td>自动保存到 <code>Asset/Sound/</code> 文件夹</td>
+</tr>
+<tr>
+<td><strong>字幕数据</strong></td>
+<td>保存为 <code>.srt</code> 文件或项目元数据</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="_13">💡 提示<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h3>
+<ul>
+<li>若需要在不同句子中切换角色或情感，可将台词拆分为多个句子并分别设置。  </li>
+<li>可混合使用 COEIROINK 与 Hailuo（例如：日语部分使用 COEIROINK，韩语旁白使用 Hailuo）。</li>
+</ul>
+<hr />
+<h2 id="4">4. 添加到轨道中<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<p>生成或导入的音频可<strong>拖拽到时间轴</strong>直接添加。</p>
+<ul>
+<li>从左侧列表拖拽音频到轨道上，会自动生成节点。  </li>
+<li>可立即调整节点长度与位置。  </li>
+<li>可同时放置多个音频以实现<strong>复合音效</strong>。</li>
+</ul>
+<blockquote>
+<p>💡 <strong>提示：</strong><br />
+音频节点可与其他资源（Live2D、UI、事件）在时间轴上精确同步。</p>
+</blockquote>
+<hr />
+<h3 id="_14">🎚️ 音频节点设置<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h3>
+<p>时间轴中的音频可通过<strong>声音设置窗口</strong>进行详细调整。<br />
+右键点击音频节点选择“编辑”，或双击打开如下设置：</p>
+<p><img alt="sound-settings" src="../../images/sound_settings.png" /></p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>开始时间 / 结束时间</strong></td>
+<td>设置播放的起始与结束位置。</td>
+</tr>
+<tr>
+<td><strong>循环</strong></td>
+<td>勾选后将在指定区间循环播放。</td>
+</tr>
+<tr>
+<td><strong>左声道 / 右声道音量</strong></td>
+<td>可分别调整立体声平衡。</td>
+</tr>
+</tbody>
+</table>
+<p>通过这些设置可实现<strong>空间化音效</strong>或特定片段循环播放。</p>
+<hr />
+<h2 id="5">5. 相关文档<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../timeline/">时间轴编辑</a>  </li>
+<li><a href="../video/">视频标签页</a>  </li>
+<li><a href="../script/">脚本编辑</a>  </li>
+<li><a href="../../ai/speechRecognition/">AI → Speech Recognition</a>  </li>
+<li><a href="../../ai/coeiroink/">AI → COEIROINK</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://www.patreon.com/VoiceScriptPlayer" target="_blank" rel="noopener" title="Patreon" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M490 153.8c-.1-65.4-51-119-110.7-138.3-74.2-24-172-20.5-242.9 12.9C50.6 68.9 23.6 157.7 22.6 246.2 21.8 319 29 510.6 137.2 512c80.3 1 92.3-102.5 129.5-152.3 26.4-35.5 60.5-45.5 102.4-55.9 72-17.8 121.1-74.7 121-150z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.sections", "search.suggest", "search.highlight"], "search": "../../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>

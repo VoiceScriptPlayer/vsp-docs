@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="ko" class="no-js">
+<html lang="en" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
     
     
       
@@ -28,7 +28,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.2a3383ac.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
       
       
 
@@ -66,8 +66,8 @@
     <div data-md-component="skip">
       
         
-        <a href="#live2d" class="md-skip">
-          콘텐츠로 이동
+        <a href="#live2d-tab" class="md-skip">
+          Skip to content
         </a>
       
     </div>
@@ -111,20 +111,14 @@
       <div class="md-header__option">
   <div class="md-select">
     
-    <button class="md-header__button md-icon" aria-label="언어설정">
+    <button class="md-header__button md-icon" aria-label="Select language">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
     </button>
     <div class="md-select__inner">
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="./" hreflang="ko" class="md-select__link">
-              한국어
-            </a>
-          </li>
-        
-          <li class="md-select__item">
-            <a href="../../en/editor/live2d/" hreflang="en" class="md-select__link">
+            <a href="./" hreflang="en" class="md-select__link">
               English
             </a>
           </li>
@@ -132,6 +126,18 @@
           <li class="md-select__item">
             <a href="../../ja/editor/live2d/" hreflang="ja" class="md-select__link">
               日本語
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../zh/editor/live2d/" hreflang="zh" class="md-select__link">
+              中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../ko/editor/live2d/" hreflang="ko" class="md-select__link">
+              한국어
             </a>
           </li>
         
@@ -146,16 +152,16 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="검색">
+      <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
@@ -168,7 +174,7 @@
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            검색 초기화
+            Initializing search
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -197,7 +203,7 @@
         
           
             
-<nav class="md-tabs" aria-label="탭" data-md-component="tabs">
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
   <div class="md-grid">
     <ul class="md-tabs__list">
       
@@ -439,7 +445,7 @@
   
 
 
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="VoiceScriptPlayer Docs" class="md-nav__button md-logo" aria-label="VoiceScriptPlayer Docs" data-md-component="logo">
       
@@ -551,7 +557,7 @@
   
   
   <span class="md-ellipsis">
-    개요
+    Overview
     
   </span>
   
@@ -590,7 +596,7 @@
   
   
   <span class="md-ellipsis">
-    예제 & 심화
+    Examples & Advanced
     
   </span>
   
@@ -601,7 +607,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
-            예제 & 심화
+            Examples & Advanced
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -617,7 +623,7 @@
   
   
   <span class="md-ellipsis">
-    기본 템플릿으로 시작하기
+    Start with a Basic Template
     
   </span>
   
@@ -640,7 +646,7 @@
   
   
   <span class="md-ellipsis">
-    UI와 스크립트 연동 실습
+    Practice Linking UI and Script
     
   </span>
   
@@ -663,7 +669,7 @@
   
   
   <span class="md-ellipsis">
-    조건문과 변수로 인터랙션 만들기
+    Create Interaction with Conditions and Variables
     
   </span>
   
@@ -686,7 +692,7 @@
   
   
   <span class="md-ellipsis">
-    Stroke & Device 응용
+    Stroke & Device Applications
     
   </span>
   
@@ -767,7 +773,7 @@
   
   
   <span class="md-ellipsis">
-    새 프로젝트 만들기
+    Create New Project
     
   </span>
   
@@ -790,7 +796,7 @@
   
   
   <span class="md-ellipsis">
-    불러오기 & 저장
+    Load & Save
     
   </span>
   
@@ -868,7 +874,7 @@
   
   
   <span class="md-ellipsis">
-    개요
+    Overview
     
   </span>
   
@@ -891,7 +897,7 @@
   
   
   <span class="md-ellipsis">
-    타임라인
+    Timeline
     
   </span>
   
@@ -914,7 +920,7 @@
   
   
   <span class="md-ellipsis">
-    사운드
+    Sound
     
   </span>
   
@@ -937,7 +943,7 @@
   
   
   <span class="md-ellipsis">
-    비디오
+    Video
     
   </span>
   
@@ -991,7 +997,7 @@
       
         
 
-<nav class="md-nav md-nav--secondary" aria-label="목차">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -1000,51 +1006,51 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      목차
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#1-main-interface" class="md-nav__link">
     <span class="md-ellipsis">
-      1. 기본 인터페이스
+      1. Main Interface
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-live2d" class="md-nav__link">
+  <a href="#2-live2d-scene-editor" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Live2D 씬 편집기
+      2. Live2D Scene Editor
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. Live2D 씬 편집기">
+    <nav class="md-nav" aria-label="2. Live2D Scene Editor">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#top-panel" class="md-nav__link">
     <span class="md-ellipsis">
-      🎛️ 상단 패널
+      🎛️ Top Panel
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#spine" class="md-nav__link">
+  <a href="#spine-object-management" class="md-nav__link">
     <span class="md-ellipsis">
-      🧩 Spine 오브젝트 관리
+      🧩 Spine Object Management
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#add-remove-objects" class="md-nav__link">
     <span class="md-ellipsis">
-      ➕ 오브젝트 추가 및 삭제
+      ➕ Add / Remove Objects
     </span>
   </a>
   
@@ -1056,83 +1062,83 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#3-timeline-script-integration" class="md-nav__link">
     <span class="md-ellipsis">
-      3. 트랙 및 스크립트 연동
+      3. Timeline &amp; Script Integration
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="3. 트랙 및 스크립트 연동">
+    <nav class="md-nav" aria-label="3. Timeline &amp; Script Integration">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#timeline-integration" class="md-nav__link">
     <span class="md-ellipsis">
-      🎞️ 트랙 연동
+      🎞️ Timeline Integration
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#script-integration" class="md-nav__link">
     <span class="md-ellipsis">
-      ⚙️ 스크립트 연동
+      ⚙️ Script Integration
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#controllable-variables" class="md-nav__link">
     <span class="md-ellipsis">
-      📊 제어 가능한 주요 변수
+      📊 Controllable Variables
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#example-script" class="md-nav__link">
     <span class="md-ellipsis">
-      🧩 예시 스크립트
+      🧩 Example Script
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#trigger-integration-examples" class="md-nav__link">
     <span class="md-ellipsis">
-      🔗 트리거 연동 활용 예시
+      🔗 Trigger Integration Examples
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#spine_1" class="md-nav__link">
+  <a href="#spine-control-scripts" class="md-nav__link">
     <span class="md-ellipsis">
-      🎬 Spine 제어 스크립트
+      🎬 Spine Control Scripts
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🎬 Spine 제어 스크립트">
+    <nav class="md-nav" aria-label="🎬 Spine Control Scripts">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#spine_2" class="md-nav__link">
+  <a href="#play-spine-animation" class="md-nav__link">
     <span class="md-ellipsis">
-      🕹️ Spine 애니메이션 재생
+      🕹️ Play Spine Animation
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#spine_3" class="md-nav__link">
+  <a href="#change-spine-skin" class="md-nav__link">
     <span class="md-ellipsis">
-      🎨 Spine 스킨 변경
+      🎨 Change Spine Skin
     </span>
   </a>
   
@@ -1149,18 +1155,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
+  <a href="#4-file-structure" class="md-nav__link">
     <span class="md-ellipsis">
-      4. 파일 구조
+      4. File Structure
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
+  <a href="#5-related-documents" class="md-nav__link">
     <span class="md-ellipsis">
-      5. 관련 문서
+      5. Related Documents
     </span>
   </a>
   
@@ -1210,7 +1216,7 @@
   
   
   <span class="md-ellipsis">
-    스크립트
+    Script
     
   </span>
   
@@ -1233,7 +1239,7 @@
   
   
   <span class="md-ellipsis">
-    스트로크
+    Stroke
     
   </span>
   
@@ -1256,7 +1262,7 @@
   
   
   <span class="md-ellipsis">
-    클라이맥스
+    Climax
     
   </span>
   
@@ -1279,7 +1285,7 @@
   
   
   <span class="md-ellipsis">
-    리소스 관리
+    Resource Management
     
   </span>
   
@@ -1302,7 +1308,7 @@
   
   
   <span class="md-ellipsis">
-    런타임 도우미
+    Runtime Helper
     
   </span>
   
@@ -1325,7 +1331,7 @@
   
   
   <span class="md-ellipsis">
-    프로젝트 설정
+    Project Settings
     
   </span>
   
@@ -1398,7 +1404,7 @@
   
   
   <span class="md-ellipsis">
-    실행하기
+    Run
     
   </span>
   
@@ -1421,7 +1427,7 @@
   
   
   <span class="md-ellipsis">
-    디버그 & 로그
+    Debug & Log
     
   </span>
   
@@ -1562,7 +1568,7 @@
   
   
   <span class="md-ellipsis">
-    Intiface 고급
+    Intiface Advanced
     
   </span>
   
@@ -1635,7 +1641,7 @@
   
   
   <span class="md-ellipsis">
-    개요
+    Overview
     
   </span>
   
@@ -1773,7 +1779,7 @@
   
   
   <span class="md-ellipsis">
-    Hailuo 구독 가이드
+    Hailuo Subscription Guide
     
   </span>
   
@@ -1842,7 +1848,7 @@
   
   
   <span class="md-ellipsis">
-    DeepL 구독 가이드
+    DeepL Subscription Guide
     
   </span>
   
@@ -1991,7 +1997,7 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="목차">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -2000,51 +2006,51 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      목차
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#1-main-interface" class="md-nav__link">
     <span class="md-ellipsis">
-      1. 기본 인터페이스
+      1. Main Interface
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-live2d" class="md-nav__link">
+  <a href="#2-live2d-scene-editor" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Live2D 씬 편집기
+      2. Live2D Scene Editor
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. Live2D 씬 편집기">
+    <nav class="md-nav" aria-label="2. Live2D Scene Editor">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#top-panel" class="md-nav__link">
     <span class="md-ellipsis">
-      🎛️ 상단 패널
+      🎛️ Top Panel
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#spine" class="md-nav__link">
+  <a href="#spine-object-management" class="md-nav__link">
     <span class="md-ellipsis">
-      🧩 Spine 오브젝트 관리
+      🧩 Spine Object Management
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_2" class="md-nav__link">
+  <a href="#add-remove-objects" class="md-nav__link">
     <span class="md-ellipsis">
-      ➕ 오브젝트 추가 및 삭제
+      ➕ Add / Remove Objects
     </span>
   </a>
   
@@ -2056,83 +2062,83 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#3-timeline-script-integration" class="md-nav__link">
     <span class="md-ellipsis">
-      3. 트랙 및 스크립트 연동
+      3. Timeline &amp; Script Integration
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="3. 트랙 및 스크립트 연동">
+    <nav class="md-nav" aria-label="3. Timeline &amp; Script Integration">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#timeline-integration" class="md-nav__link">
     <span class="md-ellipsis">
-      🎞️ 트랙 연동
+      🎞️ Timeline Integration
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
+  <a href="#script-integration" class="md-nav__link">
     <span class="md-ellipsis">
-      ⚙️ 스크립트 연동
+      ⚙️ Script Integration
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
+  <a href="#controllable-variables" class="md-nav__link">
     <span class="md-ellipsis">
-      📊 제어 가능한 주요 변수
+      📊 Controllable Variables
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#example-script" class="md-nav__link">
     <span class="md-ellipsis">
-      🧩 예시 스크립트
+      🧩 Example Script
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#trigger-integration-examples" class="md-nav__link">
     <span class="md-ellipsis">
-      🔗 트리거 연동 활용 예시
+      🔗 Trigger Integration Examples
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#spine_1" class="md-nav__link">
+  <a href="#spine-control-scripts" class="md-nav__link">
     <span class="md-ellipsis">
-      🎬 Spine 제어 스크립트
+      🎬 Spine Control Scripts
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🎬 Spine 제어 스크립트">
+    <nav class="md-nav" aria-label="🎬 Spine Control Scripts">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#spine_2" class="md-nav__link">
+  <a href="#play-spine-animation" class="md-nav__link">
     <span class="md-ellipsis">
-      🕹️ Spine 애니메이션 재생
+      🕹️ Play Spine Animation
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#spine_3" class="md-nav__link">
+  <a href="#change-spine-skin" class="md-nav__link">
     <span class="md-ellipsis">
-      🎨 Spine 스킨 변경
+      🎨 Change Spine Skin
     </span>
   </a>
   
@@ -2149,18 +2155,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
+  <a href="#4-file-structure" class="md-nav__link">
     <span class="md-ellipsis">
-      4. 파일 구조
+      4. File Structure
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
+  <a href="#5-related-documents" class="md-nav__link">
     <span class="md-ellipsis">
-      5. 관련 문서
+      5. Related Documents
     </span>
   </a>
   
@@ -2182,409 +2188,407 @@
 
 
 
-<h1 id="live2d">Live2D 탭<a class="headerlink" href="#live2d" title="Permanent link">&para;</a></h1>
-<p>Live2D 탭은 <strong>캐릭터 씬(Scene)</strong> 을 구성하고<br />
-Spine 모델을 배치하여 애니메이션을 설정하는 편집 탭입니다.<br />
-모든 Live2D 리소스는 <strong>프로젝트 내부(<code>Asset/Live2D/</code>)에 자동 저장</strong>되며,<br />
-외부 참조 옵션은 제공되지 않습니다.</p>
+<h1 id="live2d-tab">Live2D Tab<a class="headerlink" href="#live2d-tab" title="Permanent link">&para;</a></h1>
+<p>The <strong>Live2D Tab</strong> is used to create <strong>character scenes</strong> by placing Spine models and setting up their animations.<br />
+All Live2D resources are <strong>automatically saved within the project (<code>Asset/Live2D/</code>)</strong>,<br />
+and external reference options are <strong>not supported</strong>.</p>
 <hr />
-<h2 id="1">1. 기본 인터페이스<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<h2 id="1-main-interface">1. Main Interface<a class="headerlink" href="#1-main-interface" title="Permanent link">&para;</a></h2>
 <p><img alt="live2d-main" src="../../images/live2d-main.png" /></p>
 <table>
 <thead>
 <tr>
-<th>구성 요소</th>
-<th>설명</th>
+<th>Component</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>① 가져오기</strong></td>
-<td>Live2D Scene(<code>.live2d</code>) 파일을 불러옵니다.</td>
+<td><strong>① Import</strong></td>
+<td>Load a Live2D Scene (<code>.live2d</code>) file.</td>
 </tr>
 <tr>
-<td><strong>② 새로 만들기</strong></td>
-<td>새 Live2D 씬(Scene)을 생성합니다.</td>
+<td><strong>② New</strong></td>
+<td>Create a new Live2D Scene.</td>
 </tr>
 <tr>
-<td><strong>③ 편집 ✏️</strong></td>
-<td>선택한 씬의 세부 편집 창을 엽니다.</td>
+<td><strong>③ Edit ✏️</strong></td>
+<td>Open the detail editor for the selected scene.</td>
 </tr>
 <tr>
-<td><strong>④ 삭제 🗑️</strong></td>
-<td>선택한 씬을 프로젝트에서 제거합니다.</td>
+<td><strong>④ Delete 🗑️</strong></td>
+<td>Remove the selected scene from the project.</td>
 </tr>
 <tr>
-<td><strong>⑤ 폴더 열기 📂</strong></td>
-<td><code>Asset/Live2D/</code> 폴더를 바로 엽니다.</td>
+<td><strong>⑤ Open Folder 📂</strong></td>
+<td>Open the <code>Asset/Live2D/</code> folder directly.</td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-<p>💡 <strong>참고:</strong><br />
-Live2D 씬은 프로젝트 내에서만 관리되며,<br />
-외부 참조나 내보내기 기능은 지원하지 않습니다.</p>
+<p>💡 <strong>Note:</strong><br />
+Live2D scenes are managed entirely within the project and cannot be referenced or exported externally.</p>
 </blockquote>
 <hr />
-<h2 id="2-live2d">2. Live2D 씬 편집기<a class="headerlink" href="#2-live2d" title="Permanent link">&para;</a></h2>
+<h2 id="2-live2d-scene-editor">2. Live2D Scene Editor<a class="headerlink" href="#2-live2d-scene-editor" title="Permanent link">&para;</a></h2>
 <p><img alt="live2d-editor" src="../../images/live2d-editor.png" /></p>
-<p>Live2D 편집기는 여러 Spine 오브젝트를 한 화면에 배치하여<br />
-캐릭터 연출을 구성할 수 있는 독립된 에디터입니다.</p>
+<p>The Live2D Editor allows you to place multiple Spine objects in one screen<br />
+to create a complete character performance scene.</p>
 <hr />
-<h3 id="_1">🎛️ 상단 패널<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
+<h3 id="top-panel">🎛️ Top Panel<a class="headerlink" href="#top-panel" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
-<th>항목</th>
-<th>설명</th>
+<th>Item</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>이름</strong></td>
-<td>현재 편집 중인 씬(Scene)의 이름을 지정합니다.</td>
+<td><strong>Name</strong></td>
+<td>Name of the current scene being edited.</td>
 </tr>
 <tr>
-<td><strong>가로 / 세로 해상도</strong></td>
-<td>씬의 해상도를 설정합니다. (예: 1920x1080)</td>
+<td><strong>Width / Height</strong></td>
+<td>Set the resolution of the scene (e.g., 1920x1080).</td>
 </tr>
 <tr>
-<td><strong>씬 미리보기 영역</strong></td>
-<td>배경과 함께 Spine 오브젝트를 시각적으로 배치할 수 있습니다.</td>
+<td><strong>Scene Preview Area</strong></td>
+<td>Visually place Spine objects and background elements.</td>
 </tr>
 <tr>
-<td><strong>오브젝트 목록 (오른쪽 패널)</strong></td>
-<td>현재 씬에 포함된 Spine 오브젝트의 리스트가 표시됩니다.</td>
+<td><strong>Object List (Right Panel)</strong></td>
+<td>Displays all Spine objects included in the current scene.</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h3 id="spine">🧩 Spine 오브젝트 관리<a class="headerlink" href="#spine" title="Permanent link">&para;</a></h3>
-<p>Live2D 씬 내부에는 여러 Spine 오브젝트를 추가할 수 있습니다.<br />
-각 오브젝트는 고유의 위치, 크기, 애니메이션, 스킨을 개별적으로 가집니다.</p>
+<h3 id="spine-object-management">🧩 Spine Object Management<a class="headerlink" href="#spine-object-management" title="Permanent link">&para;</a></h3>
+<p>Multiple Spine objects can be added to a Live2D scene.<br />
+Each object has its own position, scale, animation, and skin settings.</p>
 <table>
 <thead>
 <tr>
-<th>항목</th>
-<th>설명</th>
+<th>Item</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>이름</strong></td>
-<td>Spine 오브젝트 이름입니다.</td>
+<td><strong>Name</strong></td>
+<td>Name of the Spine object.</td>
 </tr>
 <tr>
 <td><strong>StartX / StartY</strong></td>
-<td>씬 내 위치 좌표를 지정합니다. (가로/세로 픽셀 단위)</td>
+<td>Set the position coordinates within the scene (in pixels).</td>
 </tr>
 <tr>
 <td><strong>Scale</strong></td>
-<td>캐릭터의 크기를 조정합니다.</td>
+<td>Adjust the size of the character.</td>
 </tr>
 <tr>
 <td><strong>StartAnimation</strong></td>
-<td>처음 재생할 애니메이션을 지정합니다. (예: <code>idle</code>, <code>aim</code>, <code>walk</code>)</td>
+<td>Specify the animation to play on load (e.g., <code>idle</code>, <code>walk</code>, <code>attack</code>).</td>
 </tr>
 <tr>
 <td><strong>Skin</strong></td>
-<td>Spine 모델의 외형 스킨을 선택합니다.</td>
+<td>Select the visual skin of the Spine model.</td>
 </tr>
 <tr>
 <td><strong>Loop</strong></td>
-<td>애니메이션을 반복 재생합니다.</td>
+<td>Enable or disable loop playback.</td>
 </tr>
 <tr>
 <td><strong>AutoPlay</strong></td>
-<td>씬 로드 시 자동으로 애니메이션을 시작합니다.</td>
+<td>Automatically start the animation when the scene is loaded.</td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-<p>💡 <strong>팁:</strong><br />
-오브젝트는 미리보기 화면에서 <strong>드래그로 직접 위치 조정</strong>할 수도 있습니다.<br />
-여러 캐릭터를 배치해 장면 전체를 구성할 수 있습니다.</p>
+<p>💡 <strong>Tip:</strong><br />
+You can <strong>drag</strong> objects directly in the preview window to reposition them.<br />
+Multiple characters can be placed together to create a full scene.</p>
 </blockquote>
 <hr />
-<h3 id="_2">➕ 오브젝트 추가 및 삭제<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h3>
+<h3 id="add-remove-objects">➕ Add / Remove Objects<a class="headerlink" href="#add-remove-objects" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
-<th>작업</th>
-<th>설명</th>
+<th>Action</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>추가(+) 버튼</strong></td>
-<td>새로운 Spine 오브젝트를 씬에 추가합니다.</td>
+<td><strong>Add (+)</strong></td>
+<td>Add a new Spine object to the scene.</td>
 </tr>
 <tr>
-<td><strong>삭제(🗑️ 버튼)</strong></td>
-<td>선택된 Spine 오브젝트를 씬에서 제거합니다.</td>
+<td><strong>Delete (🗑️)</strong></td>
+<td>Remove the selected Spine object from the scene.</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="3">3. 트랙 및 스크립트 연동<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
-<p>Live2D 씬은 타임라인뿐만 아니라 <strong>스크립트와 직접 연동</strong>할 수 있습니다.<br />
-이를 통해 특정 이벤트나 조건에 따라 <strong>모션, 위치, 크기, 진행도</strong> 등을 실시간으로 제어할 수 있습니다.</p>
+<h2 id="3-timeline-script-integration">3. Timeline &amp; Script Integration<a class="headerlink" href="#3-timeline-script-integration" title="Permanent link">&para;</a></h2>
+<p>Live2D scenes can be integrated not only with the <strong>timeline</strong>,<br />
+but also directly with the <strong>scripting system</strong> — allowing real-time control over<br />
+<strong>motion, position, scale, and animation progress</strong> based on conditions or events.</p>
 <hr />
-<h3 id="_3">🎞️ 트랙 연동<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
-<p>Live2D 씬은 타임라인 트랙에 배치하여<br />
-다른 리소스(사운드, 이벤트, UI 등)와 시간축 기준으로 연동할 수 있습니다.</p>
+<h3 id="timeline-integration">🎞️ Timeline Integration<a class="headerlink" href="#timeline-integration" title="Permanent link">&para;</a></h3>
+<p>Live2D scenes can be placed on the timeline<br />
+to synchronize with other resources such as sound, events, and UI.</p>
 <table>
 <thead>
 <tr>
-<th>기능</th>
-<th>설명</th>
+<th>Feature</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>드래그 추가</strong></td>
-<td>Live2D 씬을 타임라인에 드래그해 배치합니다.</td>
+<td><strong>Drag &amp; Drop</strong></td>
+<td>Drag the Live2D scene onto the timeline to place it.</td>
 </tr>
 <tr>
-<td><strong>조건 편집</strong></td>
-<td>특정 조건을 만족할 때만 씬이 표시되도록 설정합니다.</td>
+<td><strong>Condition Editing</strong></td>
+<td>Set visibility conditions for when the scene should appear.</td>
 </tr>
 <tr>
-<td><strong>시간 조정</strong></td>
-<td>씬의 표시 구간(시작/종료 시점)을 직접 지정할 수 있습니다.</td>
+<td><strong>Timing Adjustment</strong></td>
+<td>Manually set the start and end times of the scene.</td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-<p>💡 <strong>예시:</strong><br />
-- 특정 사운드 구간에 캐릭터 모션을 표시<br />
-- UI 선택 이후 캐릭터의 표정 전환 트리거<br />
-- 클라이맥스 이벤트 시 자동 재생</p>
+<p>💡 <strong>Examples:</strong><br />
+- Display character motion during a specific audio segment<br />
+- Trigger facial changes after a UI interaction<br />
+- Automatically play animations during a climax event  </p>
 </blockquote>
 <hr />
-<h3 id="_4">⚙️ 스크립트 연동<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
-<p>Live2D 오브젝트는 스크립트에서 <strong>직접 변수로 제어</strong>할 수 있습니다.<br />
-변수 설정 창을 열면 다음과 같은 구조로 Live2D 항목이 표시됩니다.</p>
+<h3 id="script-integration">⚙️ Script Integration<a class="headerlink" href="#script-integration" title="Permanent link">&para;</a></h3>
+<p>Live2D objects can be <strong>controlled directly via variables in scripts</strong>.<br />
+When opening the variable selection window, you’ll see the following structure:</p>
 <p><img alt="live2d-variable" src="../../images/live2d-variable.png" /></p>
 <table>
 <thead>
 <tr>
-<th>구성 요소</th>
-<th>설명</th>
+<th>Component</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Live2D 씬 선택</strong></td>
-<td>제어할 씬(Scene)을 선택합니다.</td>
+<td><strong>Live2D Scene Selection</strong></td>
+<td>Choose which scene to control.</td>
 </tr>
 <tr>
-<td><strong>Spine 오브젝트 선택</strong></td>
-<td>씬 안에 포함된 개별 오브젝트를 선택합니다.</td>
+<td><strong>Spine Object Selection</strong></td>
+<td>Select the specific object within the scene.</td>
 </tr>
 <tr>
-<td><strong>속성 선택</strong></td>
-<td>조작할 변수를 선택합니다.</td>
+<td><strong>Property Selection</strong></td>
+<td>Choose which variable or property to manipulate.</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h3 id="_5">📊 제어 가능한 주요 변수<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h3>
+<h3 id="controllable-variables">📊 Controllable Variables<a class="headerlink" href="#controllable-variables" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
-<th>변수</th>
-<th>설명</th>
+<th>Variable</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>AnimationProgress</strong></td>
-<td>현재 애니메이션 진행률(0.0~1.0) — 시간 기반 제어에 사용</td>
+<td>Current animation progress (0.0–1.0) — used for time-based control.</td>
 </tr>
 <tr>
 <td><strong>X / Y</strong></td>
-<td>오브젝트의 좌표를 변경합니다.</td>
+<td>Adjust object coordinates.</td>
 </tr>
 <tr>
 <td><strong>Scale</strong></td>
-<td>캐릭터의 크기를 조절합니다.</td>
+<td>Adjust the size of the character.</td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-<p>💡 <strong>팁:</strong><br />
-스크립트 내에서 Live2D 변수를 실시간으로 변경하면<br />
-애니메이션 도중 캐릭터의 위치, 크기, 표정 등을 자연스럽게 조정할 수 있습니다.  </p>
+<p>💡 <strong>Tip:</strong><br />
+By changing Live2D variables dynamically via scripts,<br />
+you can smoothly modify a character’s position, size, or expression mid-animation.</p>
 </blockquote>
 <hr />
-<h3 id="_6">🧩 예시 스크립트<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h3>
+<h3 id="example-script">🧩 Example Script<a class="headerlink" href="#example-script" title="Permanent link">&para;</a></h3>
 <p><img alt="example-live2d-script" src="../../images/example-live2d-script.png" /></p>
 <blockquote>
-<p>🎯 <strong>결과:</strong><br />
-위 스크립트를 실행하면 캐릭터의 위치와 크기, 애니메이션 진행률이<br />
-실시간으로 변경되어 타임라인과 완벽하게 동기화됩니다.</p>
+<p>🎯 <strong>Result:</strong><br />
+When executed, the script dynamically adjusts character position, scale,<br />
+and animation progress in perfect sync with the timeline.</p>
 </blockquote>
 <hr />
-<h3 id="_7">🔗 트리거 연동 활용 예시<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h3>
+<h3 id="trigger-integration-examples">🔗 Trigger Integration Examples<a class="headerlink" href="#trigger-integration-examples" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
-<th>상황</th>
-<th>트리거 동작</th>
+<th>Situation</th>
+<th>Trigger Behavior</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>버튼 클릭 시</td>
-<td>특정 Spine 캐릭터의 <code>AnimationProgress</code>를 1로 설정하여 애니메이션 즉시 완료</td>
+<td>On button click</td>
+<td>Set <code>AnimationProgress</code> to 1 to instantly complete the animation.</td>
 </tr>
 <tr>
-<td>이벤트 발생 시</td>
-<td><code>Scale</code> 값을 1.0 → 1.5로 변경하여 캐릭터 확대 연출</td>
+<td>On event trigger</td>
+<td>Change <code>Scale</code> from 1.0 → 1.5 for a zoom-in effect.</td>
 </tr>
 <tr>
-<td>타이머 기반</td>
-<td><code>Y</code> 값을 점진적으로 변경하여 캐릭터가 위로 이동하는 효과</td>
+<td>On timer</td>
+<td>Gradually increase <code>Y</code> value to move the character upward.</td>
 </tr>
 </tbody>
 </table>
 <hr />
 <blockquote>
-<p>💡 <strong>참고:</strong><br />
-Live2D 변수는 UI, 사운드, 스트로크 이벤트와 동일한 방식으로 접근할 수 있으며,<br />
-<strong>PlayData 스크립트 시스템</strong>을 통해 모든 이벤트에서 통합 제어가 가능합니다.</p>
+<p>💡 <strong>Note:</strong><br />
+Live2D variables can be accessed in the same way as UI, sound, or stroke events.<br />
+Through the <strong>PlayData script system</strong>, all event types can be controlled together seamlessly.</p>
 </blockquote>
 <hr />
-<h3 id="spine_1">🎬 Spine 제어 스크립트<a class="headerlink" href="#spine_1" title="Permanent link">&para;</a></h3>
-<p>Live2D 씬의 Spine 오브젝트는 스크립트를 통해<br />
-<strong>애니메이션 재생</strong>과 <strong>스킨 변경</strong>을 직접 제어할 수 있습니다.</p>
+<h3 id="spine-control-scripts">🎬 Spine Control Scripts<a class="headerlink" href="#spine-control-scripts" title="Permanent link">&para;</a></h3>
+<p>You can control <strong>Spine animations and skins</strong> within Live2D scenes via scripts.</p>
 <hr />
-<h4 id="spine_2">🕹️ Spine 애니메이션 재생<a class="headerlink" href="#spine_2" title="Permanent link">&para;</a></h4>
+<h4 id="play-spine-animation">🕹️ Play Spine Animation<a class="headerlink" href="#play-spine-animation" title="Permanent link">&para;</a></h4>
 <p><img alt="live2d-play-animation" src="../../images/live2d-play-animation.png" /></p>
-<p>이 스크립트를 사용하면 특정 Spine 오브젝트의 애니메이션을 원하는 타이밍에 재생할 수 있습니다.</p>
+<p>Use this script to trigger specific Spine animations at any timing you choose.</p>
 <table>
 <thead>
 <tr>
-<th>항목</th>
-<th>설명</th>
+<th>Item</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Live2D 씬 선택</strong></td>
-<td>제어할 씬을 지정합니다.</td>
+<td><strong>Live2D Scene Selection</strong></td>
+<td>Specify which scene to control.</td>
 </tr>
 <tr>
-<td><strong>Spine 오브젝트 선택</strong></td>
-<td>재생할 Spine 모델을 선택합니다.</td>
+<td><strong>Spine Object Selection</strong></td>
+<td>Choose the target Spine model.</td>
 </tr>
 <tr>
-<td><strong>애니메이션 이름</strong></td>
-<td>실행할 애니메이션(<code>idle</code>, <code>attack</code>, <code>death</code> 등)을 지정합니다.</td>
+<td><strong>Animation Name</strong></td>
+<td>The animation to play (e.g., <code>idle</code>, <code>attack</code>, <code>death</code>).</td>
 </tr>
 <tr>
-<td><strong>상태</strong></td>
-<td>애니메이션 종료 시 동작을 설정합니다. <br>예: <code>멈춤</code>, <code>루프</code>, <code>다음 애니메이션으로</code> 등</td>
+<td><strong>State</strong></td>
+<td>Define post-animation behavior (e.g., Stop, Loop, Play Next).</td>
 </tr>
 <tr>
-<td><strong>중첩 재생 모드</strong></td>
-<td>다른 애니메이션 위에서 재생할지(Blend) 여부를 지정합니다.</td>
+<td><strong>Blend Mode</strong></td>
+<td>Enable blending with other animations if desired.</td>
 </tr>
 <tr>
-<td><strong>활성화 / 비활성화</strong></td>
-<td>애니메이션을 활성 또는 중지 상태로 설정합니다.</td>
+<td><strong>Enable / Disable</strong></td>
+<td>Set the animation as active or paused.</td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-<p>💡 <strong>활용 예시:</strong><br />
-- 대사 구간에서 캐릭터의 <code>talk</code> 모션 재생<br />
-- 이벤트 완료 시 <code>happy</code> 모션으로 전환<br />
-- 클라이맥스 장면에서 <code>death</code> 애니메이션 재생</p>
+<p>💡 <strong>Use Cases:</strong><br />
+- Play <code>talk</code> motion during dialogue lines<br />
+- Switch to <code>happy</code> motion after an event finishes<br />
+- Play <code>death</code> animation during a climax scene  </p>
 </blockquote>
 <hr />
-<h4 id="spine_3">🎨 Spine 스킨 변경<a class="headerlink" href="#spine_3" title="Permanent link">&para;</a></h4>
+<h4 id="change-spine-skin">🎨 Change Spine Skin<a class="headerlink" href="#change-spine-skin" title="Permanent link">&para;</a></h4>
 <p><img alt="live2d-set-skin" src="../../images/live2d-set-skin.png" /></p>
-<p>Spine 캐릭터의 스킨을 변경하여 다른 복장, 표정, 장비 등을 적용할 수 있습니다.</p>
+<p>You can change a Spine character’s skin to apply different outfits, expressions, or accessories.</p>
 <table>
 <thead>
 <tr>
-<th>항목</th>
-<th>설명</th>
+<th>Item</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Live2D 씬 선택</strong></td>
-<td>제어할 씬을 지정합니다.</td>
+<td><strong>Live2D Scene Selection</strong></td>
+<td>Specify which scene to control.</td>
 </tr>
 <tr>
-<td><strong>Spine 오브젝트 선택</strong></td>
-<td>스킨을 변경할 Spine 모델을 선택합니다.</td>
+<td><strong>Spine Object Selection</strong></td>
+<td>Select the Spine model to modify.</td>
 </tr>
 <tr>
-<td><strong>스킨 이름</strong></td>
-<td>적용할 스킨 이름(<code>default</code>, <code>costume1</code>, <code>damaged</code> 등)을 선택합니다.</td>
+<td><strong>Skin Name</strong></td>
+<td>Choose the skin to apply (e.g., <code>default</code>, <code>costume1</code>, <code>damaged</code>).</td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-<p>💡 <strong>활용 예시:</strong><br />
-- 스토리 진행에 따라 복장 전환 (<code>default</code> → <code>battle</code>)<br />
-- 특정 트리거에서 손상 상태(<code>damaged</code>)로 변경<br />
-- 선택지 결과에 따라 다른 캐릭터 외형 표시</p>
+<p>💡 <strong>Use Cases:</strong><br />
+- Switch costumes based on story progression (<code>default</code> → <code>battle</code>)<br />
+- Change to <code>damaged</code> state upon a hit event<br />
+- Display different appearances depending on user choice  </p>
 </blockquote>
 <hr />
 <blockquote>
-<p>⚙️ <strong>추가 팁:</strong><br />
-Spine 애니메이션 제어 스크립트와 Live2D 변수 제어 스크립트를 함께 사용하면,<br />
-“모션 + 위치 이동 + 확대/축소” 같은 복합 연출을 손쉽게 구성할 수 있습니다.</p>
+<p>⚙️ <strong>Extra Tip:</strong><br />
+Combine Spine animation control and Live2D variable control scripts<br />
+to easily create complex dynamic effects such as “motion + movement + zoom”.</p>
 </blockquote>
 <hr />
-<h2 id="4">4. 파일 구조<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
+<h2 id="4-file-structure">4. File Structure<a class="headerlink" href="#4-file-structure" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>항목</th>
-<th>경로</th>
+<th>Item</th>
+<th>Path</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>씬 데이터</strong></td>
+<td><strong>Scene Data</strong></td>
 <td><code>Asset/Live2D/SceneName.live2D</code></td>
 </tr>
 <tr>
-<td><strong>Live2D 모델 파일</strong></td>
+<td><strong>Live2D Model Files</strong></td>
 <td><code>Asset/Live2DModel/</code></td>
 </tr>
 <tr>
-<td><strong>Spine 모델 파일</strong></td>
+<td><strong>Spine Model Files</strong></td>
 <td><code>Asset/SpineModel/</code></td>
 </tr>
 <tr>
-<td><strong>텍스처 / 애니메이션 데이터</strong></td>
-<td>Spine 모델 내부 폴더 구조 유지</td>
+<td><strong>Textures / Animation Data</strong></td>
+<td>Maintains original Spine folder structure</td>
 </tr>
 <tr>
-<td><strong>미리보기 캐시</strong></td>
+<td><strong>Preview Cache</strong></td>
 <td><code>Asset/Live2D/</code></td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-<p>⚙️ <strong>주의:</strong><br />
-Live2D 씬은 프로젝트 내부 전용으로 관리되며,<br />
-경로를 변경하거나 외부로 이동할 경우 정상적으로 로드되지 않을 수 있습니다.</p>
+<p>⚙️ <strong>Note:</strong><br />
+Live2D scenes are managed exclusively within the project.<br />
+If paths are changed or files are moved externally, they may fail to load correctly.</p>
 </blockquote>
 <hr />
-<h2 id="5">5. 관련 문서<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<h2 id="5-related-documents">5. Related Documents<a class="headerlink" href="#5-related-documents" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="../sound/">사운드 탭</a>  </li>
-<li><a href="../video/">비디오 탭</a>  </li>
-<li><a href="../ui/">UI 탭</a>  </li>
-<li><a href="../timeline/">타임라인 편집</a></li>
+<li><a href="../sound/">Sound Tab</a>  </li>
+<li><a href="../video/">Video Tab</a>  </li>
+<li><a href="../ui/">UI Tab</a>  </li>
+<li><a href="../timeline/">Timeline Editing</a></li>
 </ul>
 
 
@@ -2630,7 +2634,7 @@ Live2D 씬은 프로젝트 내부 전용으로 관리되며,<br />
     
     
     <a href="https://www.patreon.com/VoiceScriptPlayer" target="_blank" rel="noopener" title="Patreon" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M490 153.8c-.1-65.4-51-119-110.7-138.3-74.2-24-172-20.5-242.9 12.9C50.6 68.9 23.6 157.7 22.6 246.2 21.8 319 29 510.6 137.2 512c80.3 1 92.3-102.5 129.5-152.3 26.4-35.5 60.5-45.5 102.4-55.9 72-17.8 121.1-74.7 121-150z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M490 153.8c-.1-65.4-51-119-110.7-138.3-74.2-24-172-20.5-242.9 12.9C50.6 68.9 23.6 157.7 22.6 246.2 21.8 319 29 510.6 137.2 512c80.3 1 92.3-102.5 129.5-152.3 26.4-35.5 60.5-45.5 102.4-55.9 72-17.8 121.1-74.7 121-150z"/></svg>
     </a>
   
 </div>
@@ -2647,7 +2651,7 @@ Live2D 씬은 프로젝트 내부 전용으로 관리되며,<br />
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>

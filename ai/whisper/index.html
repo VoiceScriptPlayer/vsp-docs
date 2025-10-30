@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="ko" class="no-js">
+<html lang="en" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
     
     
       
@@ -28,7 +28,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.2a3383ac.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
       
       
 
@@ -66,8 +66,8 @@
     <div data-md-component="skip">
       
         
-        <a href="#whisper-speech-to-text" class="md-skip">
-          콘텐츠로 이동
+        <a href="#whisper-speech-recognition-speech-to-text" class="md-skip">
+          Skip to content
         </a>
       
     </div>
@@ -111,20 +111,14 @@
       <div class="md-header__option">
   <div class="md-select">
     
-    <button class="md-header__button md-icon" aria-label="언어설정">
+    <button class="md-header__button md-icon" aria-label="Select language">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
     </button>
     <div class="md-select__inner">
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="./" hreflang="ko" class="md-select__link">
-              한국어
-            </a>
-          </li>
-        
-          <li class="md-select__item">
-            <a href="../../en/ai/whisper/" hreflang="en" class="md-select__link">
+            <a href="./" hreflang="en" class="md-select__link">
               English
             </a>
           </li>
@@ -132,6 +126,18 @@
           <li class="md-select__item">
             <a href="../../ja/ai/whisper/" hreflang="ja" class="md-select__link">
               日本語
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../zh/ai/whisper/" hreflang="zh" class="md-select__link">
+              中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../ko/ai/whisper/" hreflang="ko" class="md-select__link">
+              한국어
             </a>
           </li>
         
@@ -146,16 +152,16 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="검색">
+      <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
@@ -168,7 +174,7 @@
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            검색 초기화
+            Initializing search
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -197,7 +203,7 @@
         
           
             
-<nav class="md-tabs" aria-label="탭" data-md-component="tabs">
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
   <div class="md-grid">
     <ul class="md-tabs__list">
       
@@ -439,7 +445,7 @@
   
 
 
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="VoiceScriptPlayer Docs" class="md-nav__button md-logo" aria-label="VoiceScriptPlayer Docs" data-md-component="logo">
       
@@ -551,7 +557,7 @@
   
   
   <span class="md-ellipsis">
-    개요
+    Overview
     
   </span>
   
@@ -590,7 +596,7 @@
   
   
   <span class="md-ellipsis">
-    예제 & 심화
+    Examples & Advanced
     
   </span>
   
@@ -601,7 +607,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
-            예제 & 심화
+            Examples & Advanced
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -617,7 +623,7 @@
   
   
   <span class="md-ellipsis">
-    기본 템플릿으로 시작하기
+    Start with a Basic Template
     
   </span>
   
@@ -640,7 +646,7 @@
   
   
   <span class="md-ellipsis">
-    UI와 스크립트 연동 실습
+    Practice Linking UI and Script
     
   </span>
   
@@ -663,7 +669,7 @@
   
   
   <span class="md-ellipsis">
-    조건문과 변수로 인터랙션 만들기
+    Create Interaction with Conditions and Variables
     
   </span>
   
@@ -686,7 +692,7 @@
   
   
   <span class="md-ellipsis">
-    Stroke & Device 응용
+    Stroke & Device Applications
     
   </span>
   
@@ -767,7 +773,7 @@
   
   
   <span class="md-ellipsis">
-    새 프로젝트 만들기
+    Create New Project
     
   </span>
   
@@ -790,7 +796,7 @@
   
   
   <span class="md-ellipsis">
-    불러오기 & 저장
+    Load & Save
     
   </span>
   
@@ -863,7 +869,7 @@
   
   
   <span class="md-ellipsis">
-    개요
+    Overview
     
   </span>
   
@@ -886,7 +892,7 @@
   
   
   <span class="md-ellipsis">
-    타임라인
+    Timeline
     
   </span>
   
@@ -909,7 +915,7 @@
   
   
   <span class="md-ellipsis">
-    사운드
+    Sound
     
   </span>
   
@@ -932,7 +938,7 @@
   
   
   <span class="md-ellipsis">
-    비디오
+    Video
     
   </span>
   
@@ -1001,7 +1007,7 @@
   
   
   <span class="md-ellipsis">
-    스크립트
+    Script
     
   </span>
   
@@ -1024,7 +1030,7 @@
   
   
   <span class="md-ellipsis">
-    스트로크
+    Stroke
     
   </span>
   
@@ -1047,7 +1053,7 @@
   
   
   <span class="md-ellipsis">
-    클라이맥스
+    Climax
     
   </span>
   
@@ -1070,7 +1076,7 @@
   
   
   <span class="md-ellipsis">
-    리소스 관리
+    Resource Management
     
   </span>
   
@@ -1093,7 +1099,7 @@
   
   
   <span class="md-ellipsis">
-    런타임 도우미
+    Runtime Helper
     
   </span>
   
@@ -1116,7 +1122,7 @@
   
   
   <span class="md-ellipsis">
-    프로젝트 설정
+    Project Settings
     
   </span>
   
@@ -1189,7 +1195,7 @@
   
   
   <span class="md-ellipsis">
-    실행하기
+    Run
     
   </span>
   
@@ -1212,7 +1218,7 @@
   
   
   <span class="md-ellipsis">
-    디버그 & 로그
+    Debug & Log
     
   </span>
   
@@ -1353,7 +1359,7 @@
   
   
   <span class="md-ellipsis">
-    Intiface 고급
+    Intiface Advanced
     
   </span>
   
@@ -1431,7 +1437,7 @@
   
   
   <span class="md-ellipsis">
-    개요
+    Overview
     
   </span>
   
@@ -1508,7 +1514,7 @@
       
         
 
-<nav class="md-nav md-nav--secondary" aria-label="목차">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -1517,14 +1523,14 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      목차
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#1-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      1. 개요 (Overview)
+      1. Overview
     </span>
   </a>
   
@@ -1533,17 +1539,17 @@
         <li class="md-nav__item">
   <a href="#2-installation-setup" class="md-nav__link">
     <span class="md-ellipsis">
-      2. 설치 및 준비 (Installation &amp; Setup)
+      2. Installation &amp; Setup
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. 설치 및 준비 (Installation &amp; Setup)">
+    <nav class="md-nav" aria-label="2. Installation &amp; Setup">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#automatic-model-download" class="md-nav__link">
     <span class="md-ellipsis">
-      🔽 자동 모델 다운로드
+      🔽 Automatic Model Download
     </span>
   </a>
   
@@ -1557,7 +1563,7 @@
         <li class="md-nav__item">
   <a href="#3-configuration" class="md-nav__link">
     <span class="md-ellipsis">
-      3. 설정 방법 (Configuration)
+      3. Configuration
     </span>
   </a>
   
@@ -1566,7 +1572,7 @@
         <li class="md-nav__item">
   <a href="#4-usage" class="md-nav__link">
     <span class="md-ellipsis">
-      4. 사용 방법 (Usage)
+      4. Usage
     </span>
   </a>
   
@@ -1575,17 +1581,17 @@
         <li class="md-nav__item">
   <a href="#5-notes-limitations" class="md-nav__link">
     <span class="md-ellipsis">
-      5. 주의사항 (Notes &amp; Limitations)
+      5. Notes &amp; Limitations
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="5. 주의사항 (Notes &amp; Limitations)">
+    <nav class="md-nav" aria-label="5. Notes &amp; Limitations">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#performance-benchmark" class="md-nav__link">
     <span class="md-ellipsis">
-      ⚡ 성능 참고 (Performance Benchmark)
+      ⚡ Performance Benchmark
     </span>
   </a>
   
@@ -1599,7 +1605,7 @@
         <li class="md-nav__item">
   <a href="#6-license-credits" class="md-nav__link">
     <span class="md-ellipsis">
-      6. 라이선스 및 출처 (License &amp; Credits)
+      6. License &amp; Credits
     </span>
   </a>
   
@@ -1608,7 +1614,7 @@
         <li class="md-nav__item">
   <a href="#7-troubleshooting-faq" class="md-nav__link">
     <span class="md-ellipsis">
-      7. 문제 해결 (Troubleshooting / FAQ)
+      7. Troubleshooting / FAQ
     </span>
   </a>
   
@@ -1704,7 +1710,7 @@
   
   
   <span class="md-ellipsis">
-    Hailuo 구독 가이드
+    Hailuo Subscription Guide
     
   </span>
   
@@ -1773,7 +1779,7 @@
   
   
   <span class="md-ellipsis">
-    DeepL 구독 가이드
+    DeepL Subscription Guide
     
   </span>
   
@@ -1922,7 +1928,7 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="목차">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -1931,14 +1937,14 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      목차
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
   <a href="#1-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      1. 개요 (Overview)
+      1. Overview
     </span>
   </a>
   
@@ -1947,17 +1953,17 @@
         <li class="md-nav__item">
   <a href="#2-installation-setup" class="md-nav__link">
     <span class="md-ellipsis">
-      2. 설치 및 준비 (Installation &amp; Setup)
+      2. Installation &amp; Setup
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. 설치 및 준비 (Installation &amp; Setup)">
+    <nav class="md-nav" aria-label="2. Installation &amp; Setup">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_1" class="md-nav__link">
+  <a href="#automatic-model-download" class="md-nav__link">
     <span class="md-ellipsis">
-      🔽 자동 모델 다운로드
+      🔽 Automatic Model Download
     </span>
   </a>
   
@@ -1971,7 +1977,7 @@
         <li class="md-nav__item">
   <a href="#3-configuration" class="md-nav__link">
     <span class="md-ellipsis">
-      3. 설정 방법 (Configuration)
+      3. Configuration
     </span>
   </a>
   
@@ -1980,7 +1986,7 @@
         <li class="md-nav__item">
   <a href="#4-usage" class="md-nav__link">
     <span class="md-ellipsis">
-      4. 사용 방법 (Usage)
+      4. Usage
     </span>
   </a>
   
@@ -1989,17 +1995,17 @@
         <li class="md-nav__item">
   <a href="#5-notes-limitations" class="md-nav__link">
     <span class="md-ellipsis">
-      5. 주의사항 (Notes &amp; Limitations)
+      5. Notes &amp; Limitations
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="5. 주의사항 (Notes &amp; Limitations)">
+    <nav class="md-nav" aria-label="5. Notes &amp; Limitations">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#performance-benchmark" class="md-nav__link">
     <span class="md-ellipsis">
-      ⚡ 성능 참고 (Performance Benchmark)
+      ⚡ Performance Benchmark
     </span>
   </a>
   
@@ -2013,7 +2019,7 @@
         <li class="md-nav__item">
   <a href="#6-license-credits" class="md-nav__link">
     <span class="md-ellipsis">
-      6. 라이선스 및 출처 (License &amp; Credits)
+      6. License &amp; Credits
     </span>
   </a>
   
@@ -2022,7 +2028,7 @@
         <li class="md-nav__item">
   <a href="#7-troubleshooting-faq" class="md-nav__link">
     <span class="md-ellipsis">
-      7. 문제 해결 (Troubleshooting / FAQ)
+      7. Troubleshooting / FAQ
     </span>
   </a>
   
@@ -2044,159 +2050,158 @@
 
 
 
-<h1 id="whisper-speech-to-text">Whisper 음성 인식 (Speech-to-Text)<a class="headerlink" href="#whisper-speech-to-text" title="Permanent link">&para;</a></h1>
-<h2 id="1-overview">1. 개요 (Overview)<a class="headerlink" href="#1-overview" title="Permanent link">&para;</a></h2>
-<p>Whisper는 OpenAI에서 개발한 <strong>음성 인식 AI</strong>입니다.<br />
-음성 파일을 텍스트로 변환(STT)할 수 있으며, 다양한 언어를 지원합니다.<br />
-VoiceScriptPlayer에서는 <strong>자동 자막 생성, 대본 추출, 실시간 명령 인식</strong> 등에 활용할 수 있습니다.  </p>
+<h1 id="whisper-speech-recognition-speech-to-text">Whisper Speech Recognition (Speech-to-Text)<a class="headerlink" href="#whisper-speech-recognition-speech-to-text" title="Permanent link">&para;</a></h1>
+<h2 id="1-overview">1. Overview<a class="headerlink" href="#1-overview" title="Permanent link">&para;</a></h2>
+<p>Whisper is an <strong>AI-based speech recognition model</strong> developed by OpenAI.<br />
+It can convert audio files into text (STT) and supports multiple languages.<br />
+In VoiceScriptPlayer, Whisper is used for <strong>automatic subtitle generation, script extraction, and real-time voice command recognition</strong>.  </p>
 <hr />
-<h2 id="2-installation-setup">2. 설치 및 준비 (Installation &amp; Setup)<a class="headerlink" href="#2-installation-setup" title="Permanent link">&para;</a></h2>
-<p>VoiceScriptPlayer에는 이미 <strong>WhisperNet</strong>이 내장되어 있어 별도의 설치 과정이 필요하지 않습니다.<br />
-WhisperNet은 Whisper를 .NET 환경에서 사용할 수 있도록 포팅한 라이브러리입니다.<br />
+<h2 id="2-installation-setup">2. Installation &amp; Setup<a class="headerlink" href="#2-installation-setup" title="Permanent link">&para;</a></h2>
+<p>VoiceScriptPlayer already includes <strong>WhisperNet</strong>, so no additional installation is required.<br />
+WhisperNet is a .NET implementation of Whisper that allows it to run directly in VoiceScriptPlayer.<br />
 - <a href="https://github.com/davidfowl/whisper.net">WhisperNet GitHub</a></p>
-<h3 id="_1">🔽 자동 모델 다운로드<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h3>
-<p>VoiceScriptPlayer 내의 <strong>AI / Whisper 설정 탭</strong>에서 원하는 모델 크기(<code>tiny</code>, <code>base</code>, <code>small</code>, <code>medium</code>, <code>large</code>)를 선택하면<br />
-자동으로 모델을 다운로드하고 적용할 수 있습니다.<br />
-인터넷 연결만 되어 있으면 별도의 수동 다운로드 과정이 필요 없습니다.</p>
-<p>직접 다운로드를 원하는 경우에는 아래 링크에서 수동으로 받을 수도 있습니다:</p>
+<h3 id="automatic-model-download">🔽 Automatic Model Download<a class="headerlink" href="#automatic-model-download" title="Permanent link">&para;</a></h3>
+<p>In the <strong>AI / Whisper Settings</strong> tab of VoiceScriptPlayer, you can choose a model size<br />
+(<code>tiny</code>, <code>base</code>, <code>small</code>, <code>medium</code>, <code>large</code>) to automatically download and apply it.<br />
+If you are connected to the internet, no manual download is necessary.</p>
+<p>If you prefer, you can also download models manually from the links below:</p>
 <table>
 <thead>
 <tr>
-<th>모델명</th>
-<th>용량</th>
-<th>다운로드</th>
+<th>Model</th>
+<th>Size</th>
+<th>Download</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>tiny</td>
 <td>~75 MB</td>
-<td><a href="https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-tiny.bin">다운로드</a></td>
+<td><a href="https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-tiny.bin">Download</a></td>
 </tr>
 <tr>
 <td>base</td>
 <td>~142 MB</td>
-<td><a href="https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-base.bin">다운로드</a></td>
+<td><a href="https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-base.bin">Download</a></td>
 </tr>
 <tr>
 <td>small</td>
 <td>~466 MB</td>
-<td><a href="https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-small.bin">다운로드</a></td>
+<td><a href="https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-small.bin">Download</a></td>
 </tr>
 <tr>
 <td>medium</td>
 <td>~1.5 GB</td>
-<td><a href="https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-medium.bin">다운로드</a></td>
+<td><a href="https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-medium.bin">Download</a></td>
 </tr>
 <tr>
 <td>large</td>
 <td>~2.9 GB</td>
-<td><a href="https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large.bin">다운로드</a></td>
+<td><a href="https://huggingface.co/ggerganov/whisper.cpp/resolve/main/ggml-large.bin">Download</a></td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-<p>⚠️ 모델 크기가 커질수록 정확도는 올라가지만 처리 속도가 느려지고 메모리 사용량이 많아집니다.  </p>
+<p>⚠️ Larger models provide higher accuracy but slower processing and increased memory usage.  </p>
 </blockquote>
 <hr />
-<h2 id="3-configuration">3. 설정 방법 (Configuration)<a class="headerlink" href="#3-configuration" title="Permanent link">&para;</a></h2>
+<h2 id="3-configuration">3. Configuration<a class="headerlink" href="#3-configuration" title="Permanent link">&para;</a></h2>
 <ul>
-<li>VoiceScriptPlayer에서 WhisperNet을 통해 모델을 선택할 수 있습니다.</li>
-<li>기본 모델 지정 (예: <code>base</code>, <code>medium</code>)</li>
-<li>언어 설정 방법 (자동 감지 vs 수동 지정)</li>
-<li>성능 옵션</li>
-<li>정확도 우선 vs 속도 우선</li>
-<li>CPU / GPU 모드 선택</li>
+<li>Choose models via WhisperNet within VoiceScriptPlayer.  </li>
+<li>Set default model (e.g., <code>base</code>, <code>medium</code>)  </li>
+<li>Configure language detection (auto vs. manual)  </li>
+<li>Performance options:  </li>
+<li>Accuracy Priority / Speed Priority  </li>
+<li>CPU / GPU mode selection  </li>
 </ul>
 <hr />
-<h2 id="4-usage">4. 사용 방법 (Usage)<a class="headerlink" href="#4-usage" title="Permanent link">&para;</a></h2>
+<h2 id="4-usage">4. Usage<a class="headerlink" href="#4-usage" title="Permanent link">&para;</a></h2>
 <ol>
-<li>음성 파일 불러오기 (MP3, WAV, MP4 등)</li>
-<li>자막 파일(SRT, VTT)로 내보내기</li>
-<li>텍스트만 추출하기</li>
-<li>실시간 음성 인식 사용 예시</li>
-<li>UI 동작 흐름:<br />
-<code>파일 → Whisper 처리 → 결과 표시</code></li>
+<li>Load an audio file (MP3, WAV, MP4, etc.)  </li>
+<li>Export subtitles as <code>.srt</code> or <code>.vtt</code>  </li>
+<li>Extract plain text  </li>
+<li>Use real-time speech recognition  </li>
+<li>Workflow example:<br />
+<code>File → Whisper Processing → Display Result</code></li>
 </ol>
 <hr />
-<h2 id="5-notes-limitations">5. 주의사항 (Notes &amp; Limitations)<a class="headerlink" href="#5-notes-limitations" title="Permanent link">&para;</a></h2>
+<h2 id="5-notes-limitations">5. Notes &amp; Limitations<a class="headerlink" href="#5-notes-limitations" title="Permanent link">&para;</a></h2>
 <ul>
-<li>모델 크기에 따라 속도 및 메모리 사용량이 크게 달라집니다.</li>
-<li>긴 파일은 처리 시간이 오래 걸릴 수 있습니다.</li>
-<li>GPU 환경이 없는 경우 속도가 느려질 수 있습니다.</li>
-<li>Whisper 자체는 오픈소스이지만, <strong>상업적 이용 시 반드시 라이선스를 확인해야 합니다.</strong></li>
-<li>인터넷 연결은 필요 없지만, 모델 다운로드 시에는 인터넷이 필요합니다.</li>
+<li>Processing time and memory usage vary by model size.  </li>
+<li>Long recordings may take more time to process.  </li>
+<li>Performance will be slower without GPU acceleration.  </li>
+<li>Whisper is open source, but <strong>you must check the license terms before commercial use.</strong>  </li>
+<li>Whisper works offline after models are downloaded (internet is only required for initial download).</li>
 </ul>
-<h3 id="performance-benchmark">⚡ 성능 참고 (Performance Benchmark)<a class="headerlink" href="#performance-benchmark" title="Permanent link">&para;</a></h3>
+<h3 id="performance-benchmark">⚡ Performance Benchmark<a class="headerlink" href="#performance-benchmark" title="Permanent link">&para;</a></h3>
 <table>
 <thead>
 <tr>
-<th>환경</th>
-<th>모델</th>
-<th>10분 영상 처리 시간(대략)</th>
+<th>Environment</th>
+<th>Model</th>
+<th>Processing Time for 10-Minute Audio</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>CPU (일반 데스크탑 i5/i7급)</td>
+<td>CPU (Desktop i5/i7)</td>
 <td><code>base</code></td>
-<td>약 7~10분</td>
+<td>~7–10 minutes</td>
 </tr>
 <tr>
-<td>CPU (저사양 노트북)</td>
+<td>CPU (Low-end Laptop)</td>
 <td><code>base</code></td>
-<td>약 12~15분</td>
+<td>~12–15 minutes</td>
 </tr>
 <tr>
-<td>GPU (RTX 3060 이상)</td>
+<td>GPU (RTX 3060 or higher)</td>
 <td><code>base</code></td>
-<td>약 1~2분</td>
+<td>~1–2 minutes</td>
 </tr>
 <tr>
-<td>GPU (RTX 4090 등 고성능)</td>
+<td>GPU (High-end RTX 4090)</td>
 <td><code>large</code></td>
-<td>약 30초~1분</td>
+<td>~30 seconds–1 minute</td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-<p>💡 모델 크기가 커질수록 정확도는 향상되지만 처리 속도는 느려집니다.<br />
-Whisper는 오프라인에서도 동작하며, 한 번 모델을 다운로드하면 인터넷 없이도 사용할 수 있습니다.</p>
+<p>💡 Larger models improve transcription accuracy but increase processing time.<br />
+Once downloaded, Whisper can be used <strong>completely offline</strong>.  </p>
 </blockquote>
 <hr />
-<h2 id="6-license-credits">6. 라이선스 및 출처 (License &amp; Credits)<a class="headerlink" href="#6-license-credits" title="Permanent link">&para;</a></h2>
+<h2 id="6-license-credits">6. License &amp; Credits<a class="headerlink" href="#6-license-credits" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>원본 Whisper</strong>: MIT License  </li>
+<li><strong>Whisper (original)</strong>: MIT License  </li>
 <li><strong>Whisper.cpp</strong>: MIT License  </li>
 <li><strong>WhisperNet</strong>: MIT License  </li>
-<li>공식 GitHub:</li>
-<li><a href="https://github.com/openai/whisper">Whisper</a></li>
-<li><a href="https://github.com/ggerganov/whisper.cpp">Whisper.cpp</a></li>
-<li><a href="https://github.com/davidfowl/whisper.net">WhisperNet</a></li>
-<li>상업적 사용 가능 (단, 변환된 텍스트의 저작권은 사용자에게 있습니다)</li>
+<li>Official GitHub repositories:  </li>
+<li><a href="https://github.com/openai/whisper">Whisper</a>  </li>
+<li><a href="https://github.com/ggerganov/whisper.cpp">Whisper.cpp</a>  </li>
+<li><a href="https://github.com/davidfowl/whisper.net">WhisperNet</a>  </li>
+<li>Commercial use allowed (ownership of transcribed text belongs to the user).</li>
 </ul>
 <hr />
-<h2 id="7-troubleshooting-faq">7. 문제 해결 (Troubleshooting / FAQ)<a class="headerlink" href="#7-troubleshooting-faq" title="Permanent link">&para;</a></h2>
+<h2 id="7-troubleshooting-faq">7. Troubleshooting / FAQ<a class="headerlink" href="#7-troubleshooting-faq" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
-<p>❓ <em>"모델 파일을 찾을 수 없습니다."</em><br />
-  → 프로그램 내에서 모델을 자동 다운로드할 수 있습니다.<br />
-    설정 메뉴의 Whisper 탭에서 모델을 선택하면 자동으로 다운로드 및 적용됩니다.<br />
-    수동 다운로드를 원할 경우 Whisper.cpp 페이지에서 직접 받을 수 있습니다.  </p>
+<p>❓ <em>"Model file not found."</em><br />
+  → Models can be automatically downloaded in the Whisper settings tab.<br />
+    For manual download, visit the Whisper.cpp GitHub page.  </p>
 </li>
 <li>
-<p>❓ <em>"속도가 너무 느립니다."</em><br />
-  → 작은 모델(<code>tiny</code>, <code>base</code>)을 사용하거나 GPU 가속을 설정하세요.<br />
-    일반적인 CPU에서는 10분짜리 영상 기준 약 7~10분 정도가 소요됩니다.<br />
-    GPU를 사용할 경우 약 1~2분 내에 처리됩니다.</p>
+<p>❓ <em>"Processing is too slow."</em><br />
+  → Use a smaller model (<code>tiny</code>, <code>base</code>) or enable GPU acceleration.<br />
+    On a typical CPU, a 10-minute file takes about 7–10 minutes;<br />
+    with GPU, it completes in about 1–2 minutes.  </p>
 </li>
 <li>
-<p>❓ <em>"언어가 잘못 인식됩니다."</em><br />
-  → 언어를 자동 감지 대신 명시적으로 지정하세요.  </p>
+<p>❓ <em>"Language is incorrectly detected."</em><br />
+  → Disable automatic detection and specify the language manually.  </p>
 </li>
 <li>
-<p>❓ <em>"메모리 부족 오류가 납니다."</em><br />
-  → 더 작은 모델을 사용하거나 파일을 나누어 처리하세요.  </p>
+<p>❓ <em>"Out of memory error."</em><br />
+  → Use a smaller model or split the audio file into shorter segments.  </p>
 </li>
 </ul>
 
@@ -2243,7 +2248,7 @@ Whisper는 오프라인에서도 동작하며, 한 번 모델을 다운로드하
     
     
     <a href="https://www.patreon.com/VoiceScriptPlayer" target="_blank" rel="noopener" title="Patreon" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M490 153.8c-.1-65.4-51-119-110.7-138.3-74.2-24-172-20.5-242.9 12.9C50.6 68.9 23.6 157.7 22.6 246.2 21.8 319 29 510.6 137.2 512c80.3 1 92.3-102.5 129.5-152.3 26.4-35.5 60.5-45.5 102.4-55.9 72-17.8 121.1-74.7 121-150z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M490 153.8c-.1-65.4-51-119-110.7-138.3-74.2-24-172-20.5-242.9 12.9C50.6 68.9 23.6 157.7 22.6 246.2 21.8 319 29 510.6 137.2 512c80.3 1 92.3-102.5 129.5-152.3 26.4-35.5 60.5-45.5 102.4-55.9 72-17.8 121.1-74.7 121-150z"/></svg>
     </a>
   
 </div>
@@ -2260,7 +2265,7 @@ Whisper는 오프라인에서도 동작하며, 한 번 모델을 다운로드하
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>

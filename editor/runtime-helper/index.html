@@ -1,6 +1,6 @@
 
 <!doctype html>
-<html lang="ko" class="no-js">
+<html lang="en" class="no-js">
   <head>
     
       <meta charset="utf-8">
@@ -20,15 +20,15 @@
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.21">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
     
     
       
-        <title>런타임 도우미 - VoiceScriptPlayer Docs</title>
+        <title>Runtime Helper - VoiceScriptPlayer Docs</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.2a3383ac.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
       
       
 
@@ -66,8 +66,8 @@
     <div data-md-component="skip">
       
         
-        <a href="#_1" class="md-skip">
-          콘텐츠로 이동
+        <a href="#runtime-helper-tab" class="md-skip">
+          Skip to content
         </a>
       
     </div>
@@ -101,7 +101,7 @@
           <span class="md-ellipsis">VoiceScriptPlayer Docs</span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
-          <span class="md-ellipsis">런타임 도우미</span>
+          <span class="md-ellipsis">Runtime Helper</span>
         </div>
       </div>
     </div>
@@ -111,20 +111,14 @@
       <div class="md-header__option">
   <div class="md-select">
     
-    <button class="md-header__button md-icon" aria-label="언어설정">
+    <button class="md-header__button md-icon" aria-label="Select language">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
     </button>
     <div class="md-select__inner">
       <ul class="md-select__list">
         
           <li class="md-select__item">
-            <a href="./" hreflang="ko" class="md-select__link">
-              한국어
-            </a>
-          </li>
-        
-          <li class="md-select__item">
-            <a href="../../en/editor/runtime-helper/" hreflang="en" class="md-select__link">
+            <a href="./" hreflang="en" class="md-select__link">
               English
             </a>
           </li>
@@ -132,6 +126,18 @@
           <li class="md-select__item">
             <a href="../../ja/editor/runtime-helper/" hreflang="ja" class="md-select__link">
               日本語
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../zh/editor/runtime-helper/" hreflang="zh" class="md-select__link">
+              中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../ko/editor/runtime-helper/" hreflang="ko" class="md-select__link">
+              한국어
             </a>
           </li>
         
@@ -146,16 +152,16 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="검색" placeholder="검색" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="검색">
+      <nav class="md-search__options" aria-label="Search">
         
-        <button type="reset" class="md-search__icon md-icon" title="지우기" aria-label="지우기" tabindex="-1">
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
@@ -168,7 +174,7 @@
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
         <div class="md-search-result" data-md-component="search-result">
           <div class="md-search-result__meta">
-            검색 초기화
+            Initializing search
           </div>
           <ol class="md-search-result__list" role="presentation"></ol>
         </div>
@@ -197,7 +203,7 @@
         
           
             
-<nav class="md-tabs" aria-label="탭" data-md-component="tabs">
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
   <div class="md-grid">
     <ul class="md-tabs__list">
       
@@ -439,7 +445,7 @@
   
 
 
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="네비게이션" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="VoiceScriptPlayer Docs" class="md-nav__button md-logo" aria-label="VoiceScriptPlayer Docs" data-md-component="logo">
       
@@ -551,7 +557,7 @@
   
   
   <span class="md-ellipsis">
-    개요
+    Overview
     
   </span>
   
@@ -590,7 +596,7 @@
   
   
   <span class="md-ellipsis">
-    예제 & 심화
+    Examples & Advanced
     
   </span>
   
@@ -601,7 +607,7 @@
         <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3_2">
             <span class="md-nav__icon md-icon"></span>
-            예제 & 심화
+            Examples & Advanced
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -617,7 +623,7 @@
   
   
   <span class="md-ellipsis">
-    기본 템플릿으로 시작하기
+    Start with a Basic Template
     
   </span>
   
@@ -640,7 +646,7 @@
   
   
   <span class="md-ellipsis">
-    UI와 스크립트 연동 실습
+    Practice Linking UI and Script
     
   </span>
   
@@ -663,7 +669,7 @@
   
   
   <span class="md-ellipsis">
-    조건문과 변수로 인터랙션 만들기
+    Create Interaction with Conditions and Variables
     
   </span>
   
@@ -686,7 +692,7 @@
   
   
   <span class="md-ellipsis">
-    Stroke & Device 응용
+    Stroke & Device Applications
     
   </span>
   
@@ -767,7 +773,7 @@
   
   
   <span class="md-ellipsis">
-    새 프로젝트 만들기
+    Create New Project
     
   </span>
   
@@ -790,7 +796,7 @@
   
   
   <span class="md-ellipsis">
-    불러오기 & 저장
+    Load & Save
     
   </span>
   
@@ -868,7 +874,7 @@
   
   
   <span class="md-ellipsis">
-    개요
+    Overview
     
   </span>
   
@@ -891,7 +897,7 @@
   
   
   <span class="md-ellipsis">
-    타임라인
+    Timeline
     
   </span>
   
@@ -914,7 +920,7 @@
   
   
   <span class="md-ellipsis">
-    사운드
+    Sound
     
   </span>
   
@@ -937,7 +943,7 @@
   
   
   <span class="md-ellipsis">
-    비디오
+    Video
     
   </span>
   
@@ -1006,7 +1012,7 @@
   
   
   <span class="md-ellipsis">
-    스크립트
+    Script
     
   </span>
   
@@ -1029,7 +1035,7 @@
   
   
   <span class="md-ellipsis">
-    스트로크
+    Stroke
     
   </span>
   
@@ -1052,7 +1058,7 @@
   
   
   <span class="md-ellipsis">
-    클라이맥스
+    Climax
     
   </span>
   
@@ -1075,7 +1081,7 @@
   
   
   <span class="md-ellipsis">
-    리소스 관리
+    Resource Management
     
   </span>
   
@@ -1107,7 +1113,7 @@
   
   
   <span class="md-ellipsis">
-    런타임 도우미
+    Runtime Helper
     
   </span>
   
@@ -1120,7 +1126,7 @@
   
   
   <span class="md-ellipsis">
-    런타임 도우미
+    Runtime Helper
     
   </span>
   
@@ -1129,7 +1135,7 @@
       
         
 
-<nav class="md-nav md-nav--secondary" aria-label="목차">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -1138,59 +1144,59 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      목차
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#1-interface-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      1. 인터페이스 개요
+      1. Interface Overview
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-stroke" class="md-nav__link">
+  <a href="#2-stroke-position" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Stroke 위치
+      2. Stroke Position
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#3-runtime-variables" class="md-nav__link">
     <span class="md-ellipsis">
-      3. 런타임 변수
+      3. Runtime Variables
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
+  <a href="#4-active-events" class="md-nav__link">
     <span class="md-ellipsis">
-      4. 실행 중 이벤트
+      4. Active Events
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
+  <a href="#5-use-cases" class="md-nav__link">
     <span class="md-ellipsis">
-      5. 활용 예시
+      5. Use Cases
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#7" class="md-nav__link">
+  <a href="#7-related-documents" class="md-nav__link">
     <span class="md-ellipsis">
-      7. 관련 문서
+      7. Related Documents
     </span>
   </a>
   
@@ -1217,7 +1223,7 @@
   
   
   <span class="md-ellipsis">
-    프로젝트 설정
+    Project Settings
     
   </span>
   
@@ -1290,7 +1296,7 @@
   
   
   <span class="md-ellipsis">
-    실행하기
+    Run
     
   </span>
   
@@ -1313,7 +1319,7 @@
   
   
   <span class="md-ellipsis">
-    디버그 & 로그
+    Debug & Log
     
   </span>
   
@@ -1454,7 +1460,7 @@
   
   
   <span class="md-ellipsis">
-    Intiface 고급
+    Intiface Advanced
     
   </span>
   
@@ -1527,7 +1533,7 @@
   
   
   <span class="md-ellipsis">
-    개요
+    Overview
     
   </span>
   
@@ -1665,7 +1671,7 @@
   
   
   <span class="md-ellipsis">
-    Hailuo 구독 가이드
+    Hailuo Subscription Guide
     
   </span>
   
@@ -1734,7 +1740,7 @@
   
   
   <span class="md-ellipsis">
-    DeepL 구독 가이드
+    DeepL Subscription Guide
     
   </span>
   
@@ -1883,7 +1889,7 @@
                   <div class="md-sidebar__inner">
                     
 
-<nav class="md-nav md-nav--secondary" aria-label="목차">
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
   
@@ -1892,59 +1898,59 @@
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      목차
+      Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
+  <a href="#1-interface-overview" class="md-nav__link">
     <span class="md-ellipsis">
-      1. 인터페이스 개요
+      1. Interface Overview
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-stroke" class="md-nav__link">
+  <a href="#2-stroke-position" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Stroke 위치
+      2. Stroke Position
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3" class="md-nav__link">
+  <a href="#3-runtime-variables" class="md-nav__link">
     <span class="md-ellipsis">
-      3. 런타임 변수
+      3. Runtime Variables
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#4" class="md-nav__link">
+  <a href="#4-active-events" class="md-nav__link">
     <span class="md-ellipsis">
-      4. 실행 중 이벤트
+      4. Active Events
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#5" class="md-nav__link">
+  <a href="#5-use-cases" class="md-nav__link">
     <span class="md-ellipsis">
-      5. 활용 예시
+      5. Use Cases
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#7" class="md-nav__link">
+  <a href="#7-related-documents" class="md-nav__link">
     <span class="md-ellipsis">
-      7. 관련 문서
+      7. Related Documents
     </span>
   </a>
   
@@ -1966,170 +1972,170 @@
 
 
 
-<h1 id="_1">런타임 도우미 탭<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
-<p>런타임 도우미(Runtime Helper) 탭은 <strong>프로젝트 실행 중 내부 상태를 실시간으로 확인하고 디버깅하는 도구</strong>입니다.<br />
-현재 동작 중인 Stroke의 위치, 런타임 변수 값, 전역 변수, 그리고 실행 중 이벤트 정보를<br />
-한눈에 확인할 수 있습니다.</p>
-<p>이 탭은 일반 사용자보다는 <strong>개발자 및 스크립트 디버깅용</strong>으로 설계되었습니다.</p>
+<h1 id="runtime-helper-tab">Runtime Helper Tab<a class="headerlink" href="#runtime-helper-tab" title="Permanent link">&para;</a></h1>
+<p>The <strong>Runtime Helper Tab</strong> is a tool designed to <strong>monitor and debug the internal state of your project in real time during execution</strong>.<br />
+It allows you to easily observe the current Stroke positions, runtime variable values, global variables,<br />
+and currently active events.</p>
+<p>This tab is primarily intended for <strong>developers and script debugging</strong> rather than general users.</p>
 <hr />
-<h2 id="1">1. 인터페이스 개요<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
+<h2 id="1-interface-overview">1. Interface Overview<a class="headerlink" href="#1-interface-overview" title="Permanent link">&para;</a></h2>
 <p><img alt="runtime-helper" src="../../images/runtime-helper.png" /></p>
 <table>
 <thead>
 <tr>
-<th>구성 요소</th>
-<th>설명</th>
+<th>Component</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Stroke 위치</strong></td>
-<td>각 축(L0~R2)의 현재 동작 위치를 실시간으로 표시합니다.</td>
+<td><strong>Stroke Position</strong></td>
+<td>Displays the real-time position of each axis (L0–R2).</td>
 </tr>
 <tr>
-<td><strong>런타임 변수</strong></td>
-<td>실행 중 변하는 주요 제어 변수(속도, 범위 등)를 표시합니다.</td>
+<td><strong>Runtime Variables</strong></td>
+<td>Shows major control variables that change during execution (e.g., speed, range).</td>
 </tr>
 <tr>
-<td><strong>전역 변수</strong></td>
-<td>프로젝트 전역(Global) 변수의 현재 값을 보여줍니다.</td>
+<td><strong>Global Variables</strong></td>
+<td>Displays the current values of global variables used throughout the project.</td>
 </tr>
 <tr>
-<td><strong>실행 중 이벤트</strong></td>
-<td>현재 활성화된 이벤트(사정, Live2D 씬, 자막 등)를 나열합니다.</td>
+<td><strong>Active Events</strong></td>
+<td>Lists currently running events (e.g., ejaculation, Live2D scenes, subtitles).</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="2-stroke">2. Stroke 위치<a class="headerlink" href="#2-stroke" title="Permanent link">&para;</a></h2>
-<p>Stroke 위치 섹션은 장치의 각 축(Axis)의 실시간 좌표를 보여줍니다.<br />
-이 값은 <strong>읽기 전용(Read-only)</strong> 상태이며, 실제 장치 또는 시뮬레이터의 움직임을 그대로 반영합니다.</p>
+<h2 id="2-stroke-position">2. Stroke Position<a class="headerlink" href="#2-stroke-position" title="Permanent link">&para;</a></h2>
+<p>The Stroke Position section displays the <strong>real-time coordinates of each device axis (Axis)</strong>.<br />
+These values are <strong>read-only</strong> and reflect the movements of the actual hardware or simulator.</p>
 <table>
 <thead>
 <tr>
-<th>축 이름</th>
-<th>설명</th>
+<th>Axis Name</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>L0 ~ L2</strong></td>
-<td>왼쪽 채널의 축 위치</td>
+<td><strong>L0–L2</strong></td>
+<td>Left channel axis positions</td>
 </tr>
 <tr>
-<td><strong>R0 ~ R2</strong></td>
-<td>오른쪽 채널의 축 위치</td>
+<td><strong>R0–R2</strong></td>
+<td>Right channel axis positions</td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-<p>💡 <strong>참고:</strong><br />
-슬라이더의 위치는 물리적 장치의 실시간 모션을 그대로 표현하며,<br />
-수동으로 변경은 불가능하며, 내부 상태를 관찰하기 위한 용도입니다.</p>
+<p>💡 <strong>Tip:</strong><br />
+The slider positions directly reflect the real movement of the physical device.<br />
+They cannot be manually changed and are intended purely for monitoring purposes.</p>
 </blockquote>
 <hr />
-<h2 id="3">3. 런타임 변수<a class="headerlink" href="#3" title="Permanent link">&para;</a></h2>
-<p>실행 중 동적으로 변하는 주요 제어 변수를 표시합니다.<br />
-이 값들은 스크립트나 이벤트에 따라 자동으로 갱신됩니다.</p>
+<h2 id="3-runtime-variables">3. Runtime Variables<a class="headerlink" href="#3-runtime-variables" title="Permanent link">&para;</a></h2>
+<p>This section displays key control variables that change dynamically during execution.<br />
+These values are automatically updated according to script logic or triggered events.</p>
 <table>
 <thead>
 <tr>
-<th>변수명</th>
-<th>설명</th>
+<th>Variable Name</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>StrokeRange</strong></td>
-<td>Stroke의 진폭(최대 이동 범위)</td>
+<td>Amplitude of the Stroke (maximum movement range)</td>
 </tr>
 <tr>
 <td><strong>StrokeSpeed</strong></td>
-<td>Stroke의 속도 배율</td>
+<td>Speed multiplier of the Stroke</td>
 </tr>
 <tr>
 <td><strong>Sensitivity</strong></td>
-<td>입력 감도 또는 반응 민감도</td>
+<td>Input sensitivity or response level</td>
 </tr>
 <tr>
 <td><strong>ErectionState</strong></td>
-<td>상태 기반 변수 (예: 흥분도, 감정 수치 등)</td>
+<td>State variable (e.g., arousal or emotional level)</td>
 </tr>
 <tr>
 <td><strong>RestTime</strong></td>
-<td>휴식 중인 시간(초)</td>
+<td>Time spent resting (in seconds)</td>
 </tr>
 <tr>
 <td><strong>StrokeExecCount</strong></td>
-<td>Stroke가 실행된 횟수</td>
+<td>Number of Stroke executions</td>
 </tr>
 <tr>
-<td><em>(기타 변수)</em></td>
-<td>현재 스크립트나 환경에서 선언된 전역 변수</td>
+<td><em>(Other Variables)</em></td>
+<td>Global variables declared within the current script or environment</td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-<p>💡 <strong>팁:</strong><br />
-이 영역의 값은 <strong>스크립트 로직 테스트나 밸런스 조정 시 디버깅용</strong>으로 활용됩니다.  </p>
+<p>💡 <strong>Tip:</strong><br />
+This section is useful for <strong>debugging scripts, testing variable changes, or adjusting balance</strong>.</p>
 </blockquote>
 <hr />
-<h2 id="4">4. 실행 중 이벤트<a class="headerlink" href="#4" title="Permanent link">&para;</a></h2>
-<p>이 영역은 현재 활성화된 이벤트 목록을 보여줍니다.<br />
-각 이벤트는 해당 시점에 동작 중인 기능(자막, Live2D, 스트로크, 특수 이벤트 등)을 나타냅니다.</p>
+<h2 id="4-active-events">4. Active Events<a class="headerlink" href="#4-active-events" title="Permanent link">&para;</a></h2>
+<p>This section lists all currently active events.<br />
+Each event represents a running component, such as subtitles, Live2D scenes, Strokes, or special events.</p>
 <table>
 <thead>
 <tr>
-<th>예시</th>
-<th>설명</th>
+<th>Example</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>새 Live2D 씬</strong></td>
-<td>활성화된 Live2D 애니메이션</td>
+<td><strong>New Live2D Scene</strong></td>
+<td>Currently active Live2D animation</td>
 </tr>
 <tr>
-<td><strong>일반 사정</strong></td>
-<td>현재 진행 중인 특수 이벤트</td>
+<td><strong>Normal Ejaculation</strong></td>
+<td>Ongoing special event</td>
 </tr>
 </tbody>
 </table>
 <blockquote>
-<p>💡 <strong>참고:</strong><br />
-이벤트가 종료되면 목록에서 자동으로 제거됩니다.<br />
-여러 이벤트가 동시에 작동할 경우, 상단부터 순서대로 표시됩니다.</p>
+<p>💡 <strong>Note:</strong><br />
+Events automatically disappear from the list once completed.<br />
+When multiple events are active, they are displayed in order from top to bottom.</p>
 </blockquote>
 <hr />
-<h2 id="5">5. 활용 예시<a class="headerlink" href="#5" title="Permanent link">&para;</a></h2>
+<h2 id="5-use-cases">5. Use Cases<a class="headerlink" href="#5-use-cases" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th>목적</th>
-<th>활용 방법</th>
+<th>Purpose</th>
+<th>How to Use</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>디버깅</strong></td>
-<td>스트로크 위치, 변수 상태, 이벤트 동작 여부를 실시간으로 확인</td>
+<td><strong>Debugging</strong></td>
+<td>Check Stroke positions, variable states, and event behavior in real time</td>
 </tr>
 <tr>
-<td><strong>테스트</strong></td>
-<td>스크립트 실행 시 변수 변화량 검증</td>
+<td><strong>Testing</strong></td>
+<td>Verify variable changes during script execution</td>
 </tr>
 <tr>
-<td><strong>성능 점검</strong></td>
-<td>여러 이벤트가 동시에 작동할 때 변수 변화를 모니터링</td>
+<td><strong>Performance Monitoring</strong></td>
+<td>Observe how variables behave when multiple events run simultaneously</td>
 </tr>
 </tbody>
 </table>
 <hr />
-<h2 id="7">7. 관련 문서<a class="headerlink" href="#7" title="Permanent link">&para;</a></h2>
+<h2 id="7-related-documents">7. Related Documents<a class="headerlink" href="#7-related-documents" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="../stroke/">스트로크 탭</a>  </li>
-<li><a href="../special-event/">특수 이벤트 탭</a>  </li>
-<li><a href="../resources/">리소스 관리 탭</a></li>
+<li><a href="../stroke/">Stroke Tab</a>  </li>
+<li><a href="../special-event/">Special Event Tab</a>  </li>
+<li><a href="../resources/">Resource Management Tab</a></li>
 </ul>
 
 
@@ -2175,7 +2181,7 @@
     
     
     <a href="https://www.patreon.com/VoiceScriptPlayer" target="_blank" rel="noopener" title="Patreon" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.0.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M490 153.8c-.1-65.4-51-119-110.7-138.3-74.2-24-172-20.5-242.9 12.9C50.6 68.9 23.6 157.7 22.6 246.2 21.8 319 29 510.6 137.2 512c80.3 1 92.3-102.5 129.5-152.3 26.4-35.5 60.5-45.5 102.4-55.9 72-17.8 121.1-74.7 121-150z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M490 153.8c-.1-65.4-51-119-110.7-138.3-74.2-24-172-20.5-242.9 12.9C50.6 68.9 23.6 157.7 22.6 246.2 21.8 319 29 510.6 137.2 512c80.3 1 92.3-102.5 129.5-152.3 26.4-35.5 60.5-45.5 102.4-55.9 72-17.8 121.1-74.7 121-150z"/></svg>
     </a>
   
 </div>
@@ -2192,7 +2198,7 @@
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\ud074\ub9bd\ubcf4\ub4dc\uc5d0 \ubcf5\uc0ac\ub428", "clipboard.copy": "\ud074\ub9bd\ubcf4\ub4dc\ub85c \ubcf5\uc0ac", "search.result.more.one": "\uc774 \ubb38\uc11c\uc5d0\uc11c 1\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.more.other": "\uc774 \ubb38\uc11c\uc5d0\uc11c #\uac1c\uc758 \uac80\uc0c9 \uacb0\uacfc \ub354 \ubcf4\uae30", "search.result.none": "\uac80\uc0c9\uc5b4\uc640 \uc77c\uce58\ud558\ub294 \ubb38\uc11c\uac00 \uc5c6\uc2b5\ub2c8\ub2e4", "search.result.one": "1\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.other": "#\uac1c\uc758 \uc77c\uce58\ud558\ub294 \ubb38\uc11c", "search.result.placeholder": "\uac80\uc0c9\uc5b4\ub97c \uc785\ub825\ud558\uc138\uc694", "search.result.term.missing": "\ud3ec\ud568\ub418\uc9c0 \uc54a\uc740 \uac80\uc0c9\uc5b4", "select.version": "\ubc84\uc804 \uc120\ud0dd"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
